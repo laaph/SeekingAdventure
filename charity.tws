@@ -1,0 +1,1446 @@
+(dp0
+S'buildDestination'
+p1
+V/Users/stanza/Dropbox/Public/GameJams/2013-11-24 - CharityGameJam/charity-d.html
+p2
+sS'saveDestination'
+p3
+V/Users/stanza/Active/Twine/charity.tws
+p4
+sS'target'
+p5
+S'sugarcane'
+p6
+sS'storyPanel'
+p7
+(dp8
+S'widgets'
+p9
+(lp10
+(dp11
+S'selected'
+p12
+I00
+sS'pos'
+p13
+(lp14
+I10
+aI10
+asS'passage'
+p15
+(itiddlywiki
+Tiddler
+p16
+(dp17
+S'text'
+p18
+V<<set $money=100>><<set $score=0>><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstar=0>>You have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "b">><<endsilently>>\u000a[img[TURBO.png]]\u000a\u000a
+p19
+sS'tags'
+p20
+(lp21
+sS'created'
+p22
+ctime
+struct_time
+p23
+((I2013
+I11
+I23
+I20
+I10
+I50
+I5
+I327
+I0
+tp24
+(dp25
+tp26
+Rp27
+sS'modified'
+p28
+g27
+sS'title'
+p29
+VStart
+p30
+sbsa(dp31
+g12
+I00
+sg13
+(lp32
+I570
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p33
+(dp34
+g18
+VCharity Game \u000aJam II Turbo\u000aPlus Hyper \u000aFighting  \u000aAlpha Squee \u000aChibi Edition!\u000a\u000a[[Credits]] [[Charities]] 
+p35
+sg20
+(lp36
+sg22
+g23
+((I2013
+I11
+I23
+I20
+I17
+I15
+I5
+I327
+I0
+tp37
+(dp38
+tp39
+Rp40
+sg28
+g40
+sg29
+VStoryTitle
+p41
+sbsa(dp42
+g12
+I00
+sg13
+(lp43
+I710
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p44
+(dp45
+g18
+VWritten, narrated, illustrated, plagiarized, and coddled by Laaph.\u000a\u000a[[Desktop Edition|http://dl.dropboxusercontent.com/u/59395735/GameJams/2013-11-24%20-%20CharityGameJam/charity-d.html/]] \u000a[[Mobile Edition|http://dl.dropboxusercontent.com/u/59395735/GameJams/2013-11-24%20-%20CharityGameJam/charity-m.html/]]
+p46
+sg20
+(lp47
+sg22
+g23
+((I2013
+I11
+I23
+I20
+I18
+I5
+I5
+I327
+I0
+tp48
+(dp49
+tp50
+Rp51
+sg28
+g51
+sg29
+VStoryAuthor
+p52
+sbsa(dp53
+g12
+I00
+sg13
+(lp54
+I10
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p55
+(dp56
+g18
+VBefore you start your adventure, though, you'll have to choose your partner in crime.\u000a\u000a<<if $leila  neq "no">>[[Leila the Little Slime]]<<endif>>\u000a<<if $nermin neq "no">>[[Nearly Normal Nermin the Ninja Turtle]]<<endif>>\u000a<<if $luke   neq "no">>[[Lucky Luke the Leprechaun and his Steampunk Spider]]<<endif>>\u000a[[Forget these freaks, I'm going solo.|Choose Your Destiny]]
+p57
+sg20
+(lp58
+sg22
+g23
+((I2013
+I11
+I23
+I20
+I20
+I54
+I5
+I327
+I0
+tp59
+(dp60
+tp61
+Rp62
+sg28
+g62
+sg29
+VKeep your friends close, and your enemies closer
+p63
+sbsa(dp64
+g12
+I00
+sg13
+(lp65
+I430
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p66
+(dp67
+g18
+VLeila the Little Slime looks at you with big sad eyes.  She says to you "I'd love to go on adventures with you, but I have lost my mom!  If you help me find my mom, I will go on any adventure you ask, and not even ask for a share of the loot!"\u000a\u000aHow do you respond to those pleading eyes?<<silently>>\u000a:: Hackery follows - \u000a:: Be sure to set that to yes in suggestions that she come with\u000a<<set $leila = "no">> <<endsilently>>\u000a[img[littleslime.png]]\u000a[[Of course we can go rescue your mom.|Where is mom?]]\u000a[[I can't be distracted by every missing mom.  I'm sure she is safe and just forgot to tell you where she went.|Keep your friends close, and your enemies closer]]
+p68
+sg20
+(lp69
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I1
+I10
+I5
+I327
+I0
+tp70
+(dp71
+tp72
+Rp73
+sg28
+g73
+sg29
+VLeila the Little Slime
+p74
+sbsa(dp75
+g12
+I00
+sg13
+(lp76
+I850
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p77
+(dp78
+g18
+V<<set $nermin="no">>\u000aNearly Normal Nermin the Ninja Turtle looks you over and says "you can't go adventuring like that!" with a scowl.  He continues: "I won't go with you, but in the interest that you don't get killed by the first kobold you find, I will sell you all the hardware you might need for adventuring."\u000a\u000a<<display 'store'>>
+p79
+sg20
+(lp80
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I9
+I20
+I5
+I327
+I0
+tp81
+(dp82
+tp83
+Rp84
+sg28
+g84
+sg29
+VNearly Normal Nermin the Ninja Turtle
+p85
+sbsa(dp86
+g12
+I00
+sg13
+(lp87
+I10
+aI570
+asg15
+(itiddlywiki
+Tiddler
+p88
+(dp89
+g18
+VNow it is time to choose your adventure.  You can go to -\u000a<<set $maze=0>><<set $hunger=0>><<set $okay=true>><<set $registration=false>><<set $warned=false>>\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Museum of Unnatural History]]
+p90
+sg20
+(lp91
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I19
+I47
+I5
+I327
+I0
+tp92
+(dp93
+tp94
+Rp95
+sg28
+g95
+sg29
+VChoose Your Destiny
+p96
+sbsa(dp97
+g12
+I01
+sg13
+(lp98
+I710
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p99
+(dp100
+g18
+VCredits, or page detailing blatant plagiarism.\u000a\u000aThis game was made for the [[Charity Game Jam|http://charitygamejam.com/]].\u000aSeveral elements of this game have been "borrowed" from [[OpenGameArt|http://opengameart.org/]].\u000aSpecial thanks to Anna Anthropy for making the only usable [[tutorial for Twine|http://www.auntiepixelante.com/twine]].\u000aSpecial thanks to GritFish for releasing a tutorial on [[how to make Twine look nice on phones|http://gritfish.net/blog/tin-cans.html]].\u000aSpecial thanks to Robert Yang for releasing a tutorial on [[how to integrate Twine and Unity|http://www.blog.radiator.debacle.us/2012/07/how-to-integrate-unity-and-twine.html]], even though I'm not using it on this project, but I will on my next project.\u000a\u000aI have taken inspiration from the following games to make this game.\u000a[[Pirate Adventure|http://en.wikipedia.org/wiki/Pirate_Adventure]], by Scott Adams.\u000a[[The Dungeons of Moria|http://theodor.lauppert.ws/games/moria.htm]], by Robert Alan Koeneke.\u000a[[The Great Underground Empire|http://en.wikipedia.org/wiki/Zork]], by Will Crowther.\u000a[[Slime Forest Adventure|http://lrnj.com/]], by Darrel Johnson.\u000a\u000aI have used imagry generated by the resources offered below.\u000a[[Little Slime|http://opengameart.org/content/little-slime]], by sketchstick.\u000a[[Nermin the Ninja Turtle|http://opengameart.org/content/tortoise-high-poly]], by sunburm.\u000a[[Lucky Luke the Leprechaun|http://opengameart.org/content/steampunk-spider]], by nubux.
+p101
+sg20
+(lp102
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I26
+I33
+I5
+I327
+I0
+tp103
+(dp104
+tp105
+Rp106
+sg28
+g106
+sg29
+VCredits
+p107
+sbsa(dp108
+g12
+I00
+sg13
+(lp109
+I150
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p110
+(dp111
+g18
+VLuke is simple.  "I'll go with you, for a $50 down payment and one half of all treasures found.  In the case of non-monetary treasures, we will have the shop downtown evaluate value, and split them by value, or sell them to the shop.  In the rare case that we both want an item we can do a silent auction for it.  Is this satisfactory to you?"\u000a\u000aLuke may be simple, but his Steampunk Spider is a force to be reckoned with, and just plain out fun to ride about inside.  You have <<if $money eq 0>>0<<else>><<print $money>><<endif>>  dollars.\u000a<<set $luke="no">>\u000a<<if $money gte 50>>\u000a[[Accept Luke's offer|Acceptance]]\u000a[[Decline Luke's offer|Keep your friends close, and your enemies closer]]\u000a<<else>>\u000a[["Due to lack of a down payment, I must decline."|Keep your friends close, and your enemies closer]]\u000a<<endif>>
+p112
+sg20
+(lp113
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I30
+I55
+I5
+I327
+I0
+tp114
+(dp115
+tp116
+Rp117
+sg28
+g117
+sg29
+VLucky Luke the Leprechaun and his Steampunk Spider
+p118
+sbsa(dp119
+g12
+I00
+sg13
+(lp120
+I150
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p121
+(dp122
+g18
+V"You drive a hard bargain, Luke, but I will accept your terms.  Now let's get on to business!"\u000a<<set $luke="yes">><<set $money=$money-50>>\u000a\u000a<<display 'Choose Your Destiny'>>
+p123
+sg20
+(lp124
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I36
+I22
+I5
+I327
+I0
+tp125
+(dp126
+tp127
+Rp128
+sg28
+g128
+sg29
+VAcceptance
+p129
+sbsa(dp130
+g12
+I00
+sg13
+(lp131
+I430
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p132
+(dp133
+g18
+V<<set $leila="yes">>\u000aLeila leads you to a large Meadow not far from town.  She struggles to keep her voice from wavering:  "Last time I saw her, it was here!  It was about yesterday, and I told her I'd be in town for an hour.  When I returned, she was no where to be found!"\u000a\u000a[[Perhaps she went back to her home?|Mom's House]]\u000a[[Hey, here are some signs of a battle.  Do you think we should follow the tracks?|Slime Forest Adventure]]
+p134
+sg20
+(lp135
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I44
+I51
+I5
+I327
+I0
+tp136
+(dp137
+tp138
+Rp139
+sg28
+g139
+sg29
+VWhere is mom?
+p140
+sbsa(dp141
+g12
+I00
+sg13
+(lp142
+I430
+aI570
+asg15
+(itiddlywiki
+Tiddler
+p143
+(dp144
+g18
+VYou follow the tracks to a clearing.  You come upon an adventurer battling slimes!  He hacks the last slime and suddenly looks at you and Leila.\u000a\u000aLeila seems to have fallen in a trance and starts speaking Japanese.\u000a[[Leila says \u30ce  |Splat]]\u000a[[Leila says \u30e1  |Splat]]\u000a[[Leila says \ud55c\uae00 |Fireballs]]
+p145
+sg20
+(lp146
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I51
+I36
+I5
+I327
+I0
+tp147
+(dp148
+tp149
+Rp150
+sg28
+g150
+sg29
+VSlime Forest Adventure
+p151
+sbsa(dp152
+g12
+I00
+sg13
+(lp153
+I430
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p154
+(dp155
+g18
+VThe adventurer cuts Leila cleanly in half!  Leila's cute eyeballs that led you on this adventure are now lifeless and no longer connected to the same body.  Just as you are about to mourn the loss of your dear friend, the Adventurer looks at you!\u000a<<set $leila="no">><<set $leiladead=true>>\u000a[[Say "I'm sorry, I don't know any Japanese!  Don't hurt me!"|Wrong place wrong time]]\u000a[[Say "\u3053\u3093\u306b\u3061\u306f "|Konichiwa]]
+p156
+sg20
+(lp157
+sg22
+g23
+((I2013
+I11
+I23
+I21
+I55
+I38
+I5
+I327
+I0
+tp158
+(dp159
+tp160
+Rp161
+sg28
+g161
+sg29
+VSplat
+p162
+sbsa(dp163
+g12
+I00
+sg13
+(lp164
+I430
+aI850
+asg15
+(itiddlywiki
+Tiddler
+p165
+(dp166
+g18
+VYou say the only thing in Japanese you can think of.  "\u3053\u3093\u306b\u3061\u306f!"  The adventurer says "Konnichiwa!" and cleanly cuts you in half as well.\u000a\u000a* *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, you were so busy with someone else's.  I'm not sure if I should give you Leila's score (47 out of 100) or your own (<<print $score>> out of 100).  Better luck next time.
+p167
+sg20
+(lp168
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I3
+I6
+I5
+I327
+I0
+tp169
+(dp170
+tp171
+Rp172
+sg28
+g172
+sg29
+VKonichiwa
+p173
+sbsa(dp174
+g12
+I00
+sg13
+(lp175
+I570
+aI570
+asg15
+(itiddlywiki
+Tiddler
+p176
+(dp177
+g18
+VLeila says "\ud55c\uae00" and the poor adventure looks confused for a second.  Then fireballs come out of the sky and strike the adventurer dead!<<set $score=$score+7>>\u000a\u000aLeila, acting as if this were perfectly normal, says "Do you suppose he killed my mom?  I didn't know there were Japanese learners about.  I would have kept her inside had I known."\u000a\u000aLeila seeing you looking quite so surprised says, "I gave him a Korean word.  If he had correctly guessed what I had said, he would have killed me too, but I cheated."  You aren't entirely certain that explains what happened.\u000a\u000a[[Let's go to your mom's house and see if your mom is okay.|Mom's House]]\u000a[[I imagine there is nothing we can do for her now.|Leila Angry!]]
+p178
+sg20
+(lp179
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I14
+I53
+I5
+I327
+I0
+tp180
+(dp181
+tp182
+Rp183
+sg28
+g183
+sg29
+VFireballs
+p184
+sbsa(dp185
+g12
+I00
+sg13
+(lp186
+I290
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p187
+(dp188
+g18
+V"I'm sorry, I don't know any Japanese!  Don't hurt me!"\u000a\u000aThe adventurer looks confused for a second, and says "oh!  You aren't a slime!  Terribly sorry!"  He then runs off looking for more slimes to kill.\u000a\u000aYou lost an ally, and you aren't entirely certain what adventurers are doing out in the fields killing slimes by speaking Japanese, but I suppose it makes as much sense as when Bunny Foo-Foo was bopping field mice over the head.  \u000a\u000a[[You continue on to seek your adventure|Choose Your Destiny]]
+p189
+sg20
+(lp190
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I23
+I43
+I5
+I327
+I0
+tp191
+(dp192
+tp193
+Rp194
+sg28
+g194
+sg29
+VWrong place wrong time
+p195
+sbsa(dp196
+g12
+I00
+sg13
+(lp197
+I570
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p198
+(dp199
+g18
+VYou get to Leila's Mom's house, and Leila runs in without knocking.  You follow her in, and see her embracing her mom in a slime hug.  \u000a\u000aLeila says "Mom I was so worried!"\u000aHer mom says "It's okay, don't worry about me, I'm staying inside so the adventurers don't kill me!"\u000aLeila says "But I found an adventurer and I want to go adventuring with him!"\u000aHer mom glares at you.  But then she softens her glare suddenly, and says "This one hasn't been killing slimes.  You're not an adventurer, are you?"\u000aLeila says "No mommie this is a nice person and we are going to go on adventures!"\u000a\u000aHer mom laughs and offers you tea and cookies.  "Adventures, huh?  Well, let me delay your adventures a little bit and make you sandwiches."  Mrs. Slime (?) puts out tea and cookies, and makes sandwiches for you to bring on your adventures.\u000a<<set $sandwiches=true>><<set $score=$score+5>>\u000a[[Oh this is nice.  Maybe we can just stay here.|Stuck In The Couch]]\u000a[[Thank you so much Mrs. Slime.  We must be on our way now, though.|Choose Your Destiny]]
+p200
+sg20
+(lp201
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I29
+I22
+I5
+I327
+I0
+tp202
+(dp203
+tp204
+Rp205
+sg28
+g205
+sg29
+VMom's House
+p206
+sbsa(dp207
+g12
+I00
+sg13
+(lp208
+I710
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p209
+(dp210
+g18
+VYou decide you could stay here quite a while.  Leila seems perfectly okay with this, and tells you to rest on the couch while she finds her video games.  Meanwhile, Mrs. Slime continues making tea, sandwiches, cookies and now is working on stew for tonight.  \u000a\u000aAs you relax on the couch, you realize something is wrong...  it's too soft...  It's a slime couch, of course, meant for slimes, so you slowly start to melt in to it...   literally melting in to it...  you dissolve in to the couch...  you try to scream but it's much too late for that you didn't even get to see what video game Leila was going to show you.\u000a\u000a*** *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, and you even got distracted while you were working on someone else's.  I'm not sure if I should give you Leila's score (78 out of 100) or your own (<<print $score>> out of 100).  Better luck next time.
+p211
+sg20
+(lp212
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I36
+I56
+I5
+I327
+I0
+tp213
+(dp214
+tp215
+Rp216
+sg28
+g216
+sg29
+VStuck In The Couch
+p217
+sbsa(dp218
+g12
+I00
+sg13
+(lp219
+I570
+aI710
+asg15
+(itiddlywiki
+Tiddler
+p220
+(dp221
+g18
+V"Mom isn't dead!  She's probably at home!  I'm going home, you can go on your stupid adventure without me!"  Leila stomps off in anger at your suggestion that her mom might not have made it.\u000a<<set $leila="no">>\u000aWhile you are sad to lose your companion, you are happy to be finally setting on your adventure.\u000a<<display 'Choose Your Destiny'>>
+p222
+sg20
+(lp223
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I45
+I33
+I5
+I327
+I0
+tp224
+(dp225
+tp226
+Rp227
+sg28
+g227
+sg29
+VLeila Angry!
+p228
+sbsa(dp229
+g12
+I00
+sg13
+(lp230
+I10
+aI1130
+asg15
+(itiddlywiki
+Tiddler
+p231
+(dp232
+g18
+VYou are in a maze of twisty passages, all alike.\u000aThe maze constant is <<print $maze>>.<<set $hunger=$hunger + 1>>\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -10>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 18>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a grating in the floor here.\u000a<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>
+p233
+sg20
+(lp234
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I52
+I2
+I5
+I327
+I0
+tp235
+(dp236
+tp237
+Rp238
+sg28
+g238
+sg29
+VA maze of twisty passages, all alike
+p239
+sbsa(dp240
+g12
+I00
+sg13
+(lp241
+I10
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p242
+(dp243
+g18
+V<<set $maze=$maze+2>><<display 'A maze of twisty passages, all alike'>>
+p244
+sg20
+(lp245
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I53
+I43
+I5
+I327
+I0
+tp246
+(dp247
+tp248
+Rp249
+sg28
+g249
+sg29
+Vnorth
+p250
+sbsa(dp251
+g12
+I00
+sg13
+(lp252
+I150
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p253
+(dp254
+g18
+V<<set $maze=$maze-3>><<display 'A maze of twisty passages, all alike'>>
+p255
+sg20
+(lp256
+sg22
+g23
+((I2013
+I11
+I23
+I22
+I55
+I1
+I5
+I327
+I0
+tp257
+(dp258
+tp259
+Rp260
+sg28
+g260
+sg29
+Vsouth
+p261
+sbsa(dp262
+g12
+I00
+sg13
+(lp263
+I290
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p264
+(dp265
+g18
+V<<set $maze=$maze+4>><<display 'A maze of twisty passages, all alike'>>
+p266
+sg20
+(lp267
+sg22
+g23
+((I2013
+I11
+I23
+I23
+I32
+I48
+I5
+I327
+I0
+tp268
+(dp269
+tp270
+Rp271
+sg28
+g271
+sg29
+Veast
+p272
+sbsa(dp273
+g12
+I00
+sg13
+(lp274
+I430
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p275
+(dp276
+g18
+V<<set $maze=$maze-1>><<display 'A maze of twisty passages, all alike'>>
+p277
+sg20
+(lp278
+sg22
+g23
+((I2013
+I11
+I23
+I23
+I33
+I24
+I5
+I327
+I0
+tp279
+(dp280
+tp281
+Rp282
+sg28
+g282
+sg29
+Vwest
+p283
+sbsa(dp284
+g12
+I00
+sg13
+(lp285
+I570
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p286
+(dp287
+g18
+V<<set $sandwiches=false>><<set $hunger=0>>\u000aYou stop and eat sandwiches.  You feel much better.\u000a<<display 'A maze of twisty passages, all alike'>>
+p288
+sg20
+(lp289
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I0
+I36
+I6
+I328
+I0
+tp290
+(dp291
+tp292
+Rp293
+sg28
+g293
+sg29
+VLook at all the sand which is here
+p294
+sbsa(dp295
+g12
+I00
+sg13
+(lp296
+I990
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p297
+(dp298
+g18
+VYou have <<if $money eq 0>>0<<else>><<print $money>><<endif>> dollars.  Nermin is offering you:\u000a<<if $katana eq false and $money gte 75>>\u000a[[A katana - $75|Bought katana]]\u000a \u000a<<endif>>\u000a<<if $shield eq false and $money gte 15>>\u000a[[A shield - $15|Bought shield]]\u000a<<endif>>\u000a<<if $leather eq false and $money gte 40>>\u000a[[Leather armor - $40|Bought leather]]\u000a\u000a<<endif>>\u000a<<if $money gte 10>>\u000a[[Five throwing stars - $10|Bought stars]]\u000a<<endif>>\u000a\u000a[[Thank you Nermin, I don't need anything else|Keep your friends close, and your enemies closer]]
+p299
+sg20
+(lp300
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I26
+I17
+I6
+I328
+I0
+tp301
+(dp302
+tp303
+Rp304
+sg28
+g304
+sg29
+Vstore
+p305
+sbsa(dp306
+g12
+I00
+sg13
+(lp307
+I990
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p308
+(dp309
+g18
+VYou buy the leather armor from Nermin.<<set $money=$money-40>><<set $leather=true>>\u000a\u000a<<display 'store'>>
+p310
+sg20
+(lp311
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I27
+I45
+I6
+I328
+I0
+tp312
+(dp313
+tp314
+Rp315
+sg28
+g315
+sg29
+VBought leather
+p316
+sbsa(dp317
+g12
+I00
+sg13
+(lp318
+I1270
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p319
+(dp320
+g18
+VYou buy the shield from Nermin.<<set $money=$money-15>><<set $shield=true>>\u000a\u000a<<display 'store'>>
+p321
+sg20
+(lp322
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I29
+I20
+I6
+I328
+I0
+tp323
+(dp324
+tp325
+Rp326
+sg28
+g326
+sg29
+VBought shield
+p327
+sbsa(dp328
+g12
+I00
+sg13
+(lp329
+I1130
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p330
+(dp331
+g18
+VYou buy some throwing stars from Nermin.<<set $money=$money-10>><<set $throwingstars=$throwingstars+5>>\u000a\u000a<<display 'store'>>
+p332
+sg20
+(lp333
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I30
+I14
+I6
+I328
+I0
+tp334
+(dp335
+tp336
+Rp337
+sg28
+g337
+sg29
+VBought stars
+p338
+sbsa(dp339
+g12
+I00
+sg13
+(lp340
+I1130
+aI290
+asg15
+(itiddlywiki
+Tiddler
+p341
+(dp342
+g18
+VYou buy the katana from Nermin.<<set $money=$money-75>><<set $katana=true>>\u000a\u000a<<display 'store'>>
+p343
+sg20
+(lp344
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I31
+I15
+I6
+I328
+I0
+tp345
+(dp346
+tp347
+Rp348
+sg28
+g348
+sg29
+VBought katana
+p349
+sbsa(dp350
+g12
+I00
+sg13
+(lp351
+I710
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p352
+(dp353
+g18
+VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a[[Buy boat from Nermin]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>
+p354
+sg20
+(lp355
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I53
+I15
+I6
+I328
+I0
+tp356
+(dp357
+tp358
+Rp359
+sg28
+g359
+sg29
+VPirate Adventure
+p360
+sbsa(dp361
+g12
+I00
+sg13
+(lp362
+I710
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p363
+(dp364
+g18
+VYou are in a busy office space.  People are waiting for their turn at a desk, and a clerk is busily registering people as fast as he can.  \u000aThere is a giant sign that reads: "BRING TREASURES HERE!"\u000aAnother sign says: "ANYONE GOING ON PIRATE ADVENTURES WILL BE EXECUTED IMMEDIATELY!"\u000a\u000aThere is a stairway leading upstairs.\u000a<<if $registration eq false>>\u000a[[Register at desk|Registration Desk]]\u000a<<endif>>\u000a[[Go upstairs|Upstairs]]\u000a
+p365
+sg20
+(lp366
+sg22
+g23
+((I2013
+I11
+I24
+I0
+I58
+I2
+I6
+I328
+I0
+tp367
+(dp368
+tp369
+Rp370
+sg28
+g370
+sg29
+VPirate International
+p371
+sbsa(dp372
+g12
+I00
+sg13
+(lp373
+I430
+aI10
+asg15
+(itiddlywiki
+Tiddler
+p374
+(dp375
+g18
+Vtry {\u000a	version.extensions['setTheme'] = { \u000a		major:1, minor:0, revision:0 \u000a	};\u000a	macros['setTheme'] = {\u000a		handler: function(place, macroName, params, parser) {\u000a			setTheme(params[0]);\u000a		},\u000a		init: function() { },\u000a	};\u000a} catch(e) {\u000a	throwError(place,"setTheme Setup Error: "+e.message); \u000a}
+p376
+sg20
+(lp377
+Vscript
+p378
+asg22
+g23
+((I2013
+I11
+I24
+I13
+I25
+I19
+I6
+I328
+I0
+tp379
+(dp380
+tp381
+Rp382
+sg28
+g382
+sg29
+VsetTheme
+p383
+sbsa(dp384
+g12
+I00
+sg13
+(lp385
+I850
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p386
+(dp387
+S'text'
+p388
+V<<if $registration eq false and $luke eq  "yes">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"<<endif>>\u000a<<if $registration eq false and $leila eq "yes">><<endif>>\u000a<<if $registration eq false and $leila eq "no" and $luke eq "no">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"\u000a<<display 'Not Registered Death'>>\u000a<<endif>>\u000a<<if $registration eq true and $luke eq "yes">>As you walk upstairs, Luke says quietly to you, "we are not bringing our treasures there.  Or at least, I see no need to."  You realize Luke's business sense may turn out quite profitable and he may have been worth his exorbitant price.<<display 'Pirate Hallway'>><<endif>>
+p389
+sS'tags'
+p390
+(lp391
+sS'created'
+p392
+g23
+((I2013
+I11
+I24
+I13
+I55
+I20
+I6
+I328
+I0
+tp393
+(dp394
+tp395
+Rp396
+sS'modified'
+p397
+g396
+sS'title'
+p398
+VUpstairs
+p399
+sbsa(dp400
+g12
+I00
+sg13
+(lp401
+I570
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p402
+(dp403
+g388
+V<<set $registration=true>>\u000aThe clerk at the registration quickly and efficiently helps you fill out the forms, gives you a lanyard and badge with your name and picture on it.  <<if $leila eq "yes">>She does the same for Leila, although the picture looks more like an amorphous blob than a slime.<<endif>><<if $luke eq "yes">>/%%/  She loses some efficiently as she attempts to process Luke, as she insist that he exit his spider before taking his photo, something which he is resistant to but eventually gives in and also gets registered.<<endif>>\u000a\u000a<<display 'Pirate International'>>
+p404
+sg390
+(lp405
+sg392
+g23
+((I2013
+I11
+I24
+I13
+I56
+I16
+I6
+I328
+I0
+tp406
+(dp407
+tp408
+Rp409
+sg397
+g409
+sg398
+VRegistration Desk
+p410
+sbsa(dp411
+g12
+I00
+sg13
+(lp412
+I570
+aI150
+asg15
+(itiddlywiki
+Tiddler
+p413
+(dp414
+g388
+VThis game was created for the Charity Game Jam.
+p415
+sg390
+(lp416
+sg392
+g23
+((I2013
+I11
+I24
+I14
+I12
+I40
+I6
+I328
+I0
+tp417
+(dp418
+tp419
+Rp420
+sg397
+g420
+sg398
+VCharities
+p421
+sbsa(dp422
+g12
+I00
+sg13
+(lp423
+I710
+aI1830
+asg15
+(itiddlywiki
+Tiddler
+p424
+(dp425
+g388
+V/%%/\u000a* *** You have died ***\u000a/%%/\u000aYou didn't even register the start of your adventure.  For what it's worth, your score is <<print $score>> out of 100.  Better luck next time.
+p426
+sg390
+(lp427
+sg392
+g23
+((I2013
+I11
+I24
+I14
+I42
+I3
+I6
+I328
+I0
+tp428
+(dp429
+tp430
+Rp431
+sg397
+g431
+sg398
+VNot Registered Death
+p432
+sbsa(dp433
+g12
+I00
+sg13
+(lp434
+I990
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p435
+(dp436
+g388
+V\u000aThe Hallway consists of just a doorway and a window.  You thought you would be sailing the high seas; you are not sure if this is the right place.\u000a\u000a[[Enter door]]\u000a[[Go out window|On A Window Ledge]]
+p437
+sg390
+(lp438
+sg392
+g23
+((I2013
+I11
+I24
+I15
+I25
+I50
+I6
+I328
+I0
+tp439
+(dp440
+tp441
+Rp442
+sg397
+g442
+sg398
+VPirate Hallway
+p443
+sbsasS'scale'
+p444
+I1
+ss.
