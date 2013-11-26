@@ -140,7 +140,7 @@ VStoryAuthor
 p52
 sbsa(dp53
 g12
-I00
+I01
 sg13
 (lp54
 I10
@@ -151,7 +151,7 @@ Tiddler
 p55
 (dp56
 g18
-VBefore you start your adventure, though, you'll have to choose your partner in crime.\u000a\u000a<<if $leila  neq "no">>[[Leila the Little Slime]]<<endif>>\u000a<<if $nermin neq "no">>[[Nearly Normal Nermin the Ninja Turtle]]<<endif>>\u000a<<if $luke   neq "no">>[[Lucky Luke the Leprechaun and his Steampunk Spider]]<<endif>>\u000a[[Forget these freaks, I'm going solo.|Choose Your Destiny]]
+VBefore you start your adventure, though, you'll have to choose your partner in crime.\u000a\u000a<<if $leila  neq "no">>[[Leila the Little Slime]]<<endif>>\u000a<<if $nermin neq "no">>[[Nearly Normal Nermin the Ninja Turtle]]<<endif>>\u000a<<if $luke   neq "no">>[[Lucky Luke the Leprechaun and his Steampunk Spider]]<<endif>>\u000a[[Forget these freaks, I'm going solo.|Choose Your Destiny]]\u000a
 p57
 sg20
 (lp58
@@ -288,7 +288,7 @@ VChoose Your Destiny
 p96
 sbsa(dp97
 g12
-I01
+I00
 sg13
 (lp98
 I710
@@ -1264,7 +1264,7 @@ p386
 (dp387
 S'text'
 p388
-V<<if $registration eq false and $luke eq  "yes">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"<<endif>>\u000a<<if $registration eq false and $leila eq "yes">><<endif>>\u000a<<if $registration eq false and $leila eq "no" and $luke eq "no">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"\u000a<<display 'Not Registered Death'>>\u000a<<endif>>\u000a<<if $registration eq true and $luke eq "yes">>As you walk upstairs, Luke says quietly to you, "we are not bringing our treasures there.  Or at least, I see no need to."  You realize Luke's business sense may turn out quite profitable and he may have been worth his exorbitant price.<<display 'Pirate Hallway'>><<endif>>
+V<<if $registration eq false and $luke eq  "yes">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"<<endif>><<if $registration eq false and $leila eq "yes">><<endif>><<if $registration eq false and $leila eq "no" and $luke eq "no">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"<<display 'Not Registered Death'>><<endif>>\u000a<<if $registration eq true and $luke eq "yes">>As you walk upstairs, Luke says quietly to you, "we are not bringing our treasures there.  Or at least, I see no need to."  You realize Luke's business sense may turn out quite profitable and he may have been worth his exorbitant price.<<endif>>\u000a<<if $registration eq true>>You go upstairs, and the door locks behind you.  You aren't sure how to bring treasures back to that sign even if you wanted to.  You are now in a hallway.<<display 'Pirate Hallway'>><<endif>>
 p389
 sS'tags'
 p390
@@ -1416,7 +1416,7 @@ Tiddler
 p435
 (dp436
 g388
-V\u000aThe Hallway consists of just a doorway and a window.  You thought you would be sailing the high seas; you are not sure if this is the right place.\u000a\u000a[[Enter door]]\u000a[[Go out window|On A Window Ledge]]
+V\u000aThe Hallway consists of just a doorway and a window.  You thought you would be sailing the high seas; you are not sure if this is the right place.\u000a\u000a[[Enter door]]\u000a[[Go out the window|On A Window Ledge]]
 p437
 sg390
 (lp438
@@ -1440,7 +1440,123 @@ g442
 sg398
 VPirate Hallway
 p443
+sbsa(dp444
+g12
+I00
+sg13
+(lp445
+I990
+aI1830
+asg15
+(itiddlywiki
+Tiddler
+p446
+(dp447
+S'text'
+p448
+VYou are the edge of a window.  I don't know what possessed you to come out here; you can't even see the ocean from here.  This is not feeling like a pirate adventure at all.  However, you have a feeling!  You could say a magic word here!\u000a\u000a[[Jump]]\u000a[[Go back in the window|Pirate Hallway]]\u000a[[Say a magic word|Magic Word]]
+p449
+sS'tags'
+p450
+(lp451
+sS'created'
+p452
+g23
+((I2013
+I11
+I26
+I15
+I5
+I50
+I1
+I330
+I0
+tp453
+(dp454
+tp455
+Rp456
+sS'modified'
+p457
+g456
+sS'title'
+p458
+VOn A Window Ledge
+p459
+sbsa(dp460
+g12
+I00
+sg13
+(lp461
+I990
+aI1970
+asg15
+(itiddlywiki
+Tiddler
+p462
+(dp463
+g448
+VYou jump off the edge of the window sill.\u000a\u000a* *** You have died. ***\u000a\u000aThat was silly.  Your score is <<print $score +"">> out of 100.
+p464
+sg450
+(lp465
+sg452
+g23
+((I2013
+I11
+I26
+I15
+I6
+I13
+I1
+I330
+I0
+tp466
+(dp467
+tp468
+Rp469
+sg457
+g469
+sg458
+VJump
+p470
+sbsa(dp471
+g12
+I00
+sg13
+(lp472
+I1130
+aI1830
+asg15
+(itiddlywiki
+Tiddler
+p473
+(dp474
+g448
+V<<set $magicword = prompt("What magic word do you say?")>>\u000a\u000a<<if $magicword eq "yoho" or $magicword eq "YOHO">><<display 'On The Beach'>><<else>>\u000aYou say "<<print $magicword>>" and nothing seems to happen...\u000a<<display 'Pirate Hallway'>><<endif>>
+p475
+sg450
+(lp476
+sg452
+g23
+((I2013
+I11
+I26
+I15
+I19
+I53
+I1
+I330
+I0
+tp477
+(dp478
+tp479
+Rp480
+sg457
+g480
+sg458
+VMagic Word
+p481
 sbsasS'scale'
-p444
+p482
 I1
 ss.
