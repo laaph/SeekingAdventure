@@ -262,7 +262,7 @@ Tiddler
 p88
 (dp89
 g18
-VNow it is time to choose your adventure.  You can go to -\u000a<<set $maze=0>><<set $hunger=0>><<set $okay=true>><<set $registration=false>><<set $warned=false>><<set $key=false>><<set $hatch = "closed">>\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Museum of Unnatural History]]
+V<<display 'Initialize Variables'>>Now it is time to choose your adventure.  You can go to -\u000a\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Museum of Unnatural History]]
 p90
 sg20
 (lp91
@@ -743,7 +743,7 @@ Tiddler
 p231
 (dp232
 g18
-VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if key eq false>>In what used to be his had is a key.<<endif>>\u000a<<endif>><<if $maze eq 6>>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>\u000a<<if $maze eq 3 and $key eq true>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>>\u000a
+VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if $key eq false>>In what used to be his hand is a key.<<endif>>\u000a<<endif>><<if $maze eq 6 and $hatch eq "closed">>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000aThere is a hatch in the floor here.  It is open.<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>\u000a<<if $maze eq 3 and $key eq false>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>>\u000a
 p233
 sg20
 (lp234
@@ -769,7 +769,7 @@ VA maze of twisty passages, all alike
 p239
 sbsa(dp240
 g12
-I01
+I00
 sg13
 (lp241
 I1270
@@ -1454,7 +1454,7 @@ p446
 (dp447
 S'text'
 p448
-VYou are the edge of a window.  I don't know what possessed you to come out here; you can't even see the ocean from here.  This is not feeling like a pirate adventure at all.  However, you have a feeling!  You could say a magic word here!\u000a\u000a[[Jump]]\u000a[[Go back in the window|Pirate Hallway]]\u000a[[Say a magic word|Magic Word]]
+VYou are the edge of a window.  I don't know what possessed you to come out here; you can't even see the ocean from here.  This is not feeling like a pirate adventure at all.  However, you have a feeling!  You could say a magic word here!\u000a\u000a[[Jump]]\u000a[[Go back in the window|Pirate Hallway]]\u000a[[Say a magic word|Magic Word]]\u000a
 p449
 sS'tags'
 p450
@@ -1532,7 +1532,7 @@ Tiddler
 p473
 (dp474
 g448
-V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $found = 1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
+V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $score=$score+4>><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
 p475
 sg450
 (lp476
@@ -1722,7 +1722,7 @@ Tiddler
 p533
 (dp534
 g486
-V
+V\u000a<<if $luke eq "yes">>Luke looks at you and says "I can not fit my spider down that hatch.  If you continue, you'll have to go alone.\u000a[[Refuse to continue]]\u000a[[Continue without Luke]]\u000a<<else>>\u000aYou go down the hatch.  It doesn't seem that far to the floor below so you go in as far as you can, and then let go, but then it is at least a two foot drop to the floor below.  You seem to have made it unharmed.  <<if $leila eq "yes">>Leila follows you down, but just jumps, forming herself in to a parachute, gently floating to the ground.<<endif>>\u000a\u000a<<display 'A small room'>>\u000a<<endif>>\u000a 
 p535
 sg488
 (lp536
@@ -1759,7 +1759,7 @@ Tiddler
 p544
 (dp545
 g486
-V<<set $hatch = "open">>You use the key you found and unlock the hatch.  It opens easily.  You could go down the hatch, but it looks intimidating.\u000a<<display 'A maze of twisty passages, all alike'>>
+V<<set $hatch = "open">>You use the key you found and unlock the hatch.  It opens easily.  You could go down the hatch, but it looks intimidating.\u000a\u000a<<display 'A maze of twisty passages, all alike'>>
 p546
 sg488
 (lp547
@@ -1783,7 +1783,192 @@ g551
 sg496
 VOpen the hatch
 p552
+sbsa(dp553
+g12
+I00
+sg13
+(lp554
+I150
+aI1410
+asg15
+(itiddlywiki
+Tiddler
+p555
+(dp556
+g486
+V<<set $luke = "no">>You make your parting traditions with Luke, and then head down the hatch.\u000a<<display 'Down the hatch'>>
+p557
+sg488
+(lp558
+sg490
+g23
+((I2013
+I11
+I26
+I17
+I32
+I20
+I1
+I330
+I0
+tp559
+(dp560
+tp561
+Rp562
+sg495
+g562
+sg496
+VContinue without Luke
+p563
+sbsa(dp564
+g12
+I00
+sg13
+(lp565
+I290
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p566
+(dp567
+g486
+VYou decide not to go down the hatch.\u000a\u000a<<display 'A maze of twisty passages, all alike'>>\u000a
+p568
+sg488
+(lp569
+sg490
+g23
+((I2013
+I11
+I26
+I17
+I35
+I50
+I1
+I330
+I0
+tp570
+(dp571
+tp572
+Rp573
+sg495
+g573
+sg496
+VRefuse to continue
+p574
+sbsa(dp575
+g12
+I00
+sg13
+(lp576
+I10
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p577
+(dp578
+g486
+VYou are in a small room.  A door is to the north.\u000a\u000a[[Go through the door|Goblin room]]\u000a
+p579
+sg488
+(lp580
+sg490
+g23
+((I2013
+I11
+I26
+I17
+I37
+I34
+I1
+I330
+I0
+tp581
+(dp582
+tp583
+Rp584
+sg495
+g584
+sg496
+VA small room
+p585
+sbsa(dp586
+g12
+I00
+sg13
+(lp587
+I150
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p588
+(dp589
+g486
+VYou are in a small room.  <<if $goblin eq true>> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq true and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana]]<<endif>>\u000a/% <<if $goblin eq true and $luke eq true>>\u000a[[Use Luke's spider to fight the goblin]]<<endif>>%//%This might never happen%/\u000a<<if $goblin eq true and $throwingstar gt 0>>\u000a[[Throw a throwing star at the goblin]] - You have <<print $throwingstar+"">> throwing stars in your inventory.<<endif>>\u000a<<if $goblin eq true>>\u000a[[Run back to the small room]]\u000a[[Fight the small goblin empty handed]]\u000a<<endif>>\u000a/%I am tempted to separate this in to two rooms, Goblin room with Goblin, and Goblin room without Goblin.  Code would be easier. %/
+p590
+sg488
+(lp591
+sg490
+g23
+((I2013
+I11
+I26
+I17
+I40
+I59
+I1
+I330
+I0
+tp592
+(dp593
+tp594
+Rp595
+sg495
+g595
+sg496
+VGoblin room
+p596
+sbsa(dp597
+g12
+I00
+sg13
+(lp598
+I150
+aI850
+asg15
+(itiddlywiki
+Tiddler
+p599
+(dp600
+g486
+V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $okay=true>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin=true>>\u000a<<endsilently>>
+p601
+sg488
+(lp602
+sg490
+g23
+((I2013
+I11
+I26
+I18
+I31
+I53
+I1
+I330
+I0
+tp603
+(dp604
+tp605
+Rp606
+sg495
+g606
+sg496
+VInitialize Variables
+p607
 sbsasS'scale'
-p553
+p608
 I1
 ss.
