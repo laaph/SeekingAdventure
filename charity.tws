@@ -140,7 +140,7 @@ VStoryAuthor
 p52
 sbsa(dp53
 g12
-I01
+I00
 sg13
 (lp54
 I10
@@ -732,7 +732,7 @@ VLeila Angry!
 p228
 sbsa(dp229
 g12
-I00
+I01
 sg13
 (lp230
 I10
@@ -743,7 +743,7 @@ Tiddler
 p231
 (dp232
 g18
-VYou are in a maze of twisty passages, all alike.\u000aThe maze constant is <<print $maze>>.<<set $hunger=$hunger + 1>>\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -10>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 18>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a grating in the floor here.\u000a<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>
+VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -10>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 18>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a grating in the floor here.\u000a<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>
 p233
 sg20
 (lp234
@@ -1150,7 +1150,7 @@ Tiddler
 p352
 (dp353
 g18
-VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a[[Buy boat from Nermin]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>
+VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a<<if $luke eq "yes">> Luke says "Did you know my Steampunk Spider is amphibious?  We can just drive it in to the sea!"<<endif>>\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a<<if $luke eq "yes">>Luke says quietly "Don't buy that thing.  It's crap.<<endif>>\u000a/% %/\u000a[[Buy boat from Nermin]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>\u000a<<if $luke eq "yes">>[[Head in to the sea using Luke's Steampunk Spider]]<<endif>>
 p354
 sg20
 (lp355
@@ -1416,7 +1416,7 @@ Tiddler
 p435
 (dp436
 g388
-V\u000aThe Hallway consists of just a doorway and a window.  You thought you would be sailing the high seas; you are not sure if this is the right place.\u000a\u000a[[Enter door]]\u000a[[Go out the window|On A Window Ledge]]
+V\u000aThe Hallway consists of just a doorway and a window.  You thought you would be sailing the high seas; you are not sure if this is the right place.\u000a\u000a[[Enter door|In The Attic]]\u000a[[Go out the window|On A Window Ledge]]\u000a
 p437
 sg390
 (lp438
@@ -1532,7 +1532,7 @@ Tiddler
 p473
 (dp474
 g448
-V<<set $magicword = prompt("What magic word do you say?")>>\u000a\u000a<<if $magicword eq "yoho" or $magicword eq "YOHO">><<display 'On The Beach'>><<else>>\u000aYou say "<<print $magicword>>" and nothing seems to happen...\u000a<<display 'Pirate Hallway'>><<endif>>
+V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>>\u000a<<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $found = 1>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000aYou say "<<print $magicword>>" and nothing seems to happen...\u000a<<display 'On A Window Ledge'>><<endif>>
 p475
 sg450
 (lp476
@@ -1556,7 +1556,86 @@ g480
 sg458
 VMagic Word
 p481
+sbsa(dp482
+g12
+I00
+sg13
+(lp483
+I1130
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p484
+(dp485
+S'text'
+p486
+VYou are in a small attic.  There isn't much here, but there is a bloodstained book.\u000a\u000a[[Exit the room|Pirate Hallway]]\u000a[[Read the book]]\u000a
+p487
+sS'tags'
+p488
+(lp489
+sS'created'
+p490
+g23
+((I2013
+I11
+I26
+I15
+I54
+I24
+I1
+I330
+I0
+tp491
+(dp492
+tp493
+Rp494
+sS'modified'
+p495
+g494
+sS'title'
+p496
+VIn The Attic
+p497
+sbsa(dp498
+g12
+I00
+sg13
+(lp499
+I1130
+aI1550
+asg15
+(itiddlywiki
+Tiddler
+p500
+(dp501
+g486
+VThe book is titled "Moby-Dick; or, The Whale" by Herman Melville.  The entire text can be found [[here|http://www.gutenberg.org/ebooks/2701]].  However, what is notable about this particular book is the word "YOHO" written in blood inbetween the pages.\u000a\u000a<<display 'In The Attic'>>
+p502
+sg488
+(lp503
+sg490
+g23
+((I2013
+I11
+I26
+I15
+I58
+I33
+I1
+I330
+I0
+tp504
+(dp505
+tp506
+Rp507
+sg495
+g507
+sg496
+VRead the book
+p508
 sbsasS'scale'
-p482
+p509
 I1
 ss.
