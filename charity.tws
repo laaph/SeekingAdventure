@@ -251,7 +251,7 @@ VNearly Normal Nermin the Ninja Turtle
 p85
 sbsa(dp86
 g12
-I00
+I01
 sg13
 (lp87
 I10
@@ -743,7 +743,7 @@ Tiddler
 p231
 (dp232
 g18
-VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>>\u000a<<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>>\u000a<<if $hunger gte 100>>\u000aWorse than that, it seems you have starved to death! <<set $okay=false>>\u000a<<endif>>\u000a<<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>>\u000a<<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if $key eq false>>In what used to be his hand is a key.<<endif>>\u000a<<endif>><<if $maze eq 6 and $hatch eq "closed">>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000aThere is a hatch in the floor here.  It is open.<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>\u000a<<if $maze eq 3 and $key eq false>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>><<endif>>\u000a<<if $okay eq false>>\u000a/%%/\u000a* *** You have died ***\u000a/%%/\u000aIt seems you have starved to death while lost in the twisty passages.  Perhaps next time, you should pack a sandwich.  Your score is <<print $score+"">> out of 100.  Better luck next time.\u000a<<endif>>
+VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aWorse than that, it seems you have starved to death! <<set \u000a$okay=false>>\u000a<<endif>><<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if $key eq false>>In what used to be his hand is a key.<<endif>>\u000a<<endif>><<if $maze eq 6 and $hatch eq "closed">>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000aThere is a hatch in the floor here.  It is open.<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>\u000a<<if $maze eq 3 and $key eq false>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>><<endif>>\u000a<<if $okay eq false>>\u000a/%%/\u000a* *** You have died ***\u000a/%%/\u000aIt seems you have starved to death while lost in the twisty passages.  Perhaps next time, you should pack a sandwich.  Your score is <<print $score+"">> out of 100.  Better luck next time.\u000a<<endif>>
 p233
 sg20
 (lp234
@@ -1896,7 +1896,7 @@ VA small room
 p585
 sbsa(dp586
 g12
-I01
+I00
 sg13
 (lp587
 I150
@@ -2060,7 +2060,7 @@ Tiddler
 p637
 (dp638
 g612
-VOwning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  You smack the poor goblin with you katana, with the sharp side, with the flat side, with the pointy bit, repeatedly, as he screams, as he tries to run away, but you just keep doing this, until he is covered with blood, until he stops screaming, until he is dead.\u000a\u000a<<display 'Goblin room'>>
+VOwning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  You smack the poor goblin with you katana, with the sharp side, with the flat side, with the pointy bit, repeatedly, as he screams, as he tries to run away, but you just keep doing this, until he is covered with blood, until he stops screaming, until he is dead.\u000a\u000a<<set $goblin=false>><<display 'Goblin room'>>
 p639
 sg614
 (lp640
