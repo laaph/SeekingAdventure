@@ -34,7 +34,7 @@ p16
 (dp17
 S'text'
 p18
-V<<set $money=100>><<set $score=0>><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstar=0>>You have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "b">><<endsilently>>\u000a[img[TURBO.png]]\u000a\u000a
+V<<set $money=100>><<set $score=0>><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstars=0>>You have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "b">><<endsilently>>\u000a[img[TURBO.png]]\u000a\u000a
 p19
 sS'tags'
 p20
@@ -846,7 +846,7 @@ g12
 I00
 sg13
 (lp263
-I290
+I430
 aI1270
 asg15
 (itiddlywiki
@@ -883,7 +883,7 @@ g12
 I00
 sg13
 (lp274
-I430
+I570
 aI1270
 asg15
 (itiddlywiki
@@ -1150,7 +1150,7 @@ Tiddler
 p352
 (dp353
 g18
-VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a<<if $luke eq "yes">> Luke says "Did you know my Steampunk Spider is amphibious?  We can just drive it in to the sea!"<<endif>>\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a<<if $luke eq "yes">>Luke says quietly "Don't buy that thing.  It's crap.<<endif>>\u000a/% %/\u000a[[Buy boat from Nermin]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>\u000a<<if $luke eq "yes">>[[Head in to the sea using Luke's Steampunk Spider]]<<endif>>
+VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a<<if $luke eq "yes">> Luke says "Did you know my Steampunk Spider is amphibious?  We can just drive it in to the sea!"<<endif>>\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a<<if $luke eq "yes">>Luke says quietly "Don't buy that thing.  It's crap.<<endif>>\u000a/% %/\u000a[[Buy boat from Nermin|At the docks]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>\u000a<<if $luke eq "yes">>[[Head in to the sea using Luke's Steampunk Spider]]<<endif>>
 p354
 sg20
 (lp355
@@ -1179,7 +1179,7 @@ g12
 I00
 sg13
 (lp362
-I710
+I990
 aI1690
 asg15
 (itiddlywiki
@@ -1255,7 +1255,7 @@ g12
 I00
 sg13
 (lp385
-I850
+I1130
 aI1690
 asg15
 (itiddlywiki
@@ -1297,8 +1297,8 @@ g12
 I00
 sg13
 (lp401
-I570
-aI1690
+I990
+aI1830
 asg15
 (itiddlywiki
 Tiddler
@@ -1371,7 +1371,7 @@ g12
 I00
 sg13
 (lp423
-I710
+I1130
 aI1830
 asg15
 (itiddlywiki
@@ -1408,7 +1408,7 @@ g12
 I00
 sg13
 (lp434
-I990
+I1270
 aI1690
 asg15
 (itiddlywiki
@@ -1445,7 +1445,7 @@ g12
 I00
 sg13
 (lp445
-I990
+I1270
 aI1830
 asg15
 (itiddlywiki
@@ -1487,7 +1487,7 @@ g12
 I00
 sg13
 (lp461
-I990
+I1270
 aI1970
 asg15
 (itiddlywiki
@@ -1524,7 +1524,7 @@ g12
 I00
 sg13
 (lp472
-I1130
+I1410
 aI1830
 asg15
 (itiddlywiki
@@ -1532,7 +1532,7 @@ Tiddler
 p473
 (dp474
 g448
-V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $score=$score+4>><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
+V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $score=$score+4>><<set $found = 1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
 p475
 sg450
 (lp476
@@ -1561,7 +1561,7 @@ g12
 I00
 sg13
 (lp483
-I1130
+I1410
 aI1690
 asg15
 (itiddlywiki
@@ -1896,7 +1896,7 @@ VA small room
 p585
 sbsa(dp586
 g12
-I00
+I01
 sg13
 (lp587
 I150
@@ -1907,7 +1907,7 @@ Tiddler
 p588
 (dp589
 g486
-VYou are in a small room.  <<if $goblin eq true>> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq true and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana]]<<endif>>\u000a/% <<if $goblin eq true and $luke eq true>>\u000a[[Use Luke's spider to fight the goblin]]<<endif>>%//%This might never happen%/\u000a<<if $goblin eq true and $throwingstar gt 0>>\u000a[[Throw a throwing star at the goblin]] - You have <<print $throwingstar+"">> throwing stars in your inventory.<<endif>>\u000a<<if $goblin eq true>>\u000a[[Run back to the small room]]\u000a[[Fight the small goblin empty handed]]\u000a<<endif>>\u000a/%I am tempted to separate this in to two rooms, Goblin room with Goblin, and Goblin room without Goblin.  Code would be easier. %/
+VYou are in a small room.  <<if $goblin eq true>> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq true and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana]]<<endif>><<if $goblin eq true and $throwingstar gt 0>>\u000a[[Throw a throwing star at the goblin]] - You have <<print $throwingstars+"">> throwing stars in your inventory.<<endif>>\u000a<<if $goblin eq true>>\u000a[[Run back to the small room]]\u000a[[Fight the small goblin empty handed]]\u000a<<endif>>\u000a/%I am tempted to separate this in to two rooms, Goblin room with Goblin, and Goblin room without Goblin.  Code would be easier. %/
 p590
 sg488
 (lp591
@@ -1968,7 +1968,86 @@ g606
 sg496
 VInitialize Variables
 p607
+sbsa(dp608
+g12
+I00
+sg13
+(lp609
+I710
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p610
+(dp611
+S'text'
+p612
+VYou buy Nermin's little rowboat and walk down to the dock with him.  It's sitting there tied to the dock looking all cute and ready to go.\u000a\u000aNermin says "I'd be handing you keys here, but here are the oars, and I think you're ready to go!"\u000a\u000a<<if $luke eq "yes">><<endif>>\u000a<<if $leila eq "yes">><<endif>>\u000a
+p613
+sS'tags'
+p614
+(lp615
+sS'created'
+p616
+g23
+((I2013
+I11
+I26
+I23
+I26
+I12
+I1
+I330
+I0
+tp617
+(dp618
+tp619
+Rp620
+sS'modified'
+p621
+g620
+sS'title'
+p622
+VAt the docks
+p623
+sbsa(dp624
+g12
+I00
+sg13
+(lp625
+I1550
+aI1830
+asg15
+(itiddlywiki
+Tiddler
+p626
+(dp627
+g612
+V
+p628
+sg614
+(lp629
+sg616
+g23
+((I2013
+I11
+I26
+I23
+I28
+I59
+I1
+I330
+I0
+tp630
+(dp631
+tp632
+Rp633
+sg621
+g633
+sg622
+VOn The Beach
+p634
 sbsasS'scale'
-p608
+p635
 I1
 ss.
