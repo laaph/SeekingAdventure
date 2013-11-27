@@ -743,7 +743,7 @@ Tiddler
 p231
 (dp232
 g18
-VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if $key eq false>>In what used to be his hand is a key.<<endif>>\u000a<<endif>><<if $maze eq 6 and $hatch eq "closed">>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000aThere is a hatch in the floor here.  It is open.<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>\u000a<<if $maze eq 3 and $key eq false>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>>\u000a
+VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>>\u000a<<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>>\u000a<<if $hunger gte 100>>\u000aWorse than that, it seems you have starved to death! <<set $okay=false>>\u000a<<endif>>\u000a<<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>>\u000a<<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if $key eq false>>In what used to be his hand is a key.<<endif>>\u000a<<endif>><<if $maze eq 6 and $hatch eq "closed">>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000aThere is a hatch in the floor here.  It is open.<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>\u000a<<if $maze eq 3 and $key eq false>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>><<endif>>\u000a<<if $okay eq false>>\u000a/%%/\u000a* *** You have died ***\u000a/%%/\u000aIt seems you have starved to death while lost in the twisty passages.  Perhaps next time, you should pack a sandwich.  Your score is <<print $score+"">> out of 100.  Better luck next time.\u000a<<endif>>
 p233
 sg20
 (lp234
@@ -928,7 +928,7 @@ Tiddler
 p286
 (dp287
 g18
-V<<set $sandwiches=false>><<set $hunger=0>>\u000aYou stop and eat sandwiches.  You feel much better.\u000a<<display 'A maze of twisty passages, all alike'>>
+V<<set $sandwiches=false>><<set $hunger=0>><<set $score=$score+6>>\u000aYou stop and eat sandwiches.  You feel much better.\u000a<<display 'A maze of twisty passages, all alike'>>
 p288
 sg20
 (lp289
@@ -1187,7 +1187,7 @@ Tiddler
 p363
 (dp364
 g18
-VYou are in a busy office space.  People are waiting for their turn at a desk, and a clerk is busily registering people as fast as he can.  \u000aThere is a giant sign that reads: "BRING TREASURES HERE!"\u000aAnother sign says: "ANYONE GOING ON PIRATE ADVENTURES WILL BE EXECUTED IMMEDIATELY!"\u000a\u000aThere is a stairway leading upstairs.\u000a<<if $registration eq false>>\u000a[[Register at desk|Registration Desk]]\u000a<<endif>>\u000a[[Go upstairs|Upstairs]]\u000a
+VYou are in a busy office space.  People are waiting for their turn at a desk, and a clerk is busily registering people as fast as he can.  \u000aThere is a giant sign that reads: "BRING TREASURES HERE!"\u000aAnother sign says: "ANYONE GOING ON PIRATE ADVENTURES WITHOUT REGISTERING FIRST WILL BE EXECUTED IMMEDIATELY!"\u000a\u000aThere is a stairway leading upstairs.\u000a<<if $registration eq false>>\u000a[[Register at desk|Registration Desk]]\u000a<<endif>>\u000a[[Go upstairs|Upstairs]]\u000a
 p365
 sg20
 (lp366
@@ -1264,7 +1264,7 @@ p386
 (dp387
 S'text'
 p388
-V<<if $registration eq false and $luke eq  "yes">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"<<endif>><<if $registration eq false and $leila eq "yes">><<endif>><<if $registration eq false and $leila eq "no" and $luke eq "no">>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"<<display 'Not Registered Death'>><<endif>>\u000a<<if $registration eq true and $luke eq "yes">>As you walk upstairs, Luke says quietly to you, "we are not bringing our treasures there.  Or at least, I see no need to."  You realize Luke's business sense may turn out quite profitable and he may have been worth his exorbitant price.<<endif>>\u000a<<if $registration eq true>>You go upstairs, and the door locks behind you.  You aren't sure how to bring treasures back to that sign even if you wanted to.  You are now in a hallway.<<display 'Pirate Hallway'>><<endif>>
+V<<if $registration eq false>>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or will have everyone just wandering about!"<<display 'Not Registered Death'>><<endif>>\u000a<<if $registration eq true and $luke eq "yes">>As you walk upstairs, Luke says quietly to you, "we are not bringing our treasures there.  Or at least, I see no need to."  You realize Luke's business sense may turn out quite profitable and he may have been worth his exorbitant price.<<endif>>\u000a<<if $registration eq true>>You go upstairs, and the door locks behind you.  You aren't sure how to bring treasures back to that sign even if you wanted to.  You are now in a hallway.<<display 'Pirate Hallway'>><<endif>>
 p389
 sS'tags'
 p390
@@ -1305,7 +1305,7 @@ Tiddler
 p402
 (dp403
 g388
-V<<set $registration=true>>\u000aThe clerk at the registration quickly and efficiently helps you fill out the forms, gives you a lanyard and badge with your name and picture on it.  <<if $leila eq "yes">>She does the same for Leila, although the picture looks more like an amorphous blob than a slime.<<endif>><<if $luke eq "yes">>/%%/  She loses some efficiently as she attempts to process Luke, as she insist that he exit his spider before taking his photo, something which he is resistant to but eventually gives in and also gets registered.<<endif>>\u000a\u000a<<display 'Pirate International'>>
+V<<set $registration=true>><<set $score=$score+6>>\u000aThe clerk at the registration quickly and efficiently helps you fill out the forms, gives you a lanyard and badge with your name and picture on it.  <<if $leila eq "yes">>She does the same for Leila, although the picture looks more like an amorphous blob than a slime.<<endif>><<if $luke eq "yes">>/%%/  She loses some efficiently as she attempts to process Luke, as she insist that he exit his spider before taking his photo, something which he is resistant to but eventually gives in and also gets registered.<<endif>>\u000a\u000a<<display 'Pirate International'>>
 p404
 sg390
 (lp405
@@ -1379,7 +1379,7 @@ Tiddler
 p424
 (dp425
 g388
-V/%%/\u000a* *** You have died ***\u000a/%%/\u000aYou didn't even register the start of your adventure.  For what it's worth, your score is <<print $score>> out of 100.  Better luck next time.
+V/%%/\u000a* *** You have died ***\u000a/%%/\u000aYou didn't even register the start of your adventure.  For what it's worth, your score is <<print $score+"">> out of 100.  Better luck next time.
 p426
 sg390
 (lp427
@@ -1532,7 +1532,7 @@ Tiddler
 p473
 (dp474
 g448
-V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $score=$score+4>><<set $found = 1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
+V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $score=$score+4>><<set $found = 1>><<set $travel=1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!\u000a<<set $travel=1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
 p475
 sg450
 (lp476
@@ -1648,7 +1648,7 @@ Tiddler
 p511
 (dp512
 g486
-V<<set $key = true>>You take the key.\u000a\u000a<<display 'A maze of twisty passages, all alike'>>
+V<<set $key = true>>You take the key.<<set $score=$score+6>>\u000a\u000a<<display 'A maze of twisty passages, all alike'>>
 p513
 sg488
 (lp514
@@ -1907,7 +1907,7 @@ Tiddler
 p588
 (dp589
 g486
-VYou are in a small room.  <<if $goblin eq true>> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq true and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana]]<<endif>><<if $goblin eq true and $throwingstar gt 0>>\u000a[[Throw a throwing star at the goblin]] - You have <<print $throwingstars+"">> throwing stars in your inventory.<<endif>>\u000a<<if $goblin eq true>>\u000a[[Run back to the small room]]\u000a[[Fight the small goblin empty handed]]\u000a<<endif>>\u000a/%I am tempted to separate this in to two rooms, Goblin room with Goblin, and Goblin room without Goblin.  Code would be easier. %/
+VYou are in a small room.  <<if $goblin eq true>> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq true and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana|Goblin slicing]]<<endif>><<if $goblin eq true and $throwingstar gt 1>>\u000a[[Throw a throwing star at the goblin]] - You have <<print $throwingstars+"">> throwing stars in your inventory.<<endif>>\u000a<<if $goblin eq true>>\u000a[[Run back to the small room]]\u000a[[Fight the small goblin empty handed]]\u000a<<endif>>\u000a/%I am tempted to separate this in to two rooms, Goblin room with Goblin, and Goblin room without Goblin.  Code would be easier. %/
 p590
 sg488
 (lp591
@@ -2023,7 +2023,7 @@ Tiddler
 p626
 (dp627
 g612
-V
+VYou find yourself on a sandy beach.  The ocean expands out to the north and there is a path to the south.\u000a<<if $travel eq 1>><<set $travel=0>>\u000a<<if $leila eq "yes">>You are surprised to see Leila still with you.  She looks at you as if she is equally surprised.<<endif>>\u000a<<if $luke eq "yes">>Luke somehow has made, including the Steampunk Spider.  He is as uncertain as you how he got here, but clearly ready to resume treasure hunting.<<endif>><<endif>>
 p628
 sg614
 (lp629
@@ -2047,7 +2047,44 @@ g633
 sg622
 VOn The Beach
 p634
+sbsa(dp635
+g12
+I00
+sg13
+(lp636
+I290
+aI1690
+asg15
+(itiddlywiki
+Tiddler
+p637
+(dp638
+g612
+VOwning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  You smack the poor goblin with you katana, with the sharp side, with the flat side, with the pointy bit, repeatedly, as he screams, as he tries to run away, but you just keep doing this, until he is covered with blood, until he stops screaming, until he is dead.\u000a\u000a<<display 'Goblin room'>>
+p639
+sg614
+(lp640
+sg616
+g23
+((I2013
+I11
+I27
+I0
+I35
+I3
+I2
+I331
+I0
+tp641
+(dp642
+tp643
+Rp644
+sg621
+g644
+sg622
+VGoblin slicing
+p645
 sbsasS'scale'
-p635
+p646
 I1
 ss.
