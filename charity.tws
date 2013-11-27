@@ -262,7 +262,7 @@ Tiddler
 p88
 (dp89
 g18
-VNow it is time to choose your adventure.  You can go to -\u000a<<set $maze=0>><<set $hunger=0>><<set $okay=true>><<set $registration=false>><<set $warned=false>>\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Museum of Unnatural History]]
+VNow it is time to choose your adventure.  You can go to -\u000a<<set $maze=0>><<set $hunger=0>><<set $okay=true>><<set $registration=false>><<set $warned=false>><<set $key=false>><<set $hatch = "closed">>\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Museum of Unnatural History]]
 p90
 sg20
 (lp91
@@ -732,7 +732,7 @@ VLeila Angry!
 p228
 sbsa(dp229
 g12
-I01
+I00
 sg13
 (lp230
 I10
@@ -743,7 +743,7 @@ Tiddler
 p231
 (dp232
 g18
-VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -10>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 18>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a grating in the floor here.\u000a<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>
+VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a<<endif>><<if $hunger gte 100>>\u000aYou have starved to death! <<set $okay=false>>\u000a<<endif>><<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if key eq false>>In what used to be his had is a key.<<endif>>\u000a<<endif>><<if $maze eq 6>>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>>\u000a<<if $okay eq true>>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<endif>><<if $hunger gte 30>>\u000a<<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>>\u000a<<if $maze eq 3 and $key eq true>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>>\u000a
 p233
 sg20
 (lp234
@@ -769,10 +769,10 @@ VA maze of twisty passages, all alike
 p239
 sbsa(dp240
 g12
-I00
+I01
 sg13
 (lp241
-I10
+I1270
 aI1270
 asg15
 (itiddlywiki
@@ -920,7 +920,7 @@ g12
 I00
 sg13
 (lp285
-I570
+I1130
 aI1270
 asg15
 (itiddlywiki
@@ -1532,7 +1532,7 @@ Tiddler
 p473
 (dp474
 g448
-V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>>\u000a<<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $found = 1>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000aYou say "<<print $magicword>>" and nothing seems to happen...\u000a<<display 'On A Window Ledge'>><<endif>>
+V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $found = 1>><<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $found = 1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
 p475
 sg450
 (lp476
@@ -1635,7 +1635,155 @@ g507
 sg496
 VRead the book
 p508
+sbsa(dp509
+g12
+I00
+sg13
+(lp510
+I710
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p511
+(dp512
+g486
+V<<set $key = true>>You take the key.\u000a\u000a<<display 'A maze of twisty passages, all alike'>>
+p513
+sg488
+(lp514
+sg490
+g23
+((I2013
+I11
+I26
+I16
+I49
+I42
+I1
+I330
+I0
+tp515
+(dp516
+tp517
+Rp518
+sg495
+g518
+sg496
+VKey taken
+p519
+sbsa(dp520
+g12
+I00
+sg13
+(lp521
+I850
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p522
+(dp523
+g486
+VThe hatch is locked.\u000a<<display 'A maze of twisty passages, all alike'>>
+p524
+sg488
+(lp525
+sg490
+g23
+((I2013
+I11
+I26
+I16
+I56
+I50
+I1
+I330
+I0
+tp526
+(dp527
+tp528
+Rp529
+sg495
+g529
+sg496
+VHatch is locked
+p530
+sbsa(dp531
+g12
+I00
+sg13
+(lp532
+I10
+aI1410
+asg15
+(itiddlywiki
+Tiddler
+p533
+(dp534
+g486
+V
+p535
+sg488
+(lp536
+sg490
+g23
+((I2013
+I11
+I26
+I16
+I57
+I37
+I1
+I330
+I0
+tp537
+(dp538
+tp539
+Rp540
+sg495
+g540
+sg496
+VDown the hatch
+p541
+sbsa(dp542
+g12
+I00
+sg13
+(lp543
+I990
+aI1270
+asg15
+(itiddlywiki
+Tiddler
+p544
+(dp545
+g486
+V<<set $hatch = "open">>You use the key you found and unlock the hatch.  It opens easily.  You could go down the hatch, but it looks intimidating.\u000a<<display 'A maze of twisty passages, all alike'>>
+p546
+sg488
+(lp547
+sg490
+g23
+((I2013
+I11
+I26
+I16
+I59
+I8
+I1
+I330
+I0
+tp548
+(dp549
+tp550
+Rp551
+sg495
+g551
+sg496
+VOpen the hatch
+p552
 sbsasS'scale'
-p509
+p553
 I1
 ss.
