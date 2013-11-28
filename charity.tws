@@ -1139,7 +1139,7 @@ VBought katana
 p349
 sbsa(dp350
 g12
-I01
+I00
 sg13
 (lp351
 I710
@@ -2134,7 +2134,7 @@ Tiddler
 p659
 (dp660
 g590
-VYou are in a small hut.  It looks like it hasn't been used much, except maybe as a vacation rental or something.  
+VYou are in a small hut.  It looks like it hasn't been used much, except maybe as a vacation rental or something.  There is a rug covering the floor, a locked treasure chest, and a bookshelf here.\u000a\u000a[[Move rug]]\u000a[[Open chest]]\u000a[[Read books]]\u000a
 p661
 sg592
 (lp662
@@ -2306,7 +2306,123 @@ g710
 sg600
 VTied To The Hitch At The Bird Sanctuary
 p711
+sbsa(dp712
+g12
+I00
+sg13
+(lp713
+I1830
+aI1970
+asg15
+(itiddlywiki
+Tiddler
+p714
+(dp715
+S'text'
+p716
+VThe chest is locked.\u000a\u000a<<Display 'In The Hut'>>
+p717
+sS'tags'
+p718
+(lp719
+sS'created'
+p720
+g23
+((I2013
+I11
+I27
+I16
+I32
+I23
+I2
+I331
+I0
+tp721
+(dp722
+tp723
+Rp724
+sS'modified'
+p725
+g724
+sS'title'
+p726
+VOpen chest
+p727
+sbsa(dp728
+g12
+I00
+sg13
+(lp729
+I10
+aI1970
+asg15
+(itiddlywiki
+Tiddler
+p730
+(dp731
+g716
+S''
+p732
+sg718
+(lp733
+sg720
+g23
+((I2013
+I11
+I27
+I16
+I33
+I5
+I2
+I331
+I0
+tp734
+(dp735
+tp736
+Rp737
+sg725
+g737
+sg726
+S'Untitled Passage 1'
+p738
+sbsa(dp739
+g12
+I01
+sg13
+(lp740
+I1830
+aI1830
+asg15
+(itiddlywiki
+Tiddler
+p741
+(dp742
+g716
+VI can infer something about text adventures you've played in the past.\u000a\u000aUnfortunately, there is nothing under the rug.\u000a\u000a<<display 'In The Hut'>>
+p743
+sg718
+(lp744
+sg720
+g23
+((I2013
+I11
+I27
+I16
+I33
+I8
+I2
+I331
+I0
+tp745
+(dp746
+tp747
+Rp748
+sg725
+g748
+sg726
+VMove rug
+p749
 sbsasS'scale'
-p712
+p750
 I1
 ss.
