@@ -1139,7 +1139,7 @@ VBought katana
 p349
 sbsa(dp350
 g12
-I00
+I01
 sg13
 (lp351
 I710
@@ -1896,7 +1896,7 @@ VInitialize Variables
 p585
 sbsa(dp586
 g12
-I01
+I00
 sg13
 (lp587
 I710
@@ -1908,7 +1908,7 @@ p588
 (dp589
 S'text'
 p590
-VYou buy Nermin's little rowboat and walk down to the dock with him.  It's sitting there tied to the dock looking all cute and ready to go.\u000a\u000aNermin says "I'd be handing you keys here, but here are the oars, and I think you're ready to go!"\u000a\u000a<<if $luke eq "yes">>Luke jumps in the boat with you and is ready to row.<<endif>>\u000a<<if $leila eq "yes">>Leila jumps in the boat with you but you are uncertain if she is able to help you row.<<endif>>\u000a\u000a[[Row towards small island to the south|Offshore Bird Sanctuary]]\u000a[[Row towards open ocean to the west]]
+VYou buy Nermin's little rowboat and walk down to the dock with him.  It's sitting there tied to the dock looking all cute and ready to go.\u000a\u000aNermin says "I'd be handing you keys here, but here are the oars, and I think you're ready to go!"\u000a\u000a<<if $luke eq "yes">>Luke jumps in the boat with you and is ready to row. "I believe there is an island just out of sight, not that island towards the south.  I understand it used to be a fort and it might have a treasure room!"<<endif>>\u000a<<if $leila eq "yes">>Leila jumps in the boat with you but you are uncertain if she is able to help you row.<<endif>>\u000a\u000a[[Row towards small island to the south|Offshore Bird Sanctuary]]\u000a[[Row towards open ocean to the west|Out In The Ocean]]\u000a
 p591
 sS'tags'
 p592
@@ -2208,7 +2208,7 @@ Tiddler
 p681
 (dp682
 g590
-VYou are just offshore of an island which has been designated as a bird sanctuary.  As such no humans are allowed on it.  There are several signs indicating as such, as well as a dock that you are allowed to hitch your boat to while you are observing the birds.\u000a\u000a<<if $leila eq "yes">>Leila seems utterly fascinated with the birds.  You wish you had binoculars to see them better.<<endif>>\u000a<<if $luke  eq "yes">>Luke looks at the island and says "I don't think we will find anything interesting there, and I recommend we continue on to the island with the fort on it.<<endif>>\u000a\u000a[[Hitch your boat]]\u000a[[Continue rowing to sea]]
+VYou are just offshore of an island which has been designated as a bird sanctuary.  As such no humans are allowed on it.  There are several signs indicating as such, as well as a dock that you are allowed to hitch your boat to while you are observing the birds.\u000a\u000a<<if $leila eq "yes">>Leila seems utterly fascinated with the birds.  You wish you had binoculars to see them better.<<endif>>\u000a<<if $luke  eq "yes">>Luke looks at the island and says "I don't think we will find anything interesting there, and I recommend we continue on to the island with the fort on it.<<endif>>\u000a\u000a[[Hitch your boat|Tied To The Hitch At The Bird Sanctuary]]\u000a[[Continue rowing to sea|Out In The Ocean]]\u000a
 p683
 sg592
 (lp684
@@ -2232,7 +2232,81 @@ g688
 sg600
 VOffshore Bird Sanctuary
 p689
+sbsa(dp690
+g12
+I00
+sg13
+(lp691
+I710
+aI2110
+asg15
+(itiddlywiki
+Tiddler
+p692
+(dp693
+g590
+VYou are paddling out in the ocean.  Just as you lose sight of shore, an island comes into view off in the distance!\u000a\u000a[[Row to far island]]\u000a[[Row to bird sanctuary to the south|Offshore Bird Sanctuary]]\u000a[[Row back to the docks|At the docks]]\u000a
+p694
+sg592
+(lp695
+sg594
+g23
+((I2013
+I11
+I27
+I16
+I3
+I55
+I2
+I331
+I0
+tp696
+(dp697
+tp698
+Rp699
+sg599
+g699
+sg600
+VOut In The Ocean
+p700
+sbsa(dp701
+g12
+I00
+sg13
+(lp702
+I570
+aI2110
+asg15
+(itiddlywiki
+Tiddler
+p703
+(dp704
+g590
+VYour boat is tied to the hitch at the bird sanctuary.  You can see majestic birds off in the distance, but it's really not the same without binoculars.\u000a\u000a<<if $leila eq "yes">>Leila is beside herself in awe of the birds.  It is clear she wants to go on the island for a closer look.<<endif>>\u000a<<if $luke eq "yes">> Luke clearly doesn't think much of the birds and is waiting for you to do something interesting.<<endif>>\u000a\u000a[[Go on shore]]\u000a[[Unhitch and row out to sea|Out In The Ocean]]\u000a
+p705
+sg592
+(lp706
+sg594
+g23
+((I2013
+I11
+I27
+I16
+I10
+I4
+I2
+I331
+I0
+tp707
+(dp708
+tp709
+Rp710
+sg599
+g710
+sg600
+VTied To The Hitch At The Bird Sanctuary
+p711
 sbsasS'scale'
-p690
+p712
 I1
 ss.
