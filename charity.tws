@@ -772,8 +772,8 @@ g12
 I00
 sg13
 (lp241
-I990
-aI1130
+F1270.0
+aF1130.0
 asg15
 (itiddlywiki
 Tiddler
@@ -809,8 +809,8 @@ g12
 I00
 sg13
 (lp252
-I850
-aI1130
+F1130.0
+aF1130.0
 asg15
 (itiddlywiki
 Tiddler
@@ -846,8 +846,8 @@ g12
 I00
 sg13
 (lp263
-I570
-aI1130
+F850.0
+aF1130.0
 asg15
 (itiddlywiki
 Tiddler
@@ -883,8 +883,8 @@ g12
 I00
 sg13
 (lp274
-I710
-aI1130
+F990.0
+aF1130.0
 asg15
 (itiddlywiki
 Tiddler
@@ -920,8 +920,8 @@ g12
 I00
 sg13
 (lp285
-I1270
-aI1270
+F1270.0
+aF990.0
 asg15
 (itiddlywiki
 Tiddler
@@ -1640,8 +1640,8 @@ g12
 I00
 sg13
 (lp510
-I850
-aI1270
+F850.0
+aF990.0
 asg15
 (itiddlywiki
 Tiddler
@@ -1677,8 +1677,8 @@ g12
 I00
 sg13
 (lp521
-I990
-aI1270
+F990.0
+aF990.0
 asg15
 (itiddlywiki
 Tiddler
@@ -1751,8 +1751,8 @@ g12
 I00
 sg13
 (lp543
-I1130
-aI1270
+F1130.0
+aF990.0
 asg15
 (itiddlywiki
 Tiddler
@@ -1938,7 +1938,7 @@ VAt the docks
 p601
 sbsa(dp602
 g12
-I00
+I01
 sg13
 (lp603
 I1550
@@ -2060,7 +2060,7 @@ Tiddler
 p637
 (dp638
 g590
-V<<if $luke neq "yes" and $leila neq "yes">>You attempt to attack the goblin, flailing your fists about almost uselessly.  The goblin, though small, easily overwhelms you, almost never hurts you, but lands you on the ground easily.  He then picks you up and carries you off.\u000a\u000aHe carries you over his shoulder down a long passage way, suddenly stopping and knocking on a door.  Another goblin opens the door, they talk in a language you are unfamiliar with, and put you in a large cauldron.  They look rather excited.<<set $score=$score+2>><<display 'In a Cauldron 1'>><<endif>>\u000a<<if $luke eq "yes">>You attempt to attack the goblin.  Your ineffective punches and throws make suitable distraction for the spider to come around bite the goblin on the ankles.  Meanwhile Luke attacks the goblin from behind.  Between the three of you, you easily subdue to the goblin.<<set $interview=false>>\u000a<<display 'Goblin Defeat'>>\u000a<<endif>>\u000a<<if $leila eq "yes">><<endif>>
+V<<if $luke neq "yes">>You attempt to attack the goblin, flailing your fists about almost uselessly.  The goblin, though small, easily overwhelms you, almost never hurts you, but lands you on the ground easily.  He then picks you up and carries you off.\u000a\u000aHe carries you over his shoulder down a long passage way, suddenly stopping and knocking on a door.  Another goblin opens the door, they talk in a language you are unfamiliar with, and put you in a large cauldron.  They look rather excited.<<set $score=$score+2>><<display 'In a Cauldron 1'>><<endif>>\u000a<<if $luke eq "yes">>You attempt to attack the goblin.  Your ineffective punches and throws make suitable distraction for the spider to come around bite the goblin on the ankles.  Meanwhile Luke attacks the goblin from behind.  Between the three of you, you easily subdue to the goblin.<<set $interview=false>>\u000a<<display 'Goblin Defeat'>>\u000a<<endif>>\u000a
 p639
 sg592
 (lp640
@@ -2163,8 +2163,8 @@ g12
 I00
 sg13
 (lp669
-I850
-aI1410
+F1130.0
+aF1270.0
 asg15
 (itiddlywiki
 Tiddler
@@ -2282,7 +2282,7 @@ Tiddler
 p703
 (dp704
 g590
-VYour boat is tied to the hitch at the bird sanctuary.  You can see majestic birds off in the distance, but it's really not the same without binoculars.\u000a\u000a<<if $leila eq "yes">>Leila is beside herself in awe of the birds.  It is clear she wants to go on the island for a closer look.<<endif>>\u000a<<if $luke eq "yes">> Luke clearly doesn't think much of the birds and is waiting for you to do something interesting.<<endif>>\u000a\u000a[[Go on shore]]\u000a[[Unhitch and row out to sea|Out In The Ocean]]\u000a
+VYour boat is tied to the hitch at the bird sanctuary.  You can see majestic birds off in the distance, but it's really not the same without binoculars.\u000a\u000a<<if $leila eq "yes">>Leila is beside herself in awe of the birds.  It is clear she wants to go on the island for a closer look.<<endif>>\u000a<<if $luke eq "yes">> Luke clearly doesn't think much of the birds and is waiting for you to do something interesting.<<endif>>\u000a\u000a[[Go on shore|Disembark]]\u000a[[Unhitch and row out to sea|Out In The Ocean]]\u000a
 p705
 sg592
 (lp706
@@ -2538,8 +2538,8 @@ g12
 I00
 sg13
 (lp784
-F990.0
-aF1410.0
+F1270.0
+aF1270.0
 asg15
 (itiddlywiki
 Tiddler
@@ -2733,8 +2733,8 @@ g12
 I00
 sg13
 (lp849
-F1130.0
-aF1410.0
+F1410.0
+aF1270.0
 asg15
 (itiddlywiki
 Tiddler
@@ -2742,7 +2742,7 @@ p850
 (dp851
 S'text'
 p852
-V<<if $luke neq "yes">><<if $shield eq true>>The ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being where you were before, except without a useful shield this time.<<set $shield=false>>\u000a\u000a<<display 'Ogre Room'>><<else>> /% Shield else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You remember nothing else.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have been killed by an ogre.  Perhaps next time you should use a weapon or shield.  Your score is <<print $score +"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a<<endif>>  /% No shield endif %/\u000a<<else>> /% Else we have Luke %/\u000a<<if $shield eq true>>\u000aThe ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being \u000awhere you were before, except without a useful shield this time.\u000a\u000aWhile you were busy distracting the ogre, apparantly Luke was also busy.  Although you don't know what he did, as you brace yourself to get hit by that club again, the swing never comes, and the ogre falls down dead.<<set $ogre="dead">>\u000a\u000a"My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"\u000a[[Search for loot|Ogre Loot]]<<set $shield=false>><<else>> /% Sheild else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You black out.\u000a\u000aYou aren't sure how long you were out, but after a while you come to.  You open your eyes to see Luke highly concerned and glad that you are back to consiousness.  "I was getting really worried.  I realized I can't carry you out of here by myself!"  You don't quite feel right, but at least you are alive and are capable of self-mobilization.  "My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"<<set $ogre="dead">>\u000a\u000a[[Ogre Loot]]<<endif>> /% Shield endif %/ <<endif>> /%Luke endif %/
+V<<if $luke neq "yes">><<if $shield eq true>>The ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being where you were before, except without a useful shield this time.<<set $shield=false>>\u000a\u000a<<display 'Ogre Room'>><<else>> /% Shield else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You remember nothing else.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have been killed by an ogre. <<if $katana eq false>>Perhaps next time you should use a weapon. <<endif>> Your score is <<print $score +"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a<<endif>>  /% No shield endif %/\u000a<<else>> /% Else we have Luke %/\u000a<<if $shield eq true>>\u000aThe ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being \u000awhere you were before, except without a useful shield this time.\u000a\u000aWhile you were busy distracting the ogre, apparantly Luke was also busy.  Although you don't know what he did, as you brace yourself to get hit by that club again, the swing never comes, and the ogre falls down dead.<<set $ogre="dead">>\u000a\u000a"My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"\u000a[[Search for loot|Ogre Loot]]<<set $shield=false>><<else>> /% Sheild else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You black out.\u000a\u000aYou aren't sure how long you were out, but after a while you come to.  You open your eyes to see Luke highly concerned and glad that you are back to consiousness.  "I was getting really worried.  I realized I can't carry you out of here by myself!"  You don't quite feel right, but at least you are alive and are capable of self-mobilization.  "My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"<<set $ogre="dead">>\u000a\u000a[[Ogre Loot]]<<endif>> /% Shield endif %/ <<endif>> /%Luke endif %/
 p853
 sS'tags'
 p854
@@ -2775,8 +2775,8 @@ g12
 I00
 sg13
 (lp865
-F1270.0
-aF1410.0
+F1550.0
+aF1270.0
 asg15
 (itiddlywiki
 Tiddler
@@ -2812,8 +2812,8 @@ g12
 I00
 sg13
 (lp876
-F1410.0
-aF1410.0
+F1690.0
+aF1270.0
 asg15
 (itiddlywiki
 Tiddler
@@ -2857,7 +2857,7 @@ Tiddler
 p888
 (dp889
 g852
-V
+V\u000aYou are in a long hallway.  There is a door to the south, a door to the east, and a hole with a ladder in the far end. <<if $goblin eq "making soup">>The door to the west is the kitchen, where you were being made into soup.  I don't recommend going that way.<<endif>>\u000a\u000a[[Go south|Goblin room]]\u000a[[Go east|A cold room]]\u000a[[Go down the ladder|Down a hole]]\u000a
 p890
 sg854
 (lp891
@@ -2883,7 +2883,7 @@ VA long hallway
 p896
 sbsa(dp897
 g12
-I01
+I00
 sg13
 (lp898
 F150.0
@@ -3432,7 +3432,7 @@ Tiddler
 p1073
 (dp1074
 g852
-VBeing as you are the soup bones, you don't expect to find any in here, but you dive to the bottom and look around a little.  You don't find anything but the vegetables.  You cause some splashes  and spill some water out of the cauldron, which cause the goblin to say something to you in his funny goblin language in a tone that clearly means "stop that, you!".\u000a\u000a[[Contine being a mermaid and explore the cauldron|Mermaid time!]]\u000a[[Stop splashing and behave]
+VBeing as you are the soup bones, you don't expect to find any in here, but you dive to the bottom and look around a little.  You don't find anything but the vegetables.  You cause some splashes  and spill some water out of the cauldron, which cause the goblin to say something to you in his funny goblin language in a tone that clearly means "stop that, you!".\u000a\u000a[[Contine being a mermaid and explore the cauldron|Mermaid time!]]\u000a[[Stop splashing and behave|Good Soup]]\u000a
 p1075
 sg854
 (lp1076
@@ -3654,7 +3654,7 @@ Tiddler
 p1139
 (dp1140
 g852
-VYou run out of the room.  \u000a\u000a<<display 'A long hallway'>>
+VYou run out of the room.  <<if $luke eq "yes">>You have no idea where Luke is.<<endif>><<if $leila eq "yes">>You have no idea where Leila is.<<endif>><<if $katana eq true or $throwingstars gte 0 or $leather eq true or $shield eq true>>You have no idea where your possessions might be.<<endif>><<set $leila="no">><<set $luke="no">><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstars=0>>\u000a<<display 'A long hallway'>>
 p1141
 sg854
 (lp1142
@@ -3715,7 +3715,271 @@ g1157
 sg862
 VA cold room
 p1158
+sbsa(dp1159
+g12
+I00
+sg13
+(lp1160
+F710.0
+aF2810.0
+asg15
+(itiddlywiki
+Tiddler
+p1161
+(dp1162
+g852
+VAs you go down the ladder, you realize that this ladder is not safe.  In fact, the ladder crumbles as you are holding on to it and you fall down!  You don't hurt yourself too badly as you pick yourself up.  <<if $leila eq "yes">>Leila fashions herself into a parachute again and follows you down.<<endif>><<if $luke eq "yes">>Luke follows you down, jumping parts and being carefully not to hurt himself.<<endif>>\u000a\u000a<<display 'Dark passageway'>>\u000a
+p1163
+sg854
+(lp1164
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I37
+I4
+I4
+I333
+I0
+tp1165
+(dp1166
+tp1167
+Rp1168
+sg861
+g1168
+sg862
+VDown a hole
+p1169
+sbsa(dp1170
+g12
+I00
+sg13
+(lp1171
+F850.0
+aF2810.0
+asg15
+(itiddlywiki
+Tiddler
+p1172
+(dp1173
+g852
+V\u000aYou are in a dark twisty tunnel.  Ahead you smell sulfur.  You are not aware of any other direction you can go.\u000a\u000a[[Continue...|Dragon room]]
+p1174
+sg854
+(lp1175
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I47
+I12
+I4
+I333
+I0
+tp1176
+(dp1177
+tp1178
+Rp1179
+sg861
+g1179
+sg862
+VDark passageway
+p1180
+sbsa(dp1181
+g12
+I00
+sg13
+(lp1182
+F150.0
+aF3090.0
+asg15
+(itiddlywiki
+Tiddler
+p1183
+(dp1184
+g852
+VYou stop fussing and wait for a more opportune moment.  As you wait, you get tired, maybe dizzy, and you aren't entirely certain if you've remained concious.  The water gets warmer, maybe even hot?  \u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I am not certain, but if the goblin's demeaner shows anything, I believe you were quite tasty.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
+p1185
+sg854
+(lp1186
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I49
+I54
+I4
+I333
+I0
+tp1187
+(dp1188
+tp1189
+Rp1190
+sg861
+g1190
+sg862
+VGood Soup
+p1191
+sbsa(dp1192
+g12
+I00
+sg13
+(lp1193
+F710.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p1194
+(dp1195
+g852
+VYou violate several environmental protection laws by merely stepping foot on to the bird sanctuary, but what's an adventure without breaking a few laws?  It's much more ethical than piracy, right?\u000a\u000a<<display 'On the shore of the bird sanctuary'>>\u000a
+p1196
+sg854
+(lp1197
+sg856
+g23
+((I2013
+I11
+I29
+I18
+I3
+I47
+I4
+I333
+I0
+tp1198
+(dp1199
+tp1200
+Rp1201
+sg861
+g1201
+sg862
+VDisembark
+p1202
+sbsa(dp1203
+g12
+I00
+sg13
+(lp1204
+F850.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p1205
+(dp1206
+g852
+VYou are on the shore of a bird sanctuary
+p1207
+sg854
+(lp1208
+sg856
+g23
+((I2013
+I11
+I29
+I18
+I5
+I22
+I4
+I333
+I0
+tp1209
+(dp1210
+tp1211
+Rp1212
+sg861
+g1212
+sg862
+VOn the shore of the bird sanctuary
+p1213
+sbsa(dp1214
+g12
+I00
+sg13
+(lp1215
+F850.0
+aF1410.0
+asg15
+(itiddlywiki
+Tiddler
+p1216
+(dp1217
+g852
+VThis room looks a lot like the others, except that there is a chair here.  <<if $thief eq true>>There is a human sitting in the chair, looking at you.  He says "xyzzy".<<endif>>\u000a\u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a[[Ask the thief to explain]]
+p1218
+sg854
+(lp1219
+sg856
+g23
+((I2013
+I11
+I29
+I18
+I7
+I41
+I4
+I333
+I0
+tp1220
+(dp1221
+tp1222
+Rp1223
+sg861
+g1223
+sg862
+VThief room
+p1224
+sbsa(dp1225
+g12
+I00
+sg13
+(lp1226
+F1550.0
+aF1970.0
+asg15
+(itiddlywiki
+Tiddler
+p1227
+(dp1228
+S'text'
+p1229
+V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO" or $magicword eq "yoho!" or $magicword eq "Yoho" or $magicword eq "Yoho!" or $magicword eq "YOHO!">><<set $score=$score+4>><<set $found = 1>><<set $travel=1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!\u000a<<set $travel=1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
+p1230
+sS'tags'
+p1231
+(lp1232
+sS'created'
+p1233
+g23
+((I2013
+I11
+I26
+I15
+I19
+I53
+I1
+I330
+I0
+tp1234
+(dp1235
+tp1236
+Rp1237
+sS'modified'
+p1238
+g1237
+sS'title'
+p1239
+VMagic Word
+p1240
 sbsasS'scale'
-p1159
+p1241
 F0.60000000000000009
 ss.
