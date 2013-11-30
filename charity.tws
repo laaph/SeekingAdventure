@@ -1570,7 +1570,7 @@ p484
 (dp485
 S'text'
 p486
-VYou are in a small attic.  There isn't much here, but there is a bloodstained book.\u000a\u000a[[Exit the room|Pirate Hallway]]\u000a[[Read the book]]\u000a
+VYou are in a small attic.  There isn't much here, but there is a bloodstained book. <<if $katana eq false>>There is a katana here.  You aren't familiar with how to use the weapon, but perhaps it could be useful.<<endif>>\u000a\u000a\u000a[[Exit the room|Pirate Hallway]]\u000a[[Read the book]]\u000a<<if $katana eq false>>[[Take the katana]]<<endif>>
 p487
 sS'tags'
 p488
@@ -1870,7 +1870,7 @@ Tiddler
 p577
 (dp578
 g486
-V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin="hungry">>\u000a<<set $ogre="angry">>\u000a<<endsilently>>
+V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin="hungry">>\u000a<<set $ogre="angry">>\u000a<<set $mongoose="hungry">>\u000a<<set $leilacarried=false>>\u000a<<endsilently>>\u000a
 p579
 sg488
 (lp580
@@ -1938,7 +1938,7 @@ VAt the docks
 p601
 sbsa(dp602
 g12
-I01
+I00
 sg13
 (lp603
 I1550
@@ -2097,7 +2097,7 @@ Tiddler
 p648
 (dp649
 g590
-VYou are on a small island.  There is a path to the beach north, and small hut here.\u000a\u000a[[Go north|On The Beach]]\u000a[[Enter the hut|In The Hut]]\u000a
+VYou are on a small island.  There is a path to the beach north, and small hut here.  <<if $mongoose eq "hungry" and $leila eq "yes">>There is a mongoose here, looking at Leila with what appears to be ill intent.  Leila looks blatantly worried.<<endif>>\u000a\u000a<<if $mongoose eq "hungry" and $leila eq "yes" and $leilacarried eq false>>\u000a[[Go north|Eat Leila 1]]\u000a[[Enter the hut|Eat Leila 2]]\u000a[[Carry Leila so the mongoose doesn't eat her|Carry Leila]]\u000a<<else>>\u000a[[Go north|On The Beach]]\u000a[[Enter the hut|In The Hut]]\u000a<<endif>>\u000a<<if $mongoose eq "hungry" and $leila eq "yes">>[[Feed Leila to the mongoose]]<<endif>>\u000a<<if $mongoose eq "hungry" and $leila eq "yes" and $katana eq true>>[[Kill the mongoose with the katana|Kill mongoose]]<<endif>>\u000a
 p650
 sg592
 (lp651
@@ -2390,8 +2390,8 @@ g12
 I00
 sg13
 (lp740
-I1690
-aI2390
+F1690.0
+aF2390.0
 asg15
 (itiddlywiki
 Tiddler
@@ -3754,7 +3754,7 @@ VDown a hole
 p1169
 sbsa(dp1170
 g12
-I00
+I01
 sg13
 (lp1171
 F850.0
@@ -3765,7 +3765,7 @@ Tiddler
 p1172
 (dp1173
 g852
-V\u000aYou are in a dark twisty tunnel.  Ahead you smell sulfur.  You are not aware of any other direction you can go.\u000a\u000a[[Continue...|Dragon room]]
+V\u000aYou are in a dark twisty tunnel.  Ahead you smell sulfur.  You are not aware of any other direction you can go.\u000a\u000a[[To Be Continued...|Dragon room]]
 p1174
 sg854
 (lp1175
@@ -3832,7 +3832,7 @@ I00
 sg13
 (lp1193
 F710.0
-aF2390.0
+aF2530.0
 asg15
 (itiddlywiki
 Tiddler
@@ -3869,7 +3869,7 @@ I00
 sg13
 (lp1204
 F850.0
-aF2390.0
+aF2530.0
 asg15
 (itiddlywiki
 Tiddler
@@ -3979,7 +3979,239 @@ sS'title'
 p1239
 VMagic Word
 p1240
+sbsa(dp1241
+g12
+I00
+sg13
+(lp1242
+F1410.0
+aF1550.0
+asg15
+(itiddlywiki
+Tiddler
+p1243
+(dp1244
+S'text'
+p1245
+VYou take the katana.<<set $katana=true>>\u000a\u000a<<display 'In The Attic'>>
+p1246
+sS'tags'
+p1247
+(lp1248
+sS'created'
+p1249
+g23
+((I2013
+I11
+I30
+I14
+I46
+I43
+I5
+I334
+I0
+tp1250
+(dp1251
+tp1252
+Rp1253
+sS'modified'
+p1254
+g1253
+sS'title'
+p1255
+VTake the katana
+p1256
+sbsa(dp1257
+g12
+I00
+sg13
+(lp1258
+F990.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p1259
+(dp1260
+g1245
+VYou say "hurry up Leila" and she is running as fast as she can, but as you head north, she gets eaten by the mongoose!  \u000a<<set $leila="dead">>\u000a...\u000a\u000a<<display 'On The Beach'>>
+p1261
+sg1247
+(lp1262
+sg1249
+g23
+((I2013
+I11
+I30
+I15
+I1
+I30
+I5
+I334
+I0
+tp1263
+(dp1264
+tp1265
+Rp1266
+sg1254
+g1266
+sg1255
+VEat Leila 1
+p1267
+sbsa(dp1268
+g12
+I00
+sg13
+(lp1269
+F1550.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p1270
+(dp1271
+S'text'
+p1272
+VYou say "hurry up Leila" and she is running as fast as she can, but as you in the hut, she gets eaten by the mongoose!  \u000a<<set $leila="dead">>\u000a...\u000a\u000a<<display 'In The Hut'>>
+p1273
+sS'tags'
+p1274
+(lp1275
+sS'created'
+p1276
+g23
+((I2013
+I11
+I30
+I15
+I1
+I30
+I5
+I334
+I0
+tp1277
+(dp1278
+tp1279
+Rp1280
+sS'modified'
+p1281
+g1280
+sS'title'
+p1282
+VEat Leila 2
+p1283
+sbsa(dp1284
+g12
+I00
+sg13
+(lp1285
+F1130.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p1286
+(dp1287
+g1245
+VYou pick up Leila so that she does not get eaten by a mongoose.  She is heavy and slimy.  You can't carry her forever.\u000a<<set $leilacarried=true>>\u000a<<display 'On A Small Island'>>
+p1288
+sg1247
+(lp1289
+sg1249
+g23
+((I2013
+I11
+I30
+I15
+I3
+I15
+I5
+I334
+I0
+tp1290
+(dp1291
+tp1292
+Rp1293
+sg1254
+g1293
+sg1255
+VCarry Leila
+p1294
+sbsa(dp1295
+g12
+I00
+sg13
+(lp1296
+F1270.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p1297
+(dp1298
+g1245
+V\u000aYou cruel bastard.  I'm not sure whether to increase or decrease your score.  Either way, you're mean!\u000a\u000aThe mongoose goes away, satisfied with his meal.\u000a<<set $leila eq "dead">>\u000a<<display 'On A Small Island'>>
+p1299
+sg1247
+(lp1300
+sg1249
+g23
+((I2013
+I11
+I30
+I15
+I9
+I58
+I5
+I334
+I0
+tp1301
+(dp1302
+tp1303
+Rp1304
+sg1254
+g1304
+sg1255
+VFeed Leila to the mongoose
+p1305
+sbsa(dp1306
+g12
+I00
+sg13
+(lp1307
+F1410.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p1308
+(dp1309
+g1245
+VYou hack at the mongoose with your katana. After one hit, the mongoose runs away!<<set $mongoose="runaway">><<set $score=$score+7>>\u000a\u000a<<display 'On A Small Island'>>
+p1310
+sg1247
+(lp1311
+sg1249
+g23
+((I2013
+I11
+I30
+I15
+I11
+I49
+I5
+I334
+I0
+tp1312
+(dp1313
+tp1314
+Rp1315
+sg1254
+g1315
+sg1255
+VKill mongoose
+p1316
 sbsasS'scale'
-p1241
+p1317
 F0.60000000000000009
 ss.
