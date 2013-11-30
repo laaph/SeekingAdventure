@@ -34,7 +34,7 @@ p16
 (dp17
 S'text'
 p18
-V<<set $money=100>><<set $score=0>><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstars=0>>You have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "b">><<endsilently>>\u000a[img[TURBO.png]]\u000a\u000a
+V<<set $money=100>><<set $score=0>><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstars=0>>You have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "c">><<endsilently>>\u000a[img[TURBO.png]]\u000a\u000a
 p19
 sS'tags'
 p20
@@ -77,7 +77,7 @@ Tiddler
 p33
 (dp34
 g18
-VCharity Game \u000aJam II Turbo\u000aPlus Hyper \u000aFighting  \u000aAlpha Squee \u000aChibi Edition!\u000a\u000a[[Credits]] [[Charities]] 
+VCharity Game \u000aJam II Turbo\u000aPlus Hyper \u000aFighting  \u000aAlpha Squee \u000aChibi Edition!\u000a\u000a[[Credits]] [[Charities]] l
 p35
 sg20
 (lp36
@@ -188,7 +188,7 @@ Tiddler
 p66
 (dp67
 g18
-VLeila the Little Slime looks at you with big sad eyes.  She says to you "I'd love to go on adventures with you, but I have lost my mom!  If you help me find my mom, I will go on any adventure you ask, and not even ask for a share of the loot!"\u000a\u000aHow do you respond to those pleading eyes?<<silently>>\u000a:: Hackery follows - \u000a:: Be sure to set that to yes in suggestions that she come with\u000a<<set $leila = "no">> <<endsilently>>\u000a[img[littleslime.png]]\u000a[[Of course we can go rescue your mom.|Where is mom?]]\u000a[[I can't be distracted by every missing mom.  I'm sure she is safe and just forgot to tell you where she went.|Keep your friends close, and your enemies closer]]\u000a
+VLeila the Little Slime looks at you with big sad eyes.  She says to you "I'd love to go on adventures with you, but I have lost my mom!  If you help me find my mom, I will go on any adventure you ask, and not even ask for a share of the loot!"\u000a\u000aHow do you respond to those pleading eyes?\u000a<<silently>><<endsilently>>\u000a[img[littleslime.png]]\u000a[[Of course we can go rescue your mom.|Where is mom?]]\u000a[[I can't be distracted by every missing mom.  I'm sure she is safe and just forgot to tell you where she went.|Keep your friends close, and your enemies closer]]\u000a
 p68
 sg20
 (lp69
@@ -262,7 +262,7 @@ Tiddler
 p88
 (dp89
 g18
-V<<display 'Initialize Variables'>>Now it is time to choose your adventure.  You can go to -\u000a\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Museum of Unnatural History]]
+V<<display 'Initialize Variables'>>Now it is time to choose your adventure.  You can go to -\u000a\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Space Adventure]]
 p90
 sg20
 (lp91
@@ -439,8 +439,8 @@ g12
 I00
 sg13
 (lp142
-I430
-aI570
+F430.0
+aF710.0
 asg15
 (itiddlywiki
 Tiddler
@@ -476,8 +476,8 @@ g12
 I00
 sg13
 (lp153
-I430
-aI710
+F430.0
+aF850.0
 asg15
 (itiddlywiki
 Tiddler
@@ -513,15 +513,15 @@ g12
 I00
 sg13
 (lp164
-I430
-aI850
+F430.0
+aF990.0
 asg15
 (itiddlywiki
 Tiddler
 p165
 (dp166
 g18
-VYou say the only thing in Japanese you can think of.  "\u3053\u3093\u306b\u3061\u306f!"  The adventurer says "Konnichiwa!" and cleanly cuts you in half as well.\u000a\u000a* *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, you were so busy with someone else's.  I'm not sure if I should give you Leila's score (47 out of 100) or your own (<<print $score>> out of 100).  Better luck next time.
+VYou say the only thing in Japanese you can think of.  "\u3053\u3093\u306b\u3061\u306f!"  The adventurer says "Konnichiwa!" and cleanly cuts you in half as well.\u000a\u000a* *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, you were so busy with someone else's.  I'm not sure if I should give you Leila's score (47 out of 100) or your own (<<print $score>> out of 100).  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a
 p167
 sg20
 (lp168
@@ -550,8 +550,8 @@ g12
 I00
 sg13
 (lp175
-I570
-aI570
+F570.0
+aF710.0
 asg15
 (itiddlywiki
 Tiddler
@@ -587,8 +587,8 @@ g12
 I00
 sg13
 (lp186
-I290
-aI710
+F290.0
+aF850.0
 asg15
 (itiddlywiki
 Tiddler
@@ -632,7 +632,7 @@ Tiddler
 p198
 (dp199
 g18
-VYou get to Leila's Mom's house, and Leila runs in without knocking.  You follow her in, and see her embracing her mom in a slime hug.  \u000a\u000aLeila says "Mom I was so worried!"\u000aHer mom says "It's okay, don't worry about me, I'm staying inside so the adventurers don't kill me!"\u000aLeila says "But I found an adventurer and I want to go adventuring with him!"\u000aHer mom glares at you.  But then she softens her glare suddenly, and says "This one hasn't been killing slimes.  You're not an adventurer, are you?"\u000aLeila says "No mommie this is a nice person and we are going to go on adventures!"\u000a\u000aHer mom laughs and offers you tea and cookies.  "Adventures, huh?  Well, let me delay your adventures a little bit and make you sandwiches."  Mrs. Slime (?) puts out tea and cookies, and makes sandwiches for you to bring on your adventures.\u000a<<set $sandwiches=true>><<set $score=$score+5>>\u000a[[Oh this is nice.  Maybe we can just stay here.|Stuck In The Couch]]\u000a[[Thank you so much Mrs. Slime.  We must be on our way now, though.|Choose Your Destiny]]\u000a
+VYou get to Leila's Mom's house, and Leila runs in without knocking.  You follow her in, and see her embracing her mom in a slime hug.  \u000a\u000aLeila says "Mom I was so worried!"\u000aHer mom says "It's okay, don't worry about me, I'm staying inside so the adventurers don't kill me!"\u000aLeila says "But I found an adventurer and I want to go adventuring with him!"\u000aHer mom glares at you.  But then she softens her glare suddenly, and says "This one hasn't been killing slimes.  You're not an adventurer, are you?"\u000aLeila says "No mommie this is a nice person and we are going to go on adventures!"\u000a\u000aHer mom laughs and offers you tea and cookies.  "Adventures, huh?  Well, let me delay your adventures a little bit and make you sandwiches."  Mrs. Slime (?) puts out tea and cookies, and makes sandwiches for you to bring on your adventures.\u000a<<set $sandwiches=true>><<set $score=$score+5>>\u000a[[Stay for the tea and cookies|Tea And Cookies]]\u000a[[Thank you so much Mrs. Slime.  We must be on our way now, though.|Choose Your Destiny]]\u000a
 p200
 sg20
 (lp201
@@ -661,7 +661,7 @@ g12
 I00
 sg13
 (lp208
-I710
+I850
 aI430
 asg15
 (itiddlywiki
@@ -669,7 +669,7 @@ Tiddler
 p209
 (dp210
 g18
-VYou decide you could stay here quite a while.  Leila seems perfectly okay with this, and tells you to rest on the couch while she finds her video games.  Meanwhile, Mrs. Slime continues making tea, sandwiches, cookies and now is working on stew for tonight.  \u000a\u000aAs you relax on the couch, you realize something is wrong...  it's too soft...  It's a slime couch, of course, meant for slimes, so you slowly start to melt in to it...   literally melting in to it...  you dissolve in to the couch...  you try to scream but it's much too late for that you didn't even get to see what video game Leila was going to show you.\u000a\u000a*** *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, and you even got distracted while you were working on someone else's.  I'm not sure if I should give you Leila's score (78 out of 100) or your own (<<print $score>> out of 100).  Better luck next time.
+VYou decide you could stay here quite a while.  Leila seems perfectly okay with this, and tells you to rest on the couch while she finds her video games.  Meanwhile, Mrs. Slime continues making tea, sandwiches, cookies and now is working on stew for tonight.  \u000a\u000aAs you relax on the couch, you realize something is wrong...  it's too soft...  It's a slime couch, of course, meant for slimes, so you slowly start to melt in to it...   literally melting in to it...  you dissolve in to the couch...  you try to scream but it's much too late for that you didn't even get to see what video game Leila was going to show you.\u000a\u000a*** *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, and you even got distracted while you were working on someone else's.  I'm not sure if I should give you Leila's score (78 out of 100) or your own (<<print $score>> out of 100).  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a
 p211
 sg20
 (lp212
@@ -698,8 +698,8 @@ g12
 I00
 sg13
 (lp219
-I570
-aI710
+F570.0
+aF850.0
 asg15
 (itiddlywiki
 Tiddler
@@ -1150,7 +1150,7 @@ Tiddler
 p352
 (dp353
 g18
-VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a<<if $luke eq "yes">> Luke says "Did you know my Steampunk Spider is amphibious?  We can just drive it in to the sea!"<<endif>>\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a<<if $luke eq "yes">>Luke says quietly "Don't buy that thing.  It's crap.<<endif>>\u000a/% %/\u000a[[Buy boat from Nermin|At the docks]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>
+VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a<<if $luke eq "yes">>Luke says quietly "Don't buy that thing.  It's crap.<<endif>>\u000a/% %/\u000a[[Buy boat from Nermin|At the docks]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>
 p354
 sg20
 (lp355
@@ -1342,7 +1342,7 @@ Tiddler
 p413
 (dp414
 g388
-VThis game was created for the Charity Game Jam.
+VThis game was created for the [[Charity Game Jam|http://charitygamejam.com]].
 p415
 sg390
 (lp416
@@ -1379,7 +1379,7 @@ Tiddler
 p424
 (dp425
 g388
-V/%%/\u000a* *** You have died ***\u000a/%%/\u000aYou didn't even register the start of your adventure.  For what it's worth, your score is <<print $score+"">> out of 100.  Better luck next time.
+V/%%/\u000a* *** You have died ***\u000a/%%/\u000aYou didn't even register the start of your adventure.  For what it's worth, your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
 p426
 sg390
 (lp427
@@ -1495,7 +1495,7 @@ Tiddler
 p462
 (dp463
 g448
-VYou jump off the edge of the window sill.\u000a\u000a* *** You have died. ***\u000a\u000aThat was silly.  Your score is <<print $score +"">> out of 100.
+VYou jump off the edge of the window sill.\u000a\u000a* *** You have died. ***\u000a\u000aThat was silly.  Your score is <<print $score +"">> out of 100.\u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
 p464
 sg450
 (lp465
@@ -1532,7 +1532,7 @@ Tiddler
 p473
 (dp474
 g448
-V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO">><<set $score=$score+4>><<set $found = 1>><<set $travel=1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!\u000a<<set $travel=1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
+V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO" or $magicword eq "yoho!" or $magicword eq "Yoho" or $magicword eq "Yoho!" or $magicword eq "YOHO!">><<set $score=$score+4>><<set $found = 1>><<set $travel=1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!\u000a<<set $travel=1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
 p475
 sg450
 (lp476
@@ -1833,7 +1833,7 @@ Tiddler
 p566
 (dp567
 g486
-VYou are in a small room.  <<if $goblin eq "hungry">> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq true and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana|Goblin slicing]]<<endif>><<if $goblin eq "hungry" and $throwingstar gt 1>>\u000a[[Throw a throwing star at the goblin|Goblin star toss]] - You have <<print $throwingstars+"">> throwing stars in your inventory.<<endif>>\u000a<<if $goblin eq "hungry">>\u000a[[Run back to the small room|A small room]]\u000a[[Fight the small goblin empty handed|Goblin flailing]]\u000a<<endif>>\u000a<<if $goblin eq "subdued">>A hungry goblin is attempting to hide in the corner here, carefully keeping its distance from you.<<endif>>\u000a/%I am tempted to separate this in to two rooms, Goblin room with Goblin, and Goblin room without Goblin.  Code would be easier. %/
+VYou are in a small room.  <<if $goblin eq "hungry">> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq "hungry" and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana|Goblin slicing]]\u000a/%%/\u000a<<endif>><<if $goblin eq "hungry" and $throwingstar gt 1>>\u000a[[Throw a throwing star at the goblin|Goblin star toss]] - You have <<print $throwingstars+"">> throwing stars in your inventory.<<endif>><<if $goblin eq "hungry">>\u000a[[Fight the small goblin empty handed|Goblin flailing]]\u000a[[Run back to the small room|A small room]]\u000a<<endif>><<if $goblin eq "subdued">>A hungry goblin is attempting to hide in the corner here, carefully keeping its distance from you.  Now that you aren't feeling threatened, you notice a door in the north of this room.\u000a<<endif>><<if $goblin eq "dead">>A dead goblin is here.  Now that you aren't feeling threatened, you notice a door in the north of this room.\u000a<<endif>>\u000a<<if $goblin neq "hungry">>\u000a[[Go south to the small room|A small room]]\u000a[[Go north|A long hallway]] \u000a<<endif>>
 p568
 sg488
 (lp569
@@ -1862,15 +1862,15 @@ g12
 I00
 sg13
 (lp576
-I150
-aI850
+F150.0
+aF990.0
 asg15
 (itiddlywiki
 Tiddler
 p577
 (dp578
 g486
-V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin="hungry">>\u000a<<endsilently>>
+V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin="hungry">>\u000a<<set $ogre="angry">>\u000a<<endsilently>>
 p579
 sg488
 (lp580
@@ -1908,7 +1908,7 @@ p588
 (dp589
 S'text'
 p590
-VYou buy Nermin's little rowboat and walk down to the dock with him.  It's sitting there tied to the dock looking all cute and ready to go.\u000a\u000aNermin says "I'd be handing you keys here, but here are the oars, and I think you're ready to go!"\u000a\u000a<<if $luke eq "yes">>Luke jumps in the boat with you and is ready to row. "I believe there is an island just out of sight, not that island towards the south.  I understand it used to be a fort and it might have a treasure room!"<<endif>>\u000a<<if $leila eq "yes">>Leila jumps in the boat with you but you are uncertain if she is able to help you row.<<endif>>\u000a\u000a[[Row towards small island to the south|Offshore Bird Sanctuary]]\u000a[[Row towards open ocean to the west|Out In The Ocean]]\u000a
+VYou buy Nermin's little rowboat and walk down to the dock with him.  It's sitting there tied to the dock looking all cute and ready to go.\u000a\u000aNermin says "I'd be handing you keys here, but here are the oars, and I think you're ready to go!"\u000a\u000a<<if $luke eq "yes">>Luke jumps in the boat with you and is ready to row. "I believe there is an island just out of sight, not that island towards the south.  I understand it used to be a fort and it might have a treasure room!"<<endif>><<if $leila eq "yes">>Leila jumps in the boat with you but you are uncertain if she is able to help you row.\u000a<<endif>>\u000a[[Row towards small island to the south|Offshore Bird Sanctuary]]\u000a[[Row towards open ocean to the west|Out In The Ocean]]\u000a
 p591
 sS'tags'
 p592
@@ -1942,14 +1942,14 @@ I00
 sg13
 (lp603
 I1550
-aI1830
+aI2110
 asg15
 (itiddlywiki
 Tiddler
 p604
 (dp605
 g590
-VYou find yourself on a sandy beach.  The ocean expands out to the north and there is a path to the south.\u000a<<if $travel eq 1>><<set $travel=0>>\u000a<<if $leila eq "yes">>You are surprised to see Leila still with you.  She looks at you as if she is equally surprised.<<endif>>\u000a<<if $luke eq "yes">>Luke somehow has made it with you, including the Steampunk Spider.  He is as uncertain as you how he got here, but clearly ready to resume treasure hunting.<<endif>><<endif>>\u000a[[Go south|On A Small Island]]\u000a
+VYou find yourself on a sandy beach.  The ocean expands out to the north and there is a path to the south.\u000a<<if $travel eq 1>><<set $travel=0>>\u000a<<if $leila eq "yes">>You are surprised to see Leila still with you.  She looks at you as if she is equally surprised.<<endif>>\u000a<<if $luke eq "yes">>Luke somehow has made it with you, including the Steampunk Spider.  He is as uncertain as you how he got here, but clearly ready to resume treasure hunting.<<endif>><<endif>>\u000a[[Go south|On A Small Island]]\u000a\u000a
 p606
 sg592
 (lp607
@@ -1986,7 +1986,7 @@ Tiddler
 p615
 (dp616
 g590
-V<<if $luke eq "no">>Owning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  You smack the poor goblin with you katana, with the sharp side, with the flat side, with the pointy bit, repeatedly, as he screams, as he tries to run away, but you just keep doing this, until he is covered with blood, until he stops screaming, until he is dead.<<endif>><<if $luke eq "yes">>Owning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  Unfortunately, the goblin also know this, and so stays carefully away from you.  Fortunately, you are providing a good distraction for Luke's spider, who zips around, stinging the poor goblin everytime he takes the time to dodge your katana.  The poor goblin doesn't stand a chance when it's three against one.<<endif>>\u000a\u000a<<set $goblin=false>><<display 'Goblin room'>>
+V<<if $luke neq "yes">>Owning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  You smack the poor goblin with you katana, with the sharp side, with the flat side, with the pointy bit, repeatedly, as he screams, as he tries to run away, but you just keep doing this, until he is covered with blood, until he stops screaming, until he is dead.<<endif>><<if $luke eq "yes">>Owning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  Unfortunately, the goblin also know this, and so stays carefully away from you.  Fortunately, you are providing a good distraction for Luke's spider, who zips around, stinging the poor goblin everytime he takes the time to dodge your katana.  The poor goblin doesn't stand a chance when it's three against one.<<endif>>\u000a\u000a<<set $goblin="dead">><<display 'Goblin room'>>
 p617
 sg592
 (lp618
@@ -2052,15 +2052,15 @@ g12
 I00
 sg13
 (lp636
-I290
-aI1830
+F150.0
+aF2250.0
 asg15
 (itiddlywiki
 Tiddler
 p637
 (dp638
 g590
-V<<if $luke neq "yes" and $leila neq "yes">>You attempt to attack the goblin, flailing your fists about almost uselessly.  The goblin, though small, easily overwhelms you, almost never hurts you, but lands you on the ground easily.  He then picks you up and carries you off.\u000a\u000aHe carries you over his shoulder down a long passage way, suddenly stopping and knocking on a door.  Another goblin opens the door, they talk in a language you are unfamiliar with, and put you in a large cauldron.  They look rather excited.<<set $score=$score+2>><<endif>>\u000a<<if $luke eq "yes">>You attempt to attack the goblin.  Your ineffective punches and throws make suitable distraction for the spider to come around bite the goblin on the ankles.  Meanwhile Luke attacks the goblin from behind.  Between the three of you, you easily subdue to the goblin.\u000a\u000aLuke says "what do we do with the goblin now?  My spider can inject enough venom in to him if we need to kill him.  Or we can quiz him but I'm not sure he knows our language.  Or we could just leave him here and hope he doesn't chase us, or do something more drastic if he does."\u000a[[Kill the goblin]]\u000a[[Interrogate the goblin]]\u000a[[Leave the goblin behind]]<<set $score=$score+5>><<endif>>\u000a<<if $leila eq "yes">><<endif>>
+V<<if $luke neq "yes" and $leila neq "yes">>You attempt to attack the goblin, flailing your fists about almost uselessly.  The goblin, though small, easily overwhelms you, almost never hurts you, but lands you on the ground easily.  He then picks you up and carries you off.\u000a\u000aHe carries you over his shoulder down a long passage way, suddenly stopping and knocking on a door.  Another goblin opens the door, they talk in a language you are unfamiliar with, and put you in a large cauldron.  They look rather excited.<<set $score=$score+2>><<display 'In a Cauldron 1'>><<endif>>\u000a<<if $luke eq "yes">>You attempt to attack the goblin.  Your ineffective punches and throws make suitable distraction for the spider to come around bite the goblin on the ankles.  Meanwhile Luke attacks the goblin from behind.  Between the three of you, you easily subdue to the goblin.<<set $interview=false>>\u000a<<display 'Goblin Defeat'>>\u000a<<endif>>\u000a<<if $leila eq "yes">><<endif>>
 p639
 sg592
 (lp640
@@ -2090,7 +2090,7 @@ I00
 sg13
 (lp647
 I1550
-aI1970
+aI2250
 asg15
 (itiddlywiki
 Tiddler
@@ -2127,7 +2127,7 @@ I00
 sg13
 (lp658
 I1690
-aI1970
+aI2250
 asg15
 (itiddlywiki
 Tiddler
@@ -2171,7 +2171,7 @@ Tiddler
 p670
 (dp671
 g590
-VThis room is a lot like the others, except that there is a cavernous fracture in the ground, a huge gap that would be uncrossable except for a bridge, made of stone, decrepid enough that you aren't entirely certain if it safe, goes across the gap.\u000a<<set $state="bridge">>\u000a[[Cross the bridge]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a
+VThis room is a lot like the others, except that there is a cavernous fracture in the ground, a huge gap that would be uncrossable except for a stone bridge, decrepit enough that you aren't entirely certain if it is safe, goes across the gap.\u000a<<set $state="bridge">>\u000a[[Cross the bridge|Ogre Room]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a
 p672
 sg592
 (lp673
@@ -2200,8 +2200,8 @@ g12
 I00
 sg13
 (lp680
-I570
-aI1970
+F710.0
+aF1970.0
 asg15
 (itiddlywiki
 Tiddler
@@ -2237,15 +2237,15 @@ g12
 I00
 sg13
 (lp691
-I710
-aI2110
+F850.0
+aF2110.0
 asg15
 (itiddlywiki
 Tiddler
 p692
 (dp693
 g590
-VYou are paddling out in the ocean.  Just as you lose sight of shore, an island comes into view off in the distance!\u000a\u000a[[Row to far island]]\u000a[[Row to bird sanctuary to the south|Offshore Bird Sanctuary]]\u000a[[Row back to the docks|At the docks]]\u000a
+VYou are paddling out in the ocean.  Just as you lose sight of shore, an island comes into view off in the distance!\u000a\u000a[[Row to far island|Toward The Small Island]]\u000a[[Row to bird sanctuary to the south|Offshore Bird Sanctuary]]\u000a
 p694
 sg592
 (lp695
@@ -2274,8 +2274,8 @@ g12
 I00
 sg13
 (lp702
-I570
-aI2110
+F710.0
+aF2110.0
 asg15
 (itiddlywiki
 Tiddler
@@ -2312,7 +2312,7 @@ I00
 sg13
 (lp713
 I1830
-aI1970
+aI2250
 asg15
 (itiddlywiki
 Tiddler
@@ -2320,7 +2320,7 @@ p714
 (dp715
 S'text'
 p716
-VThe chest is locked.\u000a\u000a<<Display 'In The Hut'>>
+VThe chest is locked.\u000a\u000a<<display 'In The Hut'>>
 p717
 sS'tags'
 p718
@@ -2353,55 +2353,18 @@ g12
 I00
 sg13
 (lp729
-I10
-aI1970
+I1830
+aI2110
 asg15
 (itiddlywiki
 Tiddler
 p730
 (dp731
 g716
-S''
+VI can infer something about text adventures you've played in the past.\u000a\u000aUnfortunately, there is nothing under the rug.\u000a\u000a<<display 'In The Hut'>>
 p732
 sg718
 (lp733
-sg720
-g23
-((I2013
-I11
-I27
-I16
-I33
-I5
-I2
-I331
-I0
-tp734
-(dp735
-tp736
-Rp737
-sg725
-g737
-sg726
-S'Untitled Passage 1'
-p738
-sbsa(dp739
-g12
-I01
-sg13
-(lp740
-I1830
-aI1830
-asg15
-(itiddlywiki
-Tiddler
-p741
-(dp742
-g716
-VI can infer something about text adventures you've played in the past.\u000a\u000aUnfortunately, there is nothing under the rug.\u000a\u000a<<display 'In The Hut'>>
-p743
-sg718
-(lp744
 sg720
 g23
 ((I2013
@@ -2413,6 +2376,43 @@ I8
 I2
 I331
 I0
+tp734
+(dp735
+tp736
+Rp737
+sg725
+g737
+sg726
+VMove rug
+p738
+sbsa(dp739
+g12
+I00
+sg13
+(lp740
+I1690
+aI2390
+asg15
+(itiddlywiki
+Tiddler
+p741
+(dp742
+g716
+VYou take a browse the bookshelf, and see a book titled "Treasures Found On Abandoned Islands".  You take the shelf, when suddenly the floor opens up from underneath you!\u000a\u000aYou fall in to some caves below.\u000a\u000a<<display 'A cold room'>>\u000a/% Could go to some twisty caves, but I think that's just mean.  %/
+p743
+sg718
+(lp744
+sg720
+g23
+((I2013
+I11
+I27
+I16
+I34
+I16
+I2
+I331
+I0
 tp745
 (dp746
 tp747
@@ -2420,9 +2420,1302 @@ Rp748
 sg725
 g748
 sg726
-VMove rug
+VRead books
 p749
-sbsasS'scale'
-p750
+sbsa(dp750
+g12
+I00
+sg13
+(lp751
+I710
+aI430
+asg15
+(itiddlywiki
+Tiddler
+p752
+(dp753
+g716
+VMrs. Slime has the best tea and cookies.  You make yourself comfortable on the couch and munch on too many cookies for your health and drink too much tea.  An inner voice is nagging you to get back on your adventures, but you are enjoying this far too much.  It's almost like you are melting in to the couch, it is so awesome.\u000a\u000a[[Continue to enjoy tea and cookies and couch|Stuck In The Couch]]\u000a[[Thank you so much Mrs. Slime.  We really must be on our way now, though.|Choose Your Destiny]]\u000a
+p754
+sg718
+(lp755
+sg720
+g23
+((I2013
+I11
+I27
+I16
+I40
+I31
+I2
+I331
+I0
+tp756
+(dp757
+tp758
+Rp759
+sg725
+g759
+sg726
+VTea And Cookies
+p760
+sbsa(dp761
+g12
+I00
+sg13
+(lp762
+F990.0
+aF2110.0
+asg15
+(itiddlywiki
+Tiddler
+p763
+(dp764
+g716
+VSeeing the island close, you get a new burst of energy.  You <<if $luke eq "yes">>and Luke <<endif>>row confidently towards the island.\u000a\u000aYou aren't quite there yet, but it is close now.\u000a\u000a[[Row to the small island|Almost On Shore]]\u000a[[Row back toward the mainland|Out In The Ocean]]\u000a
+p765
+sg718
+(lp766
+sg720
+g23
+((I2013
+I11
+I27
+I16
+I57
+I50
+I2
+I331
+I0
+tp767
+(dp768
+tp769
+Rp770
+sg725
+g770
+sg726
+VToward The Small Island
+p771
+sbsa(dp772
+g12
+I00
+sg13
+(lp773
+F1130.0
+aF2110.0
+asg15
+(itiddlywiki
+Tiddler
+p774
+(dp775
+g716
+VYou row vigourously.  Suddenly, the waves seem much higher than before!  You keep rowing and aiming toward shore but it has suddenly become much more difficult, with the water churning and falling.  Just as you think you've got it made, the waves cause the boat to fall, and as it hits the water it smashes in to little pieces!\u000a\u000aWithout thinking about it, you swim towards the island.  You are surprised how quickly you find land - you must have been closer than you thought.  You walk up on to the beach.  It's not so cold that you fear for your life, and you attempt to make sense of the situation.  <<set $travel=1>>\u000a\u000a<<display 'On The Beach'>>
+p776
+sg718
+(lp777
+sg720
+g23
+((I2013
+I11
+I27
+I17
+I2
+I19
+I2
+I331
+I0
+tp778
+(dp779
+tp780
+Rp781
+sg725
+g781
+sg726
+VAlmost On Shore
+p782
+sbsa(dp783
+g12
+I00
+sg13
+(lp784
+F990.0
+aF1410.0
+asg15
+(itiddlywiki
+Tiddler
+p785
+(dp786
+S'text'
+p787
+V <<if $ogre neq "dead">>There is an ogre here glaring at you.  He carries a club about the size that you are, and moves in your direction poised to swing it at you as soon as you are close enough.\u000a\u000a[[Run back across the bridge|A maze of twisty passages, all alike]]\u000a[[Empty-handedly fight the ogre|Ogre Fight]]\u000a<<if $katana eq true>>\u000a[[Fight the ogre with the katana|Ogre Slice]]\u000a<<endif>><<if $throwingstars gte 1>>\u000a[[Throw stars at the the ogre|Ogre Fight]]\u000a<<endif>>\u000a<<else>>\u000aYou are in a room that looks like it was the den for a strange animal.  Tufts of fur adorn a corner that look like it was used for a bed; bones are piled in a corner.  There is a bridge of uncertain safety to the south.\u000a\u000a[[Cross the bridge|A maze of twisty passages, all alike]]\u000a<<endif>>
+p788
+sS'tags'
+p789
+(lp790
+sS'created'
+p791
+g23
+((I2013
+I11
+I27
+I18
+I45
+I40
+I2
+I331
+I0
+tp792
+(dp793
+tp794
+Rp795
+sS'modified'
+p796
+g795
+sS'title'
+p797
+VOgre Room
+p798
+sbsa(dp799
+g12
+I00
+sg13
+(lp800
+F430.0
+aF1970.0
+asg15
+(itiddlywiki
+Tiddler
+p801
+(dp802
+S'text'
+p803
+VYou tell the goblin not to hurt you, since you clearly have the upper hand.  The goblin doesn't understand your words, but he clearly knows you can defeat him, so you hope that he doesn't try anything.\u000a<<set $goblin="subdued">>\u000a<<display 'Goblin room'>>
+p804
+sS'tags'
+p805
+(lp806
+sS'created'
+p807
+g23
+((I2013
+I11
+I29
+I12
+I26
 I1
+I4
+I333
+I0
+tp808
+(dp809
+tp810
+Rp811
+sS'modified'
+p812
+g811
+sS'title'
+p813
+VShow Mercy
+p814
+sbsa(dp815
+g12
+I00
+sg13
+(lp816
+F430.0
+aF1830.0
+asg15
+(itiddlywiki
+Tiddler
+p817
+(dp818
+g803
+VLuke says "what do we do with the goblin now?  My spider can inject enough venom in to him if we need to kill him.  <<if $interview eq false>>Or we can quiz him but I'm not sure he knows our language.<<endif>>  Or we could just leave him here and hope he doesn't chase us, or do something more drastic if he does."\u000a[[Kill the goblin]]\u000a<<if $interview eq false>>\u000a[[Interrogate the goblin]]\u000a<<endif>>\u000a[[Allow the goblin to live|Show Mercy]]<<set $score=$score+5>><<endif>>
+p819
+sg805
+(lp820
+sg807
+g23
+((I2013
+I11
+I29
+I12
+I32
+I58
+I4
+I333
+I0
+tp821
+(dp822
+tp823
+Rp824
+sg812
+g824
+sg813
+VGoblin Defeat
+p825
+sbsa(dp826
+g12
+I00
+sg13
+(lp827
+F430.0
+aF1690.0
+asg15
+(itiddlywiki
+Tiddler
+p828
+(dp829
+g803
+VYou attempt to ruthlessly question the goblin, but unfortunately, not speaking a common language, this is futile.\u000a<<set $interview true>>\u000a<<display 'Goblin Defeat'>>\u000a
+p830
+sg805
+(lp831
+sg807
+g23
+((I2013
+I11
+I29
+I12
+I34
+I51
+I4
+I333
+I0
+tp832
+(dp833
+tp834
+Rp835
+sg812
+g835
+sg813
+VInterrogate the goblin
+p836
+sbsa(dp837
+g12
+I00
+sg13
+(lp838
+F430.0
+aF2110.0
+asg15
+(itiddlywiki
+Tiddler
+p839
+(dp840
+g803
+V<<set $goblin="dead">>\u000a<<display 'Goblin room'>>
+p841
+sg805
+(lp842
+sg807
+g23
+((I2013
+I11
+I29
+I12
+I36
+I34
+I4
+I333
+I0
+tp843
+(dp844
+tp845
+Rp846
+sg812
+g846
+sg813
+VKill the goblin
+p847
+sbsa(dp848
+g12
+I00
+sg13
+(lp849
+F1130.0
+aF1410.0
+asg15
+(itiddlywiki
+Tiddler
+p850
+(dp851
+S'text'
+p852
+V<<if $luke neq "yes">><<if $shield eq true>>The ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being where you were before, except without a useful shield this time.<<set $shield=false>>\u000a\u000a<<display 'Ogre Room'>><<else>> /% Shield else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You remember nothing else.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have been killed by an ogre.  Perhaps next time you should use a weapon or shield.  Your score is <<print $score +"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a<<endif>>  /% No shield endif %/\u000a<<else>> /% Else we have Luke %/\u000a<<if $shield eq true>>\u000aThe ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being \u000awhere you were before, except without a useful shield this time.\u000a\u000aWhile you were busy distracting the ogre, apparantly Luke was also busy.  Although you don't know what he did, as you brace yourself to get hit by that club again, the swing never comes, and the ogre falls down dead.<<set $ogre="dead">>\u000a\u000a"My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"\u000a[[Search for loot|Ogre Loot]]<<set $shield=false>><<else>> /% Sheild else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You black out.\u000a\u000aYou aren't sure how long you were out, but after a while you come to.  You open your eyes to see Luke highly concerned and glad that you are back to consiousness.  "I was getting really worried.  I realized I can't carry you out of here by myself!"  You don't quite feel right, but at least you are alive and are capable of self-mobilization.  "My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"<<set $ogre="dead">>\u000a\u000a[[Ogre Loot]]<<endif>> /% Shield endif %/ <<endif>> /%Luke endif %/
+p853
+sS'tags'
+p854
+(lp855
+sS'created'
+p856
+g23
+((I2013
+I11
+I29
+I13
+I44
+I44
+I4
+I333
+I0
+tp857
+(dp858
+tp859
+Rp860
+sS'modified'
+p861
+g860
+sS'title'
+p862
+VOgre Fight
+p863
+sbsa(dp864
+g12
+I00
+sg13
+(lp865
+F1270.0
+aF1410.0
+asg15
+(itiddlywiki
+Tiddler
+p866
+(dp867
+g852
+VYou explore the ogre dwelling a little more.  He wasn't doing too badly!  You find piles of gold coins and cash (yes currency!) in a small chest mixed in with his belongings.\u000a<<if $luke eq "yes">>You split the loot evenly with Luke, giving him 75 coins with ogre heads on them, keeping 75 for yourself.  You also split the cash evenly, giving him $200 and keeping $200 for yourself.<<set $money=$money+200>><<else>>You find 150 gold coins with ogre heads on them!  You also find $400!<<set $money=$money+400>><<endif>>\u000a\u000aYou now have $<<print $money+"">>. \u000a\u000a<<display 'Ogre Room'>>\u000a
+p868
+sg854
+(lp869
+sg856
+g23
+((I2013
+I11
+I29
+I14
+I3
+I44
+I4
+I333
+I0
+tp870
+(dp871
+tp872
+Rp873
+sg861
+g873
+sg862
+VOgre Loot
+p874
+sbsa(dp875
+g12
+I00
+sg13
+(lp876
+F1410.0
+aF1410.0
+asg15
+(itiddlywiki
+Tiddler
+p877
+(dp878
+g852
+V\u000aYou ineffectively wave the katana at the ogre.<<display 'Ogre Fight'>>
+p879
+sg854
+(lp880
+sg856
+g23
+((I2013
+I11
+I29
+I14
+I46
+I40
+I4
+I333
+I0
+tp881
+(dp882
+tp883
+Rp884
+sg861
+g884
+sg862
+VOgre Slice
+p885
+sbsa(dp886
+g12
+I00
+sg13
+(lp887
+F570.0
+aF2670.0
+asg15
+(itiddlywiki
+Tiddler
+p888
+(dp889
+g852
+V
+p890
+sg854
+(lp891
+sg856
+g23
+((I2013
+I11
+I29
+I15
+I18
+I45
+I4
+I333
+I0
+tp892
+(dp893
+tp894
+Rp895
+sg861
+g895
+sg862
+VA long hallway
+p896
+sbsa(dp897
+g12
+I01
+sg13
+(lp898
+F150.0
+aF2390.0
+asg15
+(itiddlywiki
+Tiddler
+p899
+(dp900
+g852
+VYou are in a cauldron.  It is filled with water, and is not too cold.  It's not bad, you could use a bath.  The goblin cuts up carrots and puts them in the water with you.  \u000a<<set $goblin = "making soup">>\u000a[[Say "aaahhh...  what's up, doc?"|In a Cauldron 2]]\u000a[[Eat a carrot|In a Cauldron 3]]\u000a
+p901
+sg854
+(lp902
+sg856
+g23
+((I2013
+I11
+I29
+I15
+I20
+I11
+I4
+I333
+I0
+tp903
+(dp904
+tp905
+Rp906
+sg861
+g906
+sg862
+VIn a Cauldron 1
+p907
+sbsa(dp908
+g12
+I00
+sg13
+(lp909
+F150.0
+aF2530.0
+asg15
+(itiddlywiki
+Tiddler
+p910
+(dp911
+S'text'
+p912
+VThe goblin clearly has no idea what you said, and continues.\u000a\u000aYou are in a cauldron.  It is filled with water, and is not quite warm.  The goblin cuts up some onions and puts them in the water with you.  \u000a\u000a[[Say "There must be some misunderstanding!"|In a Cauldron 4]]\u000a[[Wait for the next more edible thing|In a Cauldron 8]]\u000a
+p913
+sS'tags'
+p914
+(lp915
+sS'created'
+p916
+g23
+((I2013
+I11
+I29
+I15
+I20
+I11
+I4
+I333
+I0
+tp917
+(dp918
+tp919
+Rp920
+sS'modified'
+p921
+g920
+sS'title'
+p922
+VIn a Cauldron 2
+p923
+sbsa(dp924
+g12
+I00
+sg13
+(lp925
+F290.0
+aF2530.0
+asg15
+(itiddlywiki
+Tiddler
+p926
+(dp927
+S'text'
+p928
+VThe goblin is clearly amused by your antics.\u000a\u000aYou are in a cauldron.  It is filled with water, and is not quite warm.  The goblin cuts up some turnips and puts them in the water with you.  This time, he directly hands you a turnip.\u000a\u000a[[Eat a turnip|In a Cauldron 5]]\u000a[[Say "There must be some misunderstanding!"|In a Cauldron 4]]\u000a
+p929
+sS'tags'
+p930
+(lp931
+sS'created'
+p932
+g23
+((I2013
+I11
+I29
+I15
+I20
+I11
+I4
+I333
+I0
+tp933
+(dp934
+tp935
+Rp936
+sS'modified'
+p937
+g936
+sS'title'
+p938
+VIn a Cauldron 3
+p939
+sbsa(dp940
+g12
+I00
+sg13
+(lp941
+F150.0
+aF2670.0
+asg15
+(itiddlywiki
+Tiddler
+p942
+(dp943
+S'text'
+p944
+VThe goblin ignores your blabber, and continues.\u000a\u000aYou are in a cauldron.  It is filled with water, and is finally getting warm enough to be comfortable.  The goblin cuts up some onions and puts them in the water with you.  \u000a\u000a[[Say "Perhaps I can bargain with you?"|In a Cauldron 6]]\u000a[[Get out of the cauldron|Back in the Cauldron]]\u000a
+p945
+sS'tags'
+p946
+(lp947
+sS'created'
+p948
+g23
+((I2013
+I11
+I29
+I15
+I20
+I11
+I4
+I333
+I0
+tp949
+(dp950
+tp951
+Rp952
+sS'modified'
+p953
+g952
+sS'title'
+p954
+VIn a Cauldron 4
+p955
+sbsa(dp956
+g12
+I00
+sg13
+(lp957
+F1410.0
+aF570.0
+asg15
+(itiddlywiki
+Tiddler
+p958
+(dp959
+g852
+VGoing on a space adventure sounds like a great fun idea, but you don't really know how to get to outer space. <<if $leila eq "yes">>Leila says "I have no idea how to get to space, don't look at me!"<<endif>> You remember an art project, a bunch of kids made a giant slingshot.  Although it seems risky, perhaps that could get you in to space.  <<if $luke eq "yes">>Luke says, "Don't bother with a giant slingshot!  That's stupid and dangerous. I know of an aerospace company we can sneak in to their yard; perhaps they'll have something there.<<endif>><<if $leila eq "yes">>Leila suggests that you choose a different adventure, as giant slingshots may lead to premature death.<<endif>>\u000a\u000a[[Go to giant slingshot|Giant Slingshot]]\u000a<<if $luke eq "yes">>[[Go to aerospace yard|The yard of an aerospace company]]<<endif>>\u000a<<if $leila eq "yes">>[[Choose a different adventure|Choose Your Destiny]]<<endif>>
+p960
+sg854
+(lp961
+sg856
+g23
+((I2013
+I11
+I29
+I15
+I37
+I0
+I4
+I333
+I0
+tp962
+(dp963
+tp964
+Rp965
+sg861
+g965
+sg862
+VSpace Adventure
+p966
+sbsa(dp967
+g12
+I00
+sg13
+(lp968
+F290.0
+aF2670.0
+asg15
+(itiddlywiki
+Tiddler
+p969
+(dp970
+g852
+VYou munch on the turnip.  It's not nearly as tasty raw as the carrot was, but you appreciate the gesture.\u000a\u000aYou are in a cauldron.  It is filled with water, and is finally getting warm enough to be comfortable.  The goblin cuts up some onions and puts them in the water with you.  \u000a\u000a[[Eat a slice of onion, despite it not being handed to you|In a Cauldron 7]]\u000a[[Wait for the next more edible thing|In a Cauldron 8]]\u000a
+p971
+sg854
+(lp972
+sg856
+g23
+((I2013
+I11
+I29
+I15
+I37
+I36
+I4
+I333
+I0
+tp973
+(dp974
+tp975
+Rp976
+sg861
+g976
+sg862
+VIn a Cauldron 5
+p977
+sbsa(dp978
+g12
+I00
+sg13
+(lp979
+F10.0
+aF2810.0
+asg15
+(itiddlywiki
+Tiddler
+p980
+(dp981
+g852
+VYou attempt to get out of the cauldron.  The goblin whacks you with a leek, and seeing the ineffectiveness of that, hits you with a large gourd.  That stuns you just long enough for him to grab his knife and stab you repeatedly.  You aren't entirely certain what happens next, but you strongly suspect it involves him tossing you back in the cauldron, and becoming soup.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I believe protocol is to penalize points for such a case, but I am giggling so hard that all penalties are waived.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
+p982
+sg854
+(lp983
+sg856
+g23
+((I2013
+I11
+I29
+I15
+I38
+I14
+I4
+I333
+I0
+tp984
+(dp985
+tp986
+Rp987
+sg861
+g987
+sg862
+VBack in the Cauldron
+p988
+sbsa(dp989
+g12
+I00
+sg13
+(lp990
+F150.0
+aF2810.0
+asg15
+(itiddlywiki
+Tiddler
+p991
+(dp992
+g852
+VThe goblin still has no idea what you are saying.\u000a\u000aYou are in a cauldron.  It is filled with water, and is getting warm enough to start worrying about.  \u000a\u000a[[Continue to attempt to communicate with the goblin|Noisy Soup]]\u000a[[Search for bones in the soup|In a Cauldron 9]]\u000a[[Get out of the cauldron|Back in the Cauldron]]\u000a
+p993
+sg854
+(lp994
+sg856
+g23
+((I2013
+I11
+I29
+I15
+I52
+I40
+I4
+I333
+I0
+tp995
+(dp996
+tp997
+Rp998
+sg861
+g998
+sg862
+VIn a Cauldron 6
+p999
+sbsa(dp1000
+g12
+I00
+sg13
+(lp1001
+F290.0
+aF2810.0
+asg15
+(itiddlywiki
+Tiddler
+p1002
+(dp1003
+S'text'
+p1004
+VYou munch on the onion.  If you are going to get turned in to soup, at least you can inflict your onion breath on someone.\u000a\u000aYou are in a cauldron.  It is filled with water, and is getting warm enough to start worrying about.   \u000a\u000a[[Search for bones in the soup|In a Cauldron 9]]\u000a
+p1005
+sS'tags'
+p1006
+(lp1007
+sS'created'
+p1008
+g23
+((I2013
+I11
+I29
+I15
+I37
+I36
+I4
+I333
+I0
+tp1009
+(dp1010
+tp1011
+Rp1012
+sS'modified'
+p1013
+g1012
+sS'title'
+p1014
+VIn a Cauldron 7
+p1015
+sbsa(dp1016
+g12
+I00
+sg13
+(lp1017
+F1550.0
+aF430.0
+asg15
+(itiddlywiki
+Tiddler
+p1018
+(dp1019
+g852
+VYou approach the giant slingshot.  Fortunately these artists did such a nice recreation of a smaller slingshot such that it should actually function as a slingshot.  This doesn't really make it that easy.<<if $leila eq "yes">>You suggest that you could put Leila in the slingshot, and you will pull, but Leila says "absolutely not".  And Leila is not strong enough for her to pull the slingshot such that you would be able to get far.<<endif>><<if $luke eq "yes">>Luke says that he will pull on the slingshot, if you get in it. When you make the reverse offer, he says "I am not that stupid." <<else>> You ask around the area, looking for someone who will help you slingshot off to space.  While most of the people just think you are insane, there is a homeless guy who looks strong enough to do it, who is just thrilled by the idea.<<endif>>\u000a\u000a[[Slingshot to space]]\u000a<<ifdef $leila eq "yes">>[[Listen to Leila's advice and choose another adventure|Choose Your Destiny]]<<endif>>\u000a<<ifdef $luke eq "yes">>[[Listen to Luke's advice and choose another adventure|Choose Your Destiny]]\u000a[[Listen to Luke's advice and explore the aerospace company|The yard of an aerospace company]]\u000a<<endif>>
+p1020
+sg854
+(lp1021
+sg856
+g23
+((I2013
+I11
+I29
+I16
+I4
+I23
+I4
+I333
+I0
+tp1022
+(dp1023
+tp1024
+Rp1025
+sg861
+g1025
+sg862
+VGiant Slingshot
+p1026
+sbsa(dp1027
+g12
+I00
+sg13
+(lp1028
+F1690.0
+aF430.0
+asg15
+(itiddlywiki
+Tiddler
+p1029
+(dp1030
+g852
+VYou get in the giant slingshot as <<ifdef $luke eq "yes">>luke<<else>>a homeless person<<endif>> pulls as hard as he can on the slingshot.  As it is pulled to brink of breaking, he lets go, and you are flung across the countryside.\u000a\u000a* *** You have died ***<<$score=$score+12>>\u000a\u000aIt seems you have collided with the earth at high velocity.  While the earth is in space, it's not quite what people mean when they say they are looking for a Space Adventure.  However, I have to give you extra points for trying.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.
+p1031
+sg854
+(lp1032
+sg856
+g23
+((I2013
+I11
+I29
+I16
+I12
+I25
+I4
+I333
+I0
+tp1033
+(dp1034
+tp1035
+Rp1036
+sg861
+g1036
+sg862
+VSlingshot to space
+p1037
+sbsa(dp1038
+g12
+I00
+sg13
+(lp1039
+F1550.0
+aF570.0
+asg15
+(itiddlywiki
+Tiddler
+p1040
+(dp1041
+g852
+VLuke knows a shortcut through the woods that leads to the back yard of an aerospace company.  
+p1042
+sg854
+(lp1043
+sg856
+g23
+((I2013
+I11
+I29
+I16
+I15
+I46
+I4
+I333
+I0
+tp1044
+(dp1045
+tp1046
+Rp1047
+sg861
+g1047
+sg862
+VThe yard of an aerospace company
+p1048
+sbsa(dp1049
+g12
+I00
+sg13
+(lp1050
+F10.0
+aF2950.0
+asg15
+(itiddlywiki
+Tiddler
+p1051
+(dp1052
+g852
+VYou continue trying to talk to the goblin.  He continues ignoring you, continuing to cook you, seasoning you appropriately, and keeping on.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  The goblin has found you quite tasty and passes this recipe on to his friends under the name of "Noisy Soup".  Hopefully more adventurers come in to his lair so that his friends can recreate this recipe. Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
+p1053
+sg854
+(lp1054
+sg856
+g23
+((I2013
+I11
+I29
+I16
+I20
+I26
+I4
+I333
+I0
+tp1055
+(dp1056
+tp1057
+Rp1058
+sg861
+g1058
+sg862
+VNoisy Soup
+p1059
+sbsa(dp1060
+g12
+I00
+sg13
+(lp1061
+F430.0
+aF2810.0
+asg15
+(itiddlywiki
+Tiddler
+p1062
+(dp1063
+g852
+VYou wait for something more edible, but now the goblin is cutting up leafy things.  I suppose you could knibble on the kale or something, but it's not as satisfying as a carrot.\u000a\u000aYou are in a cauldron.  It is filled with water, and is getting warm enough to start worrying about.  \u000a\u000a[[Continue waiting for tasty bits|Waited too long]]\u000a[[Search for bones in the soup|In a Cauldron 9]]\u000a
+p1064
+sg854
+(lp1065
+sg856
+g23
+((I2013
+I11
+I29
+I16
+I25
+I3
+I4
+I333
+I0
+tp1066
+(dp1067
+tp1068
+Rp1069
+sg861
+g1069
+sg862
+VIn a Cauldron 8
+p1070
+sbsa(dp1071
+g12
+I00
+sg13
+(lp1072
+F290.0
+aF2950.0
+asg15
+(itiddlywiki
+Tiddler
+p1073
+(dp1074
+g852
+VBeing as you are the soup bones, you don't expect to find any in here, but you dive to the bottom and look around a little.  You don't find anything but the vegetables.  You cause some splashes  and spill some water out of the cauldron, which cause the goblin to say something to you in his funny goblin language in a tone that clearly means "stop that, you!".\u000a\u000a[[Contine being a mermaid and explore the cauldron|Mermaid time!]]\u000a[[Stop splashing and behave]
+p1075
+sg854
+(lp1076
+sg856
+g23
+((I2013
+I11
+I29
+I16
+I27
+I53
+I4
+I333
+I0
+tp1077
+(dp1078
+tp1079
+Rp1080
+sg861
+g1080
+sg862
+VIn a Cauldron 9
+p1081
+sbsa(dp1082
+g12
+I00
+sg13
+(lp1083
+F430.0
+aF2950.0
+asg15
+(itiddlywiki
+Tiddler
+p1084
+(dp1085
+g852
+VYou patiently wait for something tasty to come in to the soup.  As you wait, you get tired, maybe dizzy, and you aren't entirely certain if you've remained concious.  The water gets warmer, maybe even hot?  \u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I am not certain, but if the goblin's demeaner shows anything, I believe you were quite tasty.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
+p1086
+sg854
+(lp1087
+sg856
+g23
+((I2013
+I11
+I29
+I16
+I28
+I31
+I4
+I333
+I0
+tp1088
+(dp1089
+tp1090
+Rp1091
+sg861
+g1091
+sg862
+VWaited too long
+p1092
+sbsa(dp1093
+g12
+I00
+sg13
+(lp1094
+F290.0
+aF3090.0
+asg15
+(itiddlywiki
+Tiddler
+p1095
+(dp1096
+g852
+VYou dive again, searching out all the nooks and the crannies of the cauldron, which as expected, doesn't really have any.  You break the surface of the water as fast as possible, like a dolphin, crash land on your back, and then take a big mouthful of water, and sploosh it out in the air like a whale!\u000a\u000aWater is everywhere.\u000a\u000aThe goblin is clearly agitated.  He is screaming at you in his language, which you still are not fluent in.  \u000a\u000a[[More splashing!]]\u000a[[Get out of the cauldron|Out of the Cauldron]]\u000a
+p1097
+sg854
+(lp1098
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I8
+I16
+I4
+I333
+I0
+tp1099
+(dp1100
+tp1101
+Rp1102
+sg861
+g1102
+sg862
+VMermaid time!
+p1103
+sbsa(dp1104
+g12
+I00
+sg13
+(lp1105
+F290.0
+aF3230.0
+asg15
+(itiddlywiki
+Tiddler
+p1106
+(dp1107
+g852
+VYou splash about more, and the water level is getting notably lower now.  The goblin now has his knife and is ready to get violent with it.\u000a\u000a[[Get out of the cauldron and run away|Leave the soup kitchen]]\u000a[[Prepare to get violent back at the goblin|Fight the goblin... again?]]\u000a
+p1108
+sg854
+(lp1109
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I21
+I40
+I4
+I333
+I0
+tp1110
+(dp1111
+tp1112
+Rp1113
+sg861
+g1113
+sg862
+VMore splashing!
+p1114
+sbsa(dp1115
+g12
+I00
+sg13
+(lp1116
+F430.0
+aF3090.0
+asg15
+(itiddlywiki
+Tiddler
+p1117
+(dp1118
+g852
+VYou get out of the cauldron and you realize the goblin is not near his knife or other weapons.  The other goblin has not yet noticed you, and you might have some time here.\u000a\u000a[[Fight the goblin|Fight the goblin... again?]]\u000a[[Leave the room|Leave the soup kitchen]]\u000a
+p1119
+sg854
+(lp1120
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I22
+I58
+I4
+I333
+I0
+tp1121
+(dp1122
+tp1123
+Rp1124
+sg861
+g1124
+sg862
+VOut of the Cauldron
+p1125
+sbsa(dp1126
+g12
+I00
+sg13
+(lp1127
+F430.0
+aF3370.0
+asg15
+(itiddlywiki
+Tiddler
+p1128
+(dp1129
+g852
+VYou get ready for combat, but did you forget there was another goblin in this room?  It doesn't matter, I think last time it was well illustrated that you are not good at fighting goblins, and this time they don't let you live so that you won't interfere with thier soup making.\u000a\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  At least you fought valiantly to not become soup.  Unfortunately, your ability with fighting is not that great.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
+p1130
+sg854
+(lp1131
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I24
+I55
+I4
+I333
+I0
+tp1132
+(dp1133
+tp1134
+Rp1135
+sg861
+g1135
+sg862
+VFight the goblin... again?
+p1136
+sbsa(dp1137
+g12
+I00
+sg13
+(lp1138
+F570.0
+aF3230.0
+asg15
+(itiddlywiki
+Tiddler
+p1139
+(dp1140
+g852
+VYou run out of the room.  \u000a\u000a<<display 'A long hallway'>>
+p1141
+sg854
+(lp1142
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I29
+I2
+I4
+I333
+I0
+tp1143
+(dp1144
+tp1145
+Rp1146
+sg861
+g1146
+sg862
+VLeave the soup kitchen
+p1147
+sbsa(dp1148
+g12
+I00
+sg13
+(lp1149
+F1550.0
+aF2670.0
+asg15
+(itiddlywiki
+Tiddler
+p1150
+(dp1151
+g852
+VYou are in a small room, notably chillier than what you have been used to.  The ceiling is high, and there is some light indicating that there is something up there.\u000a\u000aThere is a door to the west.\u000a\u000a[[Go through the door|A long hallway]]\u000a
+p1152
+sg854
+(lp1153
+sg856
+g23
+((I2013
+I11
+I29
+I17
+I31
+I0
+I4
+I333
+I0
+tp1154
+(dp1155
+tp1156
+Rp1157
+sg861
+g1157
+sg862
+VA cold room
+p1158
+sbsasS'scale'
+p1159
+F0.60000000000000009
 ss.
