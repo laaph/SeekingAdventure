@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="file:///Users/stanza/Dropbox/Public/GameJams/2013-11-24%2520-%2520CharityGameJam/charity-d.html" />
+<title>ToSpaceAdventure</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ToSpaceAdventure</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>file:///Users/stanza/Dropbox/Public/GameJams/2013-11-24%20-%20CharityGameJam/charity-d.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Keep your friends close, and your enemies closer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Lucky Luke the Leprechaun and his Steampunk Spider</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Acceptance</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Space Adventure</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=Outside the yard of an aerospace company</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
