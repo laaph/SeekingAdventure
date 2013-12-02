@@ -34,7 +34,7 @@ p16
 (dp17
 S'text'
 p18
-V<<set $money=100>><<set $score=0>><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstars=0>>You have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "c">><<endsilently>>\u000a[img[TURBO.png]]\u000a\u000a
+VYou have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "c">><<endsilently>>\u000a[img[TURBO.png]]\u000a<<display 'Initialize Variables'>>\u000a
 p19
 sS'tags'
 p20
@@ -262,7 +262,7 @@ Tiddler
 p88
 (dp89
 g18
-V<<display 'Initialize Variables'>>Now it is time to choose your adventure.  You can go to -\u000a\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Space Adventure]]
+VNow it is time to choose your adventure.  You can go to -\u000a\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Space Adventure]]
 p90
 sg20
 (lp91
@@ -1870,7 +1870,7 @@ Tiddler
 p577
 (dp578
 g486
-V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin="hungry">>\u000a<<set $ogre="angry">>\u000a<<set $mongoose="hungry">>\u000a<<set $leilacarried=false>>\u000a<<set $guard=Math.floor(Math.random()*6)>\u000a<<set $okay=true>>\u000a<<set $sitting=false>>\u000a<<endsilently>>\u000a
+V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin="hungry">>\u000a<<set $ogre="angry">>\u000a<<set $mongoose="hungry">>\u000a<<set $leilacarried=false>>\u000a<<set $guard=Math.floor(Math.random()*6)>\u000a<<set $okay=true>>\u000a<<set $sitting=false>>\u000a<<set $first3=true>>\u000a<<set $first4=true>>\u000a<<set $coins=0>>\u000a<<set $money=100>>\u000a<<set $score=0>>\u000a<<set $katana=false>>\u000a<<set $shield=false>>\u000a<<set $leather=false>>\u000a<<set $throwingstars=0>>\u000a<<set $goldegg=false>>\u000a<<endsilently>>\u000a
 p579
 sg488
 (lp580
@@ -2282,7 +2282,7 @@ Tiddler
 p703
 (dp704
 g590
-VYour boat is tied to the hitch at the bird sanctuary.  You can see majestic birds off in the distance, but it's really not the same without binoculars.\u000a\u000a<<if $leila eq "yes">>Leila is beside herself in awe of the birds.  It is clear she wants to go on the island for a closer look.<<endif>>\u000a<<if $luke eq "yes">> Luke clearly doesn't think much of the birds and is waiting for you to do something interesting.<<endif>>\u000a\u000a[[Go on shore|Disembark]]\u000a[[Unhitch and row out to sea|Out In The Ocean]]\u000a
+VYour boat is tied to the hitch at the bird sanctuary.  You can see majestic birds off in the distance, but it's really not the same without binoculars.\u000a<<if $leila eq "yes">>\u000aLeila is beside herself in awe of the birds.  It is clear she wants to go on the island for a closer look.<<endif>><<if $luke eq "yes">>\u000aLuke clearly doesn't think much of the birds and is waiting for you to do something interesting.<<endif>>\u000a[[Go on shore|Disembark]]\u000a[[Unhitch and row out to sea|Out In The Ocean]]\u000a
 p705
 sg592
 (lp706
@@ -2783,7 +2783,7 @@ Tiddler
 p866
 (dp867
 g852
-VYou explore the ogre dwelling a little more.  He wasn't doing too badly!  You find piles of gold coins and cash (yes currency!) in a small chest mixed in with his belongings.\u000a<<if $luke eq "yes">>You split the loot evenly with Luke, giving him 75 coins with ogre heads on them, keeping 75 for yourself.  You also split the cash evenly, giving him $200 and keeping $200 for yourself.<<set $money=$money+200>><<else>>You find 150 gold coins with ogre heads on them!  You also find $400!<<set $money=$money+400>><<endif>>\u000a\u000aYou now have $<<print $money+"">>. \u000a\u000a<<display 'Ogre Room'>>\u000a
+VYou explore the ogre dwelling a little more.  He wasn't doing too badly!  You find piles of gold coins and cash (yes currency!) in a small chest mixed in with his belongings.\u000a<<if $luke eq "yes">>You split the loot evenly with Luke, giving him 75 coins with ogre heads on them, keeping 75 for yourself.  You also split the cash evenly, giving him $200 and keeping $200 for yourself.<<set $money=$money+200>><<set $coins=$coins+75>><<else>>You find 150 gold coins with ogre heads on them!  You also find $400!<<set $money=$money+400>><<set $coins=$coins+150>><<endif>>\u000a\u000aYou now have $<<print $money+"">>. \u000a\u000a<<display 'Ogre Room'>>\u000a
 p868
 sg854
 (lp869
@@ -2850,7 +2850,7 @@ I00
 sg13
 (lp887
 F570.0
-aF2670.0
+aF2810.0
 asg15
 (itiddlywiki
 Tiddler
@@ -3131,7 +3131,7 @@ Tiddler
 p980
 (dp981
 g852
-VYou attempt to get out of the cauldron.  The goblin whacks you with a leek, and seeing the ineffectiveness of that, hits you with a large gourd.  That stuns you just long enough for him to grab his knife and stab you repeatedly.  You aren't entirely certain what happens next, but you strongly suspect it involves him tossing you back in the cauldron, and becoming soup.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I believe protocol is to penalize points for such a case, but I am giggling so hard that all penalties are waived.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
+VYou attempt to get out of the cauldron.  The goblin whacks you with a leek, and seeing the ineffectiveness of that, hits you with a large gourd.  That stuns you just long enough for him to grab his knife and stab you repeatedly.  You aren't entirely certain what happens next, but you strongly suspect it involves him tossing you back in the cauldron, and becoming soup.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I believe protocol is to penalize points for such a case, but in this case I will waive all penalties.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
 p982
 sg854
 (lp983
@@ -3617,7 +3617,7 @@ Tiddler
 p1128
 (dp1129
 g852
-VYou get ready for combat, but did you forget there was another goblin in this room?  It doesn't matter, I think last time it was well illustrated that you are not good at fighting goblins, and this time they don't let you live so that you won't interfere with thier soup making.\u000a\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  At least you fought valiantly to not become soup.  Unfortunately, your ability with fighting is not that great.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
+VYou get ready for combat, but did you forget there was another goblin in this room?  It doesn't matter, I think last time it was well illustrated that you are not good at fighting goblins, and this time they don't let you live so that you won't interfere with their soup making.\u000a\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  At least you fought valiantly to not become soup.  Unfortunately, your ability with fighting is not that great.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
 p1130
 sg854
 (lp1131
@@ -3684,7 +3684,7 @@ I00
 sg13
 (lp1149
 F1550.0
-aF2670.0
+aF2810.0
 asg15
 (itiddlywiki
 Tiddler
@@ -3721,14 +3721,14 @@ I00
 sg13
 (lp1160
 F710.0
-aF2810.0
+aF3090.0
 asg15
 (itiddlywiki
 Tiddler
 p1161
 (dp1162
 g852
-VAs you go down the ladder, you realize that this ladder is not safe.  In fact, the ladder crumbles as you are holding on to it and you fall down!  You don't hurt yourself too badly as you pick yourself up.  <<if $leila eq "yes">>Leila fashions herself into a parachute again and follows you down.<<endif>><<if $luke eq "yes">>Luke follows you down, jumping parts and being carefully not to hurt himself.<<endif>>\u000a\u000a<<display 'Dark passageway'>>\u000a
+VAs you go down the ladder, you realize that this ladder is not safe.  In fact, the ladder crumbles as you are holding on to it and you fall down!  You don't hurt yourself too badly as you pick yourself up.  <<if $leila eq "yes">>Leila fashions herself into a parachute and follows you down.<<endif>><<if $luke eq "yes">>Luke follows you down, jumping parts and being carefully not to hurt himself.<<endif>>\u000a\u000a<<display 'Dark passageway'>>\u000a<<silently>>\u000a<<set $dragon="sleeping">>\u000a<<set $chain="north">>\u000a<<set $switch="down">>\u000a<<endsilently>>
 p1163
 sg854
 (lp1164
@@ -3758,14 +3758,14 @@ I00
 sg13
 (lp1171
 F850.0
-aF2810.0
+aF3090.0
 asg15
 (itiddlywiki
 Tiddler
 p1172
 (dp1173
 g852
-V\u000aYou are in a dark twisty tunnel.  Ahead you smell sulfur.  You are not aware of any other direction you can go.\u000a\u000a[[To Be Continued...|Dragon room]]
+V\u000aYou are in a dark twisty tunnel.  Ahead you smell sulfur.  You are not aware of any other direction you can go.\u000a\u000a[[Continue|Dragon Room, north]]
 p1174
 sg854
 (lp1175
@@ -3876,7 +3876,7 @@ Tiddler
 p1205
 (dp1206
 g852
-VYou are on the shore of a bird sanctuary
+VYou are on the shore of a bird sanctuary.  Despite people not being allowed here, there are clear paths north and west.\u000a\u000a[[North|North side of bird sanctuary]]\u000a[[West|West side of bird sanctuary]]\u000a[[Return to boat|Tied To The Hitch At The Bird Sanctuary]]\u000a
 p1207
 sg854
 (lp1208
@@ -4187,7 +4187,7 @@ Tiddler
 p1308
 (dp1309
 g1234
-VNorth Yard 2 3\u000aMid Yard   1 4 5\u000aSouth Yard 0 6 \u000a\u000a<<set $guard=1>>
+VThe following numbers indicate when the guard is where.\u000a\u000aNorth Yard 2 3\u000aMid Yard   1 4 5\u000aSouth Yard 0 6 \u000a\u000aWe <<set $guard=1>> at the beginning, which seems to time it perfectly.
 p1310
 sg1236
 (lp1311
@@ -5065,7 +5065,641 @@ sS'title'
 p1597
 VTake the drink
 p1598
+sbsa(dp1599
+g12
+I00
+sg13
+(lp1600
+F850.0
+aF2670.0
+asg15
+(itiddlywiki
+Tiddler
+p1601
+(dp1602
+g1234
+V<<if $first4 eq true>>As you come to the north side of the sanctuary, the birds just flee their nests.  Never have you seen so many birds just fly off to the sky.  Hopefully they don't alert anyone to your presence.\u000a<<set $first4=false>><<endif>><<if $goldegg eq false>>\u000aIn a nest close to the path, you see a beautiful adorned golden egg.\u000a<<endif>>\u000aYou are on the west side of the bird sanctuary.  You can go to the north side, or back to the shore.<<endif>>\u000a\u000a[[West|West side of bird sanctuary]]\u000a[[Back to the shore|On the shore of the bird sanctuary]]\u000a<<if $goldegg eq false>>[[Take the gold egg]]<<endif>>\u000a
+p1603
+sg1236
+(lp1604
+sg1238
+g23
+((I2013
+I12
+I1
+I14
+I2
+I45
+I6
+I335
+I0
+tp1605
+(dp1606
+tp1607
+Rp1608
+sg1243
+g1608
+sg1244
+VNorth side of bird sanctuary
+p1609
+sbsa(dp1610
+g12
+I00
+sg13
+(lp1611
+F990.0
+aF2530.0
+asg15
+(itiddlywiki
+Tiddler
+p1612
+(dp1613
+S'text'
+p1614
+V<<if $first3 eq true>>As you come around the west side of the bird sanctuary, you suddenly notice that different types of birds are on the opposite sides of path.  In fact, it even seems that they are glaring at each other, taunting each other, daring each other to cross imaginary lines.\u000a\u000aAt the end of the path, there is a picnic table.  On this picnic table, a Jet and a Shark have made their nest.  As you approach, they fly off.\u000a<<set $first3=false>><<endif>>You are on the west side of the bird sanctuary.  You can go to the north side, or back to the shore.<<endif>>\u000a\u000a[[North|North side of bird sanctuary]]\u000a[[Back to the shore|On the shore of the bird sanctuary]]\u000a
+p1615
+sS'tags'
+p1616
+(lp1617
+sS'created'
+p1618
+g23
+((I2013
+I12
+I1
+I14
+I2
+I45
+I6
+I335
+I0
+tp1619
+(dp1620
+tp1621
+Rp1622
+sS'modified'
+p1623
+g1622
+sS'title'
+p1624
+VWest side of bird sanctuary
+p1625
+sbsa(dp1626
+g12
+I00
+sg13
+(lp1627
+F990.0
+aF2670.0
+asg15
+(itiddlywiki
+Tiddler
+p1628
+(dp1629
+g1234
+VYou take the gold egg.  It's hard to believe that a bird made this, it is so intricately adorned.<<set $goldegg=true>>\u000a\u000a<<display 'North side of bird sanctuary'>>
+p1630
+sg1236
+(lp1631
+sg1238
+g23
+((I2013
+I12
+I1
+I14
+I17
+I57
+I6
+I335
+I0
+tp1632
+(dp1633
+tp1634
+Rp1635
+sg1243
+g1635
+sg1244
+VTake the gold egg
+p1636
+sbsa(dp1637
+g12
+I00
+sg13
+(lp1638
+F1130.0
+aF3090.0
+asg15
+(itiddlywiki
+Tiddler
+p1639
+(dp1640
+g1234
+V<<set $here="Dragon Room, north">>You are in the north side of a large cavern.  <<if $chain eq "north">>There is a large chain on the floor here.  <<endif>><<display 'dragon status'>>\u000a\u000aYou can go\u000a[[East|Dragon Room, east]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[West|Dragon Room, west]]\u000a<<if $chain eq "north">>[[Take chain]]\u000a<<endif>><<if $dragon eq "north">><<display 'dragon options'>><<endif>>
+p1641
+sg1236
+(lp1642
+sg1238
+g23
+((I2013
+I12
+I1
+I14
+I59
+I29
+I6
+I335
+I0
+tp1643
+(dp1644
+tp1645
+Rp1646
+sg1243
+g1646
+sg1244
+VDragon Room, north
+p1647
+sbsa(dp1648
+g12
+I00
+sg13
+(lp1649
+F1130.0
+aF3370.0
+asg15
+(itiddlywiki
+Tiddler
+p1650
+(dp1651
+g1234
+V<<set $here="Dragon Room, center">>You are in the center of the cavern of the dragon.<<display 'dragon status'>>\u000a\u000a[[North|Dragon Room, north]]\u000a[[East|Dragon Room, east]]\u000a[[South|Dragon Room, south]]\u000a[[West|Dragon Room, west]]\u000a<<if $dragon eq "sleeping" or $dragon eq "center">><<display 'dragon options'>><<endif>>
+p1652
+sg1236
+(lp1653
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I0
+I39
+I6
+I335
+I0
+tp1654
+(dp1655
+tp1656
+Rp1657
+sg1243
+g1657
+sg1244
+VDragon Room, center
+p1658
+sbsa(dp1659
+g12
+I00
+sg13
+(lp1660
+F1410.0
+aF3370.0
+asg15
+(itiddlywiki
+Tiddler
+p1661
+(dp1662
+g1234
+V<<set $here="Dragon Room, east">>You are in the east side of a large cavern.  There is a large switch here, currently pointed <<print $switch>>.  <<display 'dragon status'>>\u000a\u000a[[North|Dragon Room, north]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[South|Dragon Room, south]]\u000a[[Flip switch]]\u000a<<if $dragon eq "east">><<display 'dragon options'>><<endif>>
+p1663
+sg1236
+(lp1664
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I0
+I42
+I6
+I335
+I0
+tp1665
+(dp1666
+tp1667
+Rp1668
+sg1243
+g1668
+sg1244
+VDragon Room, east
+p1669
+sbsa(dp1670
+g12
+I00
+sg13
+(lp1671
+F850.0
+aF3370.0
+asg15
+(itiddlywiki
+Tiddler
+p1672
+(dp1673
+g1234
+V<<set $here="Dragon Room, west">>You are in the west side of a large cavern.  <<display 'dragon status'>><<if $switch eq "down">>There is a large hook here, hanging from the ceiling by a thin cord.  <<endif>>\u000a\u000a[[North|Dragon Room, north]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[South|Dragon Room, south]]\u000a<<if $switch eq "down">>[[Climb cord]]\u000a<<endif>><<if $dragon eq "west">><<display 'dragon options'>><<endif>>
+p1674
+sg1236
+(lp1675
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I0
+I45
+I6
+I335
+I0
+tp1676
+(dp1677
+tp1678
+Rp1679
+sg1243
+g1679
+sg1244
+VDragon Room, west
+p1680
+sbsa(dp1681
+g12
+I00
+sg13
+(lp1682
+F1130.0
+aF3650.0
+asg15
+(itiddlywiki
+Tiddler
+p1683
+(dp1684
+g1234
+V<<set $here="Dragon Room, south">>You are in the south side of a large cavern.  <<display 'dragon status'>>\u000aYou see a strange antique lamp here.\u000a\u000aYou can go\u000a[[East|Dragon Room, east]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[West|Dragon Room, west]]\u000a[[Rub the lamp]]\u000a<<if $dragon eq "south">><<display 'dragon options'>><<endif>>
+p1685
+sg1236
+(lp1686
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I0
+I48
+I6
+I335
+I0
+tp1687
+(dp1688
+tp1689
+Rp1690
+sg1243
+g1690
+sg1244
+VDragon Room, south
+p1691
+sbsa(dp1692
+g12
+I00
+sg13
+(lp1693
+F1410.0
+aF3090.0
+asg15
+(itiddlywiki
+Tiddler
+p1694
+(dp1695
+g1234
+V<<if $dragon eq "sleeping">>There is a large dragon sleeping in the center of the cavern.  <<endif>><<if $dragon eq "north" and $here neq "Dragon Room, north">>The dragon is in the north of the room, heading east.<<set $f=false>><<set $dragon="east">><<endif>><<if $dragon eq "north" and $here eq "Dragon Room, north">>The dragon is here in the north with you.  You do not feel safe.<<set $f=true>><<endif>>
+p1696
+sg1236
+(lp1697
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I9
+I57
+I6
+I335
+I0
+tp1698
+(dp1699
+tp1700
+Rp1701
+sg1243
+g1701
+sg1244
+Vdragon status
+p1702
+sbsa(dp1703
+g12
+I00
+sg13
+(lp1704
+F1270.0
+aF3790.0
+asg15
+(itiddlywiki
+Tiddler
+p1705
+(dp1706
+g1234
+VYou rub the lamp, and the world blurs and you get disoriented.\u000a\u000a...<<set $hastreasures=false>><<set $score=$score+20>>\u000a\u000aYou wake up to find yourself at your house.  <<if $goldegg eq true or $coins gt 0>>After verifying that you seem to be okay, or at least no worse for the wear, you realize that you still have all you treasures!<<set $hastreasures=true>>\u000a\u000a* *** Your adventure was successful ***\u000a\u000a<<if $dragon eq "dead>>You defeated the dragon.  <<endif>>You managed to have an adventure, and make it home alive.  <<if $hastreasures eq true>>You even managed to make it back with some treasures!  <<endif>>Your score is <<print $score+"">> out of 100.\u000a\u000aCongratulations!  To try again, click "Restart" on the left.
+p1707
+sg1236
+(lp1708
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I13
+I57
+I6
+I335
+I0
+tp1709
+(dp1710
+tp1711
+Rp1712
+sg1243
+g1712
+sg1244
+VRub the lamp
+p1713
+sbsa(dp1714
+g12
+I00
+sg13
+(lp1715
+F1410.0
+aF3650.0
+asg15
+(itiddlywiki
+Tiddler
+p1716
+(dp1717
+g1234
+V<<if $katana eq true>>[[Stab the dragon with the katana]]<<endif>>\u000a<<if $throwingstars gt 0>>[[Throw stars at the dragon]]<<endif>>\u000a
+p1718
+sg1236
+(lp1719
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I23
+I21
+I6
+I335
+I0
+tp1720
+(dp1721
+tp1722
+Rp1723
+sg1243
+g1723
+sg1244
+Vdragon options
+p1724
+sbsa(dp1725
+g12
+I00
+sg13
+(lp1726
+F1130.0
+aF2950.0
+asg15
+(itiddlywiki
+Tiddler
+p1727
+(dp1728
+g1234
+VYou take the chain.  <<set $chain="taken">>\u000a\u000a<<display 'Dragon Room, north'>>
+p1729
+sg1236
+(lp1730
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I46
+I42
+I6
+I335
+I0
+tp1731
+(dp1732
+tp1733
+Rp1734
+sg1243
+g1734
+sg1244
+VTake chain
+p1735
+sbsa(dp1736
+g12
+I00
+sg13
+(lp1737
+F1550.0
+aF3370.0
+asg15
+(itiddlywiki
+Tiddler
+p1738
+(dp1739
+g1234
+V<<if $switch eq "down">>You flip the switch up.<<set $switch="up">><<endif>><<if $switch eq "up">>You flip the switch down.<<set $switch="down">><<endif>>\u000a\u000a<<display 'Dragon Room, east'>>
+p1740
+sg1236
+(lp1741
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I50
+I26
+I6
+I335
+I0
+tp1742
+(dp1743
+tp1744
+Rp1745
+sg1243
+g1745
+sg1244
+VFlip switch
+p1746
+sbsa(dp1747
+g12
+I00
+sg13
+(lp1748
+F710.0
+aF3370.0
+asg15
+(itiddlywiki
+Tiddler
+p1749
+(dp1750
+g1234
+VYou attempt to climb the cord, but it is far too thin to be easily climbed.\u000a\u000a<<display 'Dragon Room, west'>>
+p1751
+sg1236
+(lp1752
+sg1238
+g23
+((I2013
+I12
+I1
+I15
+I53
+I59
+I6
+I335
+I0
+tp1753
+(dp1754
+tp1755
+Rp1756
+sg1243
+g1756
+sg1244
+VClimb cord
+p1757
+sbsa(dp1758
+g12
+I00
+sg13
+(lp1759
+F1550.0
+aF3650.0
+asg15
+(itiddlywiki
+Tiddler
+p1760
+(dp1761
+g1234
+V<<if $dragon eq "sleeping">>You slam your katana in to the dragon as hard as you can.  You succeed in getting your katana stuck in the dragon scales, and the dragon wakes up, looks at you, and starts running about!  He runs to the north of the cavern.<<set $katana=false>><<set $dragon="north">><<endif>><<print tale.get($here).text>>
+p1762
+sg1236
+(lp1763
+sg1238
+g23
+((I2013
+I12
+I1
+I19
+I9
+I38
+I6
+I335
+I0
+tp1764
+(dp1765
+tp1766
+Rp1767
+sg1243
+g1767
+sg1244
+VStab the dragon with the katana
+p1768
+sbsa(dp1769
+g12
+I00
+sg13
+(lp1770
+F1550.0
+aF3090.0
+asg15
+(itiddlywiki
+Tiddler
+p1771
+(dp1772
+g1234
+V
+p1773
+sg1236
+(lp1774
+sg1238
+g23
+((I2013
+I12
+I1
+I19
+I25
+I46
+I6
+I335
+I0
+tp1775
+(dp1776
+tp1777
+Rp1778
+sg1243
+g1778
+sg1244
+Vdragon fight
+p1779
+sbsa(dp1780
+g12
+I00
+sg13
+(lp1781
+F1410.0
+aF2950.0
+asg15
+(itiddlywiki
+Tiddler
+p1782
+(dp1783
+g1234
+V$f is used to indicate if the dragon starts a fight with the player.  $f is set to false whenever the dragon isn't in the same room; $f is set to true if the dragon is in the same room, and if $f is set to true when the dragon starts in the same room, combat will occur.
+p1784
+sg1236
+(lp1785
+sg1238
+g23
+((I2013
+I12
+I1
+I19
+I28
+I35
+I6
+I335
+I0
+tp1786
+(dp1787
+tp1788
+Rp1789
+sg1243
+g1789
+sg1244
+VMore notes
+p1790
 sbsasS'scale'
-p1599
-F0.60000000000000009
+p1791
+F0.80000000000000004
 ss.
