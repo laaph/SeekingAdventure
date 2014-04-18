@@ -5,7 +5,7 @@ V/Users/stanza/Active/Twine/SeekingAdventure/charity.html
 p2
 sS'saveDestination'
 p3
-V/Users/stanza/Dropbox/Public/GameJams/2013-11-24 - CharityGameJam/SeekingAdventure/charity.tws
+V/Users/stanza/Active/Twine/SeekingAdventure/charity.tws
 p4
 sS'target'
 p5
@@ -20,7 +20,7 @@ p9
 (dp11
 S'selected'
 p12
-I01
+I00
 sS'pos'
 p13
 (lp14
@@ -325,7 +325,7 @@ sg30
 g106
 sbsa(dp108
 g12
-I00
+I01
 sg13
 (lp109
 I150
@@ -336,7 +336,7 @@ Tiddler
 p110
 (dp111
 g18
-VLuke is simple.  "I'll go with you, for a $50 down payment and one half of all treasures found.  In the case of non-monetary treasures, we will have the shop downtown evaluate value, and split them by value, or sell them to the shop.  In the rare case that we both want an item we can do a silent auction for it.  Is this satisfactory to you?"\u000a\u000aLuke may be simple, but his Steampunk Spider would also be an ally. You have <<if $money eq 0>>0<<else>><<print $money>><<endif>>  dollars.\u000a<<set $luke="no">>\u000a<<if $money gte 50>>\u000a[[Accept Luke's offer|Acceptance]]\u000a[[Decline Luke's offer|Keep your friends close, and your enemies closer]]\u000a<<else>>\u000a[["Due to lack of a down payment, I must decline."|Keep your friends close, and your enemies closer]]\u000a<<endif>>
+VLuke is simple.  "I'll go with you, for a $50 down payment and one half of all treasures found.  In the case of non-monetary treasures, we will have the shop downtown evaluate value, and split them by value, or sell them to the shop.  In the rare case that we both want an item we can do a silent auction for it.  Is this satisfactory to you?"\u000a\u000a[img[images/luke.jpg]]\u000a\u000aLuke may be simple, but his Steampunk Spider would also be an ally. You have <<if $money eq 0>>0<<else>><<print $money>><<endif>>  dollars.\u000a<<set $luke="no">>\u000a<<if $money gte 50>>\u000a[[Accept Luke's offer|Acceptance]]\u000a[[Decline Luke's offer|Keep your friends close, and your enemies closer]]\u000a<<else>>\u000a[["Due to lack of a down payment, I must decline."|Keep your friends close, and your enemies closer]]\u000a<<endif>>
 p112
 sg20
 VLucky Luke the Leprechaun and his Steampunk Spider
