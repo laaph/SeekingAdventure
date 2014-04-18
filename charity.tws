@@ -1,15 +1,15 @@
 (dp0
 S'buildDestination'
 p1
-V/Users/stanza/Dropbox/Public/GameJams/2013-11-24 - CharityGameJam/charity-m.html
+V/Users/stanza/Active/Twine/SeekingAdventure/charity.html
 p2
 sS'saveDestination'
 p3
-V/Users/stanza/Active/Twine/charity.tws
+V/Users/stanza/Dropbox/Public/GameJams/2013-11-24 - CharityGameJam/SeekingAdventure/charity.tws
 p4
 sS'target'
 p5
-S'tw'
+S'sugarcane'
 p6
 sS'storyPanel'
 p7
@@ -20,7 +20,7 @@ p9
 (dp11
 S'selected'
 p12
-I00
+I01
 sS'pos'
 p13
 (lp14
@@ -34,12 +34,13 @@ p16
 (dp17
 S'text'
 p18
-VYou have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "a">><<endsilently>>\u000a[img[TURBO.png]]\u000a<html><a href="http://www.charitygamejam.com"><img src="charity-button-512x128.png"</a></html>\u000a[[Click here for information about charities to donate to.|Charities]]\u000a<<display 'Initialize Variables'>>\u000a
+VYou have found yourself in a text adventure game.  [[Click to continue.|Keep your friends close, and your enemies closer]]\u000a<<silently>><<setTheme "a">><<endsilently>>[img[images/title.jpg]]\u000a\u000a\u000aThis game was made for the Charity Game Jam in 2013.  \u000a[img[images/TURBO.png]]\u000a<html><a href="http://www.charitygamejam.com"><img src="images/charity-button-512x128.png"</a></html>\u000a[[Click here for information about charities to donate to.|Charities]]\u000a<<display 'Initialize Variables'>>\u000a
 p19
-sS'tags'
+sS'title'
 p20
-(lp21
-sS'created'
+VStart
+p21
+sS'modified'
 p22
 ctime
 struct_time
@@ -57,13 +58,12 @@ tp24
 (dp25
 tp26
 Rp27
-sS'modified'
+sS'tags'
 p28
-g27
-sS'title'
-p29
-VStart
+(lp29
+sS'created'
 p30
+g27
 sbsa(dp31
 g12
 I00
@@ -80,7 +80,8 @@ g18
 VCharity Game \u000aJam II Turbo\u000aPlus Hyper \u000aFighting  \u000aAlpha Squee \u000aChibi Edition!\u000a\u000a[[Credits]] [[Charities]] 
 p35
 sg20
-(lp36
+VStoryTitle
+p36
 sg22
 g23
 ((I2013
@@ -97,10 +98,9 @@ tp37
 tp39
 Rp40
 sg28
+(lp41
+sg30
 g40
-sg29
-VStoryTitle
-p41
 sbsa(dp42
 g12
 I00
@@ -117,7 +117,8 @@ g18
 VWritten, narrated, illustrated, plagiarized, and coddled by Laaph.\u000a\u000a[[Desktop Edition|http://dl.dropboxusercontent.com/u/59395735/GameJams/2013-11-24%20-%20CharityGameJam/charity-d.html]] \u000a[[Mobile Edition|http://dl.dropboxusercontent.com/u/59395735/GameJams/2013-11-24%20-%20CharityGameJam/charity-m.html]]
 p46
 sg20
-(lp47
+VStoryAuthor
+p47
 sg22
 g23
 ((I2013
@@ -134,10 +135,9 @@ tp48
 tp50
 Rp51
 sg28
+(lp52
+sg30
 g51
-sg29
-VStoryAuthor
-p52
 sbsa(dp53
 g12
 I00
@@ -154,7 +154,8 @@ g18
 VBefore you start your adventure, though, you'll have to choose your partner in crime.\u000a\u000a<<if $leila  neq "no">>[[Leila the Little Slime]]<<endif>>\u000a<<if $nermin neq "no">>[[Nearly Normal Nermin the Ninja Turtle]]<<endif>>\u000a<<if $luke   neq "no">>[[Lucky Luke the Leprechaun and his Steampunk Spider]]<<endif>>\u000a[[Forget these freaks, I'm going solo.|Choose Your Destiny]]\u000a
 p57
 sg20
-(lp58
+VKeep your friends close, and your enemies closer
+p58
 sg22
 g23
 ((I2013
@@ -171,10 +172,9 @@ tp59
 tp61
 Rp62
 sg28
+(lp63
+sg30
 g62
-sg29
-VKeep your friends close, and your enemies closer
-p63
 sbsa(dp64
 g12
 I00
@@ -191,7 +191,8 @@ g18
 VLeila the Little Slime looks at you with big sad eyes.  She says to you "I'd love to go on adventures with you, but I have lost my mom!  If you help me find my mom, I will go on any adventure you ask, and not even ask for a share of the loot!"\u000a\u000aHow do you respond to those pleading eyes?\u000a<<silently>><<endsilently>>\u000a[img[littleslime.png]]\u000a[[Of course we can go rescue your mom.|Where is mom?]]\u000a[[I can't be distracted by every missing mom.  I'm sure she is safe and just forgot to tell you where she went.|Keep your friends close, and your enemies closer]]\u000a
 p68
 sg20
-(lp69
+VLeila the Little Slime
+p69
 sg22
 g23
 ((I2013
@@ -208,10 +209,9 @@ tp70
 tp72
 Rp73
 sg28
+(lp74
+sg30
 g73
-sg29
-VLeila the Little Slime
-p74
 sbsa(dp75
 g12
 I00
@@ -228,7 +228,8 @@ g18
 V<<set $nermin="no">>\u000aNearly Normal Nermin the Ninja Turtle looks you over and says "you can't go adventuring like that!" with a scowl.  He continues: "I won't go with you, but in the interest that you don't get killed by the first kobold you find, I will sell you all the hardware you might need for adventuring."\u000a\u000a<<display 'store'>>
 p79
 sg20
-(lp80
+VNearly Normal Nermin the Ninja Turtle
+p80
 sg22
 g23
 ((I2013
@@ -245,10 +246,9 @@ tp81
 tp83
 Rp84
 sg28
+(lp85
+sg30
 g84
-sg29
-VNearly Normal Nermin the Ninja Turtle
-p85
 sbsa(dp86
 g12
 I00
@@ -265,7 +265,8 @@ g18
 VNow it is time to choose your adventure.  You can go to -\u000a\u000a[[The dungeons of Moria|A maze of twisty passages, all alike]]\u000a[[Pirate Adventure]]\u000a[[Space Adventure]]
 p90
 sg20
-(lp91
+VChoose Your Destiny
+p91
 sg22
 g23
 ((I2013
@@ -282,10 +283,9 @@ tp92
 tp94
 Rp95
 sg28
+(lp96
+sg30
 g95
-sg29
-VChoose Your Destiny
-p96
 sbsa(dp97
 g12
 I00
@@ -302,7 +302,8 @@ g18
 VCredits, or page detailing blatant plagiarism.\u000a\u000aThis game was made by an entity who occasionally goes by "laaph", and can be emailed at charitygamejam@laaph.com if you have any bug reports, suggestions, etc.\u000a\u000aThis game was made for the [[Charity Game Jam|http://charitygamejam.com/]].\u000aSeveral elements of this game have been "borrowed" from [[OpenGameArt|http://opengameart.org/]].\u000aSpecial thanks to Anna Anthropy for making the only usable [[tutorial for Twine|http://www.auntiepixelante.com/twine]].\u000aSpecial thanks to GritFish for releasing a tutorial on [[how to make Twine look nice on phones|http://gritfish.net/blog/tin-cans.html]].\u000aSpecial thanks to Robert Yang for releasing a tutorial on [[how to integrate Twine and Unity|http://www.blog.radiator.debacle.us/2012/07/how-to-integrate-unity-and-twine.html]], even though I'm not using it on this project, but I will on my next project.\u000a\u000aSpecial thanks to oldtopman from #ludumdare for the text Leila speaks in Korean.  I'm not sure he actually played the game.  I also didn't use his text.  He said she should say "&#51060;&#32;&#52880;&#47533;&#53552;&#44032;&#32;&#47568;&#51012;&#54644;&#50556;&#54616;&#45716;&#51648;&#32;&#50508;&#44256;&#51080;&#45716;&#32;&#44221;&#50864;&#32;&#51089;&#49457;&#51088;&#50640;&#44172;&#32;&#47928;&#51032;&#54616;&#49884;&#44592;&#32;&#48148;&#46989;&#45768;&#45796;".\u000aSpecial thanks to JeremySFX for help with the graphics.  Due to the crunch time, I haven't actually put his graphics in the game.\u000aSpecial thanks to iFire from #ludumdare for helping me with the unicode bugs.\u000aThanks to James for playtesting the game.  Also, thank you to everyone else for helping playtest the game.  If you find any bugs, email me at the address above.  If you find some good ones, I'll add your name here (unless you don't want me to).\u000a\u000aI have taken inspiration from the following games to make this game.\u000a[[Pirate Adventure|http://en.wikipedia.org/wiki/Pirate_Adventure]], by Scott Adams.\u000a[[The Dungeons of Moria|http://theodor.lauppert.ws/games/moria.htm]], by Robert Alan Koeneke.\u000a[[The Great Underground Empire|http://en.wikipedia.org/wiki/Colossal_Cave_Adventure#Maze_of_twisty_little_passages]], by Will Crowther.\u000a[[Slime Forest Adventure|http://lrnj.com/]], by Darrel Johnson.\u000a\u000aI have to include Bugs Bunny in the credits somewhere, but I'm not sure where to put him.\u000a\u000aI have used imagery generated by the resources offered below.\u000a[[Little Slime|http://opengameart.org/content/little-slime]], by sketchstick.\u000a[[Nermin the Ninja Turtle|http://opengameart.org/content/tortoise-high-poly]], by sunburm.\u000a[[Lucky Luke the Leprechaun|http://opengameart.org/content/steampunk-spider]], by nubux.
 p101
 sg20
-(lp102
+VCredits
+p102
 sg22
 g23
 ((I2013
@@ -319,10 +320,9 @@ tp103
 tp105
 Rp106
 sg28
+(lp107
+sg30
 g106
-sg29
-VCredits
-p107
 sbsa(dp108
 g12
 I00
@@ -339,7 +339,8 @@ g18
 VLuke is simple.  "I'll go with you, for a $50 down payment and one half of all treasures found.  In the case of non-monetary treasures, we will have the shop downtown evaluate value, and split them by value, or sell them to the shop.  In the rare case that we both want an item we can do a silent auction for it.  Is this satisfactory to you?"\u000a\u000aLuke may be simple, but his Steampunk Spider would also be an ally. You have <<if $money eq 0>>0<<else>><<print $money>><<endif>>  dollars.\u000a<<set $luke="no">>\u000a<<if $money gte 50>>\u000a[[Accept Luke's offer|Acceptance]]\u000a[[Decline Luke's offer|Keep your friends close, and your enemies closer]]\u000a<<else>>\u000a[["Due to lack of a down payment, I must decline."|Keep your friends close, and your enemies closer]]\u000a<<endif>>
 p112
 sg20
-(lp113
+VLucky Luke the Leprechaun and his Steampunk Spider
+p113
 sg22
 g23
 ((I2013
@@ -356,10 +357,9 @@ tp114
 tp116
 Rp117
 sg28
+(lp118
+sg30
 g117
-sg29
-VLucky Luke the Leprechaun and his Steampunk Spider
-p118
 sbsa(dp119
 g12
 I00
@@ -376,7 +376,8 @@ g18
 V"You drive a hard bargain, Luke, but I will accept your terms.  Now let's get on to business!"\u000a<<set $luke="yes">><<set $money=$money-50>>\u000a\u000a<<display 'Choose Your Destiny'>>
 p123
 sg20
-(lp124
+VAcceptance
+p124
 sg22
 g23
 ((I2013
@@ -393,10 +394,9 @@ tp125
 tp127
 Rp128
 sg28
+(lp129
+sg30
 g128
-sg29
-VAcceptance
-p129
 sbsa(dp130
 g12
 I00
@@ -413,7 +413,8 @@ g18
 V<<set $leila="yes">>\u000aLeila leads you to a large Meadow not far from town.  She struggles to keep her voice from wavering:  "Last time I saw her, it was here!  It was about yesterday, and I told her I'd be in town for an hour.  When I returned, she was no where to be found!"\u000a\u000a[[Perhaps she went back to her home?|Mom's House]]\u000a[[Hey, here are some signs of a battle.  Do you think we should follow the tracks?|Slime Forest Adventure]]\u000a
 p134
 sg20
-(lp135
+VWhere is mom?
+p135
 sg22
 g23
 ((I2013
@@ -430,10 +431,9 @@ tp136
 tp138
 Rp139
 sg28
+(lp140
+sg30
 g139
-sg29
-VWhere is mom?
-p140
 sbsa(dp141
 g12
 I00
@@ -450,7 +450,8 @@ g18
 VYou follow the tracks to a clearing.  You come upon an adventurer battling slimes!  He hacks the last slime and suddenly looks at you and Leila.\u000a\u000aLeila seems to have fallen in a trance and starts speaking Japanese.\u000a[[Leila says &#x30CE;  |Splat]]\u000a[[Leila says &#x30CC;  |Splat]]\u000a[[Leila says &#54620;&#44544;|Fireballs]]\u000a
 p145
 sg20
-(lp146
+VSlime Forest Adventure
+p146
 sg22
 g23
 ((I2013
@@ -467,10 +468,9 @@ tp147
 tp149
 Rp150
 sg28
+(lp151
+sg30
 g150
-sg29
-VSlime Forest Adventure
-p151
 sbsa(dp152
 g12
 I00
@@ -487,7 +487,8 @@ g18
 VThe adventurer cuts Leila cleanly in half!  Leila's cute eyeballs that led you on this adventure are now lifeless and no longer connected to the same body.  Just as you are about to mourn the loss of your dear friend, the Adventurer looks at you!\u000a<<set $leila="no">><<set $leiladead=true>>\u000a[[Say "I'm sorry, I don't know any Japanese!  Don't hurt me!"|Wrong place wrong time]]\u000a[[Say "&#12371;&#12435;&#12395;&#12385;&#12399;"|Konichiwa]]
 p156
 sg20
-(lp157
+VSplat
+p157
 sg22
 g23
 ((I2013
@@ -504,10 +505,9 @@ tp158
 tp160
 Rp161
 sg28
+(lp162
+sg30
 g161
-sg29
-VSplat
-p162
 sbsa(dp163
 g12
 I00
@@ -524,7 +524,8 @@ g18
 VYou say the only thing in Japanese you can think of.  "&#12371;&#12435;&#12395;&#12385;&#12399;!"  The adventurer says "Konnichiwa!" and cleanly cuts you in half as well.\u000a\u000a* *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, you were so busy with someone else's.  I'm not sure if I should give you Leila's score (47 out of 100) or your own (<<print $score>> out of 100).  \u000a
 p167
 sg20
-(lp168
+VKonichiwa
+p168
 sg22
 g23
 ((I2013
@@ -541,10 +542,9 @@ tp169
 tp171
 Rp172
 sg28
+(lp173
+sg30
 g172
-sg29
-VKonichiwa
-p173
 sbsa(dp174
 g12
 I00
@@ -561,7 +561,8 @@ g18
 VLeila says "&#54620;&#44544;" and the poor adventure looks confused for a second.  Then fireballs come out of the sky and strike the adventurer dead!<<set $score=$score+7>>\u000a\u000aLeila, acting as if this were perfectly normal, says "Do you suppose he killed my mom?  I didn't know there were Japanese learners about.  I would have kept her inside had I known."\u000a\u000aLeila seeing you looking quite so surprised says, "I gave him a Korean word.  If he had correctly guessed what I had said, he would have killed me too, but I cheated."  You aren't entirely certain that explains what happened.\u000a\u000a[[Let's go to your mom's house and see if your mom is okay.|Mom's House]]\u000a[[I imagine there is nothing we can do for her now.|Leila Angry!]]\u000a
 p178
 sg20
-(lp179
+VFireballs
+p179
 sg22
 g23
 ((I2013
@@ -578,10 +579,9 @@ tp180
 tp182
 Rp183
 sg28
+(lp184
+sg30
 g183
-sg29
-VFireballs
-p184
 sbsa(dp185
 g12
 I00
@@ -598,7 +598,8 @@ g18
 V"I'm sorry, I don't know any Japanese!  Don't hurt me!"\u000a\u000aThe adventurer looks confused for a second, and says "oh!  You aren't a slime!  Terribly sorry!"  He then runs off looking for more slimes to kill.\u000a\u000aYou lost an ally, and you aren't entirely certain what adventurers are doing out in the fields killing slimes by speaking Japanese, but I suppose it makes as much sense as when Bunny Foo-Foo was bopping field mice over the head.  \u000a\u000a[[You continue on to seek your adventure|Choose Your Destiny]]\u000a
 p189
 sg20
-(lp190
+VWrong place wrong time
+p190
 sg22
 g23
 ((I2013
@@ -615,10 +616,9 @@ tp191
 tp193
 Rp194
 sg28
+(lp195
+sg30
 g194
-sg29
-VWrong place wrong time
-p195
 sbsa(dp196
 g12
 I00
@@ -635,7 +635,8 @@ g18
 VYou get to Leila's Mom's house, and Leila runs in without knocking.  You follow her in, and see her embracing her mom in a slime hug.  \u000a\u000aLeila says "Mom I was so worried!"\u000aHer mom says "It's okay, don't worry about me, I'm staying inside so the adventurers don't kill me!"\u000aLeila says "But I found an adventurer and I want to go adventuring with him!"\u000aHer mom glares at you.  But then she softens her glare suddenly, and says "This one hasn't been killing slimes.  You're not an adventurer, are you?"\u000aLeila says "No mommie this is a nice person and we are going to go on adventures!"\u000a\u000aHer mom laughs and offers you tea and cookies.  "Adventures, huh?  Well, let me delay your adventures a little bit and make you sandwiches."  Mrs. Slime (?) puts out tea and cookies, and makes sandwiches for you to bring on your adventures.\u000a<<set $sandwiches=true>><<set $score=$score+5>>\u000a[[Stay for the tea and cookies|Tea And Cookies]]\u000a[[Thank you so much Mrs. Slime.  We must be on our way now, though.|Choose Your Destiny]]\u000a
 p200
 sg20
-(lp201
+VMom's House
+p201
 sg22
 g23
 ((I2013
@@ -652,10 +653,9 @@ tp202
 tp204
 Rp205
 sg28
+(lp206
+sg30
 g205
-sg29
-VMom's House
-p206
 sbsa(dp207
 g12
 I00
@@ -672,7 +672,8 @@ g18
 VYou decide you could stay here quite a while.  Leila seems perfectly okay with this, and tells you to rest on the couch while she finds her video games.  Meanwhile, Mrs. Slime continues making tea, sandwiches, cookies and now is working on stew for tonight.  \u000a\u000aAs you relax on the couch, you realize something is wrong...  it's too soft...  It's a slime couch, of course, meant for slimes, so you slowly start to melt in to it...   literally melting in to it...  you dissolve in to the couch...  you try to scream but it's much too late for that you didn't even get to see what video game Leila was going to show you.\u000a\u000a*** *** You have died. ***\u000a\u000aYou didn't even get started on your adventure, and you even got distracted while you were working on someone else's.  I'm not sure if I should give you Leila's score (78 out of 100) or your own (<<print $score>> out of 100).  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a
 p211
 sg20
-(lp212
+VStuck In The Couch
+p212
 sg22
 g23
 ((I2013
@@ -689,10 +690,9 @@ tp213
 tp215
 Rp216
 sg28
+(lp217
+sg30
 g216
-sg29
-VStuck In The Couch
-p217
 sbsa(dp218
 g12
 I00
@@ -709,7 +709,8 @@ g18
 V"Mom isn't dead!  She's probably at home!  I'm going home, you can go on your stupid adventure without me!"  Leila stomps off in anger at your suggestion that her mom might not have made it.\u000a<<set $leila="no">>\u000aWhile you are sad to lose your companion, you are happy to be finally setting on your adventure.\u000a<<display 'Choose Your Destiny'>>
 p222
 sg20
-(lp223
+VLeila Angry!
+p223
 sg22
 g23
 ((I2013
@@ -726,10 +727,9 @@ tp224
 tp226
 Rp227
 sg28
+(lp228
+sg30
 g227
-sg29
-VLeila Angry!
-p228
 sbsa(dp229
 g12
 I00
@@ -746,7 +746,8 @@ g18
 VYou are in a maze of twisty passages, all alike.<<set $hunger=$hunger + 1>><<set $state="okay">>/%  The maze constant is <<print $maze>>.%/\u000a<<if $hunger gte 30>>\u000aYou are getting hungry.\u000a\u000a<<endif>><<if $hunger gte 60>>\u000aYou are starving!\u000a\u000a<<endif>><<if $hunger gte 100>>\u000aWorse than that, it seems you have starved to death! <<set \u000a$state="dead">>\u000a<<endif>><<if $maze lte -5>>\u000aYou are clearly getting lost.  You should go east.\u000a<<endif>><<if $maze gte 12>>\u000aYou are clearly getting lost.  You should go south.\u000a<<endif>><<if $maze eq 3>>\u000aThere is a skeleton here.  He has clearly seen better days.  <<if $key eq false>>In what used to be his hand is a key.<<endif>>\u000a<<endif>><<if $maze eq 6 and $hatch eq "closed">>\u000aThere is a hatch in the floor here.  There is a nice handle and a large keyhole under the handle.<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000aThere is a hatch in the floor here.  It is open.<<endif>>\u000a<<if $maze eq 9>><<display 'Bridge Room'>><<endif>>\u000a<<if $state eq "okay">>\u000aYou can go \u000a[[north]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a<<if $hunger gte 30>><<if $sandwiches eq true>>\u000a[[Stop to eat sandwiches|Look at all the sand which is here]]\u000a<<endif>><<endif>><<if $maze eq 3 and $key eq false>>[[Take the key from the skeleton|Key taken]]<<endif>><<if $maze eq 6 and $key eq false>>\u000a[[Open the hatch|Hatch is locked]]<<endif>><<if $maze eq 6 and $key eq true and $hatch eq "closed">>\u000a[[Open the hatch]]<<endif>><<if $maze eq 6 and $hatch eq "open">>\u000a[[Go down the hatch|Down the hatch]]<<endif>><<endif>>\u000a<<if $state eq "dead">>\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have starved to death while lost in the twisty passages.  Perhaps next time, you should pack a sandwich.  Your score is <<print $score+"">> out of 100.  Better luck next time.\u000a<<endif>>
 p233
 sg20
-(lp234
+VA maze of twisty passages, all alike
+p234
 sg22
 g23
 ((I2013
@@ -763,10 +764,9 @@ tp235
 tp237
 Rp238
 sg28
+(lp239
+sg30
 g238
-sg29
-VA maze of twisty passages, all alike
-p239
 sbsa(dp240
 g12
 I00
@@ -783,7 +783,8 @@ g18
 V<<set $maze=$maze+2>><<display 'A maze of twisty passages, all alike'>>
 p244
 sg20
-(lp245
+Vnorth
+p245
 sg22
 g23
 ((I2013
@@ -800,10 +801,9 @@ tp246
 tp248
 Rp249
 sg28
+(lp250
+sg30
 g249
-sg29
-Vnorth
-p250
 sbsa(dp251
 g12
 I00
@@ -820,7 +820,8 @@ g18
 V<<set $maze=$maze-3>><<display 'A maze of twisty passages, all alike'>>
 p255
 sg20
-(lp256
+Vsouth
+p256
 sg22
 g23
 ((I2013
@@ -837,10 +838,9 @@ tp257
 tp259
 Rp260
 sg28
+(lp261
+sg30
 g260
-sg29
-Vsouth
-p261
 sbsa(dp262
 g12
 I00
@@ -857,7 +857,8 @@ g18
 V<<set $maze=$maze+4>><<display 'A maze of twisty passages, all alike'>>
 p266
 sg20
-(lp267
+Veast
+p267
 sg22
 g23
 ((I2013
@@ -874,10 +875,9 @@ tp268
 tp270
 Rp271
 sg28
+(lp272
+sg30
 g271
-sg29
-Veast
-p272
 sbsa(dp273
 g12
 I00
@@ -894,7 +894,8 @@ g18
 V<<set $maze=$maze-1>><<display 'A maze of twisty passages, all alike'>>
 p277
 sg20
-(lp278
+Vwest
+p278
 sg22
 g23
 ((I2013
@@ -911,10 +912,9 @@ tp279
 tp281
 Rp282
 sg28
+(lp283
+sg30
 g282
-sg29
-Vwest
-p283
 sbsa(dp284
 g12
 I00
@@ -931,7 +931,8 @@ g18
 V<<set $sandwiches=false>><<set $hunger=0>><<set $score=$score+6>>\u000aYou stop and eat sandwiches.  You feel much better.\u000a<<display 'A maze of twisty passages, all alike'>>
 p288
 sg20
-(lp289
+VLook at all the sand which is here
+p289
 sg22
 g23
 ((I2013
@@ -948,10 +949,9 @@ tp290
 tp292
 Rp293
 sg28
+(lp294
+sg30
 g293
-sg29
-VLook at all the sand which is here
-p294
 sbsa(dp295
 g12
 I00
@@ -968,7 +968,8 @@ g18
 VYou have <<if $money eq 0>>0<<else>><<print $money>><<endif>> dollars.  Nermin is offering you:\u000a<<if $katana eq false and $money gte 75>>\u000a[[A katana - $75|Bought katana]]\u000a \u000a<<endif>>\u000a<<if $shield eq false and $money gte 15>>\u000a[[A shield - $15|Bought shield]]\u000a<<endif>>\u000a<<if $leather eq false and $money gte 40>>\u000a[[Leather armor - $40|Bought leather]]\u000a\u000a<<endif>>\u000a<<if $money gte 10>>\u000a[[Five throwing stars - $10|Bought stars]]\u000a<<endif>>\u000a\u000a[[Thank you Nermin, I don't need anything else|Keep your friends close, and your enemies closer]]
 p299
 sg20
-(lp300
+Vstore
+p300
 sg22
 g23
 ((I2013
@@ -985,10 +986,9 @@ tp301
 tp303
 Rp304
 sg28
+(lp305
+sg30
 g304
-sg29
-Vstore
-p305
 sbsa(dp306
 g12
 I00
@@ -1005,7 +1005,8 @@ g18
 VYou buy the leather armor from Nermin.<<set $money=$money-40>><<set $leather=true>>\u000a\u000a<<display 'store'>>
 p310
 sg20
-(lp311
+VBought leather
+p311
 sg22
 g23
 ((I2013
@@ -1022,10 +1023,9 @@ tp312
 tp314
 Rp315
 sg28
+(lp316
+sg30
 g315
-sg29
-VBought leather
-p316
 sbsa(dp317
 g12
 I00
@@ -1042,7 +1042,8 @@ g18
 VYou buy the shield from Nermin.<<set $money=$money-15>><<set $shield=true>>\u000a\u000a<<display 'store'>>
 p321
 sg20
-(lp322
+VBought shield
+p322
 sg22
 g23
 ((I2013
@@ -1059,10 +1060,9 @@ tp323
 tp325
 Rp326
 sg28
+(lp327
+sg30
 g326
-sg29
-VBought shield
-p327
 sbsa(dp328
 g12
 I00
@@ -1079,7 +1079,8 @@ g18
 VYou buy some throwing stars from Nermin.<<set $money=$money-10>><<set $throwingstars=$throwingstars+5>>\u000a\u000a<<display 'store'>>
 p332
 sg20
-(lp333
+VBought stars
+p333
 sg22
 g23
 ((I2013
@@ -1096,10 +1097,9 @@ tp334
 tp336
 Rp337
 sg28
+(lp338
+sg30
 g337
-sg29
-VBought stars
-p338
 sbsa(dp339
 g12
 I00
@@ -1116,7 +1116,8 @@ g18
 VYou buy the katana from Nermin.<<set $money=$money-75>><<set $katana=true>>\u000a\u000a<<display 'store'>>
 p343
 sg20
-(lp344
+VBought katana
+p344
 sg22
 g23
 ((I2013
@@ -1133,10 +1134,9 @@ tp345
 tp347
 Rp348
 sg28
+(lp349
+sg30
 g348
-sg29
-VBought katana
-p349
 sbsa(dp350
 g12
 I00
@@ -1153,7 +1153,8 @@ g18
 VAh, the life of a pirate!  We can commandeer a pirate ship and go chase some pirates and sing "yoho" and drink rum and be pirates!\u000a<<if $money gte 75>>\u000aNermin comes out of no where.  "I see you are looking to sail the high seas!  I don't have much of a boat, but I think it might be in your budget, would you like to buy it?  Only $75 dollars!"\u000a/% %/\u000a<<if $luke eq "yes">>Luke says quietly "Don't buy that thing.  It's crap.<<endif>>\u000a/% %/\u000a[[Buy boat from Nermin|At the docks]]\u000a[[I'm going down to Pirate International|Pirate International]]\u000a<<else>>\u000aThe place to get yourself organized for pirate adventures is a place called "Pirate International".  You should head down there.\u000a\u000a[[Head down to Pirate International.|Pirate International]]\u000a<<endif>>
 p354
 sg20
-(lp355
+VPirate Adventure
+p355
 sg22
 g23
 ((I2013
@@ -1170,10 +1171,9 @@ tp356
 tp358
 Rp359
 sg28
+(lp360
+sg30
 g359
-sg29
-VPirate Adventure
-p360
 sbsa(dp361
 g12
 I00
@@ -1190,7 +1190,8 @@ g18
 VYou are in a busy office space.  People are waiting for their turn at a desk, and a clerk is busily registering people as fast as he can.  \u000aThere is a giant sign that reads: "BRING TREASURES HERE!"\u000aAnother sign says: "ANYONE GOING ON PIRATE ADVENTURES WITHOUT REGISTERING FIRST WILL BE EXECUTED IMMEDIATELY!"\u000a\u000aThere is a stairway leading upstairs.\u000a<<if $registration eq false>>\u000a[[Register at desk|Registration Desk]]\u000a<<endif>>\u000a[[Go upstairs|Upstairs]]\u000a
 p365
 sg20
-(lp366
+VPirate International
+p366
 sg22
 g23
 ((I2013
@@ -1207,10 +1208,9 @@ tp367
 tp369
 Rp370
 sg28
+(lp371
+sg30
 g370
-sg29
-VPirate International
-p371
 sbsa(dp372
 g12
 I00
@@ -1227,10 +1227,9 @@ g18
 Vtry {\u000a	version.extensions['setTheme'] = { \u000a		major:1, minor:0, revision:0 \u000a	};\u000a	macros['setTheme'] = {\u000a		handler: function(place, macroName, params, parser) {\u000a			setTheme(params[0]);\u000a		},\u000a		init: function() { },\u000a	};\u000a} catch(e) {\u000a	throwError(place,"setTheme Setup Error: "+e.message); \u000a}
 p376
 sg20
-(lp377
-Vscript
-p378
-asg22
+VsetTheme
+p377
+sg22
 g23
 ((I2013
 I11
@@ -1241,15 +1240,16 @@ I19
 I6
 I328
 I0
-tp379
-(dp380
-tp381
-Rp382
+tp378
+(dp379
+tp380
+Rp381
 sg28
-g382
-sg29
-VsetTheme
+(lp382
+Vscript
 p383
+asg30
+g381
 sbsa(dp384
 g12
 I00
@@ -1262,15 +1262,13 @@ asg15
 Tiddler
 p386
 (dp387
-S'text'
-p388
+g18
 V<<if $registration eq false>>As you walk upstairs, you here a loud "BANG!", and you realize you have been shot in the back.  As you fade from conciousness, you hear someone say "We have to be strict about the rules, or we will have everyone just wandering about!"<<display 'Not Registered Death'>><<endif>>\u000a<<if $registration eq true and $luke eq "yes">>As you walk upstairs, Luke says quietly to you, "we are not bringing our treasures there.  Or at least, I see no need to."  You realize Luke's business sense may turn out quite profitable and he may have been worth his exorbitant price.<<endif>>\u000a<<if $registration eq true>>You go upstairs, and the door locks behind you.  You aren't sure how to bring treasures back to that sign even if you wanted to.  You are now in a hallway.<<display 'Pirate Hallway'>><<endif>>
+p388
+sg20
+VUpstairs
 p389
-sS'tags'
-p390
-(lp391
-sS'created'
-p392
+sg22
 g23
 ((I2013
 I11
@@ -1281,35 +1279,33 @@ I20
 I6
 I328
 I0
-tp393
-(dp394
-tp395
-Rp396
-sS'modified'
-p397
-g396
-sS'title'
-p398
-VUpstairs
-p399
-sbsa(dp400
+tp390
+(dp391
+tp392
+Rp393
+sg28
+(lp394
+sg30
+g393
+sbsa(dp395
 g12
 I00
 sg13
-(lp401
+(lp396
 I990
 aI1830
 asg15
 (itiddlywiki
 Tiddler
-p402
-(dp403
-g388
+p397
+(dp398
+g18
 V<<set $registration=true>><<set $score=$score+6>>\u000aThe clerk at the registration quickly and efficiently helps you fill out the forms, gives you a lanyard and badge with your name and picture on it.  <<if $leila eq "yes">>She does the same for Leila, although the picture looks more like an amorphous blob than a slime.<<endif>><<if $luke eq "yes">>/%%/  She loses some efficiently as she attempts to process Luke, as she insist that he exit his spider before taking his photo, something which he is resistant to but eventually gives in and also gets registered.<<endif>>\u000a\u000a<<display 'Pirate International'>>
-p404
-sg390
-(lp405
-sg392
+p399
+sg20
+VRegistration Desk
+p400
+sg22
 g23
 ((I2013
 I11
@@ -1320,33 +1316,33 @@ I16
 I6
 I328
 I0
-tp406
-(dp407
-tp408
-Rp409
-sg397
-g409
-sg398
-VRegistration Desk
-p410
-sbsa(dp411
+tp401
+(dp402
+tp403
+Rp404
+sg28
+(lp405
+sg30
+g404
+sbsa(dp406
 g12
 I00
 sg13
-(lp412
+(lp407
 I570
 aI150
 asg15
 (itiddlywiki
 Tiddler
-p413
-(dp414
-g388
+p408
+(dp409
+g18
 VThis game was created for the [[Charity Game Jam|http://charitygamejam.com]]. I have a lot of charities I'd like to support, but I am going to mention two for this game.  If you don't like the ones I am drawing attention to, perhaps go to the [[Charity Game Jam web page|http://charitygamejam.com]] and choose one from their list to donate to?\u000a\u000a[[The Electronic Frontier Foundation|http://supporters.eff.org/donate]] has been around for as long as anyone on the internet remembers, but I personally feel they keep fighting the good fight.  Hopefully this isn't too political.\u000a\u000a[[The Museum of Art and Digital Entertainment|http://themade.org/donate]] not only provides a history museum of gaming, but also education.  The MADE teaches free classes to chidren in programming and writing, hosts game jams, and you can visit and play video games!  Disclaimer:  most of this game was written at the MADE while I was abusing it as my own personal office.\u000a\u000aOkay, I lied.  Here is another charity for your consideration.\u000a\u000a[[The International Dark-Sky Association|http://www.darksky.org/joinnow]] is a group that attempts to draw attention to the effects of light at night towards astronomy, animals and ecosystems, and humans.  By promoting information (such as merely making your night-time lights face the ground rather than at the sky) and protecting dark areas, it is possible to see the stars and save energy.  I hope this one isn't too political too.  I also hope it isn't too fringe.
-p415
-sg390
-(lp416
-sg392
+p410
+sg20
+VCharities
+p411
+sg22
 g23
 ((I2013
 I11
@@ -1357,33 +1353,33 @@ I40
 I6
 I328
 I0
-tp417
-(dp418
-tp419
-Rp420
-sg397
-g420
-sg398
-VCharities
-p421
-sbsa(dp422
+tp412
+(dp413
+tp414
+Rp415
+sg28
+(lp416
+sg30
+g415
+sbsa(dp417
 g12
 I00
 sg13
-(lp423
+(lp418
 I1130
 aI1830
 asg15
 (itiddlywiki
 Tiddler
-p424
-(dp425
-g388
+p419
+(dp420
+g18
 V/%%/\u000a* *** You have died ***\u000a/%%/\u000aYou didn't even register the start of your adventure.  For what it's worth, your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p426
-sg390
-(lp427
-sg392
+p421
+sg20
+VNot Registered Death
+p422
+sg22
 g23
 ((I2013
 I11
@@ -1394,33 +1390,33 @@ I3
 I6
 I328
 I0
-tp428
-(dp429
-tp430
-Rp431
-sg397
-g431
-sg398
-VNot Registered Death
-p432
-sbsa(dp433
+tp423
+(dp424
+tp425
+Rp426
+sg28
+(lp427
+sg30
+g426
+sbsa(dp428
 g12
 I00
 sg13
-(lp434
+(lp429
 I1270
 aI1690
 asg15
 (itiddlywiki
 Tiddler
-p435
-(dp436
-g388
+p430
+(dp431
+g18
 V\u000aThe Hallway consists of just a doorway and a window.  You thought you would be sailing the high seas; you are not sure if this is the right place.\u000a\u000a[[Enter door|In The Attic]]\u000a[[Go out the window|On A Window Ledge]]\u000a
-p437
-sg390
-(lp438
-sg392
+p432
+sg20
+VPirate Hallway
+p433
+sg22
 g23
 ((I2013
 I11
@@ -1431,36 +1427,33 @@ I50
 I6
 I328
 I0
-tp439
-(dp440
-tp441
-Rp442
-sg397
-g442
-sg398
-VPirate Hallway
-p443
-sbsa(dp444
+tp434
+(dp435
+tp436
+Rp437
+sg28
+(lp438
+sg30
+g437
+sbsa(dp439
 g12
 I00
 sg13
-(lp445
+(lp440
 I1270
 aI1830
 asg15
 (itiddlywiki
 Tiddler
-p446
-(dp447
-S'text'
-p448
+p441
+(dp442
+g18
 VYou are the edge of a window.  I don't know what possessed you to come out here; you can't even see the ocean from here.  This is not feeling like a pirate adventure at all.  However, you have a feeling!  You could say a magic word here!\u000a\u000a[[Jump]]\u000a[[Go back in the window|Pirate Hallway]]\u000a[[Say a magic word|Magic Word]]\u000a
-p449
-sS'tags'
-p450
-(lp451
-sS'created'
-p452
+p443
+sg20
+VOn A Window Ledge
+p444
+sg22
 g23
 ((I2013
 I11
@@ -1471,35 +1464,33 @@ I50
 I1
 I330
 I0
-tp453
-(dp454
-tp455
-Rp456
-sS'modified'
-p457
-g456
-sS'title'
-p458
-VOn A Window Ledge
-p459
-sbsa(dp460
+tp445
+(dp446
+tp447
+Rp448
+sg28
+(lp449
+sg30
+g448
+sbsa(dp450
 g12
 I00
 sg13
-(lp461
+(lp451
 I1270
 aI1970
 asg15
 (itiddlywiki
 Tiddler
-p462
-(dp463
-g448
+p452
+(dp453
+g18
 VYou jump off the edge of the window sill.\u000a\u000a* *** You have died. ***\u000a\u000aThat was silly.  Your score is <<print $score +"">> out of 100.\u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p464
-sg450
-(lp465
-sg452
+p454
+sg20
+VJump
+p455
+sg22
 g23
 ((I2013
 I11
@@ -1510,33 +1501,33 @@ I13
 I1
 I330
 I0
-tp466
-(dp467
-tp468
-Rp469
-sg457
-g469
-sg458
-VJump
-p470
-sbsa(dp471
+tp456
+(dp457
+tp458
+Rp459
+sg28
+(lp460
+sg30
+g459
+sbsa(dp461
 g12
 I00
 sg13
-(lp472
+(lp462
 I1410
 aI1830
 asg15
 (itiddlywiki
 Tiddler
-p473
-(dp474
-g448
+p463
+(dp464
+g18
 V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO" or $magicword eq "yoho!" or $magicword eq "Yoho" or $magicword eq "Yoho!" or $magicword eq "YOHO!">><<set $score=$score+4>><<set $found = 1>><<set $travel=1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!\u000a<<set $travel=1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
-p475
-sg450
-(lp476
-sg452
+p465
+sg20
+VMagic Word
+p466
+sg22
 g23
 ((I2013
 I11
@@ -1547,36 +1538,33 @@ I53
 I1
 I330
 I0
-tp477
-(dp478
-tp479
-Rp480
-sg457
-g480
-sg458
-VMagic Word
-p481
-sbsa(dp482
+tp467
+(dp468
+tp469
+Rp470
+sg28
+(lp471
+sg30
+g470
+sbsa(dp472
 g12
 I00
 sg13
-(lp483
+(lp473
 I1410
 aI1690
 asg15
 (itiddlywiki
 Tiddler
-p484
-(dp485
-S'text'
-p486
+p474
+(dp475
+g18
 VYou are in a small attic.  There isn't much here, but there is a bloodstained book. <<if $katana eq false>>There is a katana here.  You aren't familiar with how to use the weapon, but perhaps it could be useful.<<endif>>\u000a\u000a\u000a[[Exit the room|Pirate Hallway]]\u000a[[Read the book]]\u000a<<if $katana eq false>>[[Take the katana]]<<endif>>
-p487
-sS'tags'
-p488
-(lp489
-sS'created'
-p490
+p476
+sg20
+VIn The Attic
+p477
+sg22
 g23
 ((I2013
 I11
@@ -1587,35 +1575,33 @@ I24
 I1
 I330
 I0
-tp491
-(dp492
-tp493
-Rp494
-sS'modified'
-p495
-g494
-sS'title'
-p496
-VIn The Attic
-p497
-sbsa(dp498
+tp478
+(dp479
+tp480
+Rp481
+sg28
+(lp482
+sg30
+g481
+sbsa(dp483
 g12
 I00
 sg13
-(lp499
+(lp484
 I1550
 aI1690
 asg15
 (itiddlywiki
 Tiddler
-p500
-(dp501
-g486
+p485
+(dp486
+g18
 VThe book is titled "Moby-Dick; or, The Whale" by Herman Melville.  The entire text can be found [[here|http://www.gutenberg.org/ebooks/2701]].  However, what is notable about this particular book is the word "YOHO" written in blood inbetween the pages.\u000a\u000a<<display 'In The Attic'>>
-p502
-sg488
-(lp503
-sg490
+p487
+sg20
+VRead the book
+p488
+sg22
 g23
 ((I2013
 I11
@@ -1626,33 +1612,33 @@ I33
 I1
 I330
 I0
-tp504
-(dp505
-tp506
-Rp507
-sg495
-g507
-sg496
-VRead the book
-p508
-sbsa(dp509
+tp489
+(dp490
+tp491
+Rp492
+sg28
+(lp493
+sg30
+g492
+sbsa(dp494
 g12
 I00
 sg13
-(lp510
+(lp495
 F850.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p511
-(dp512
-g486
+p496
+(dp497
+g18
 V<<set $key = true>>You take the key.<<set $score=$score+6>>\u000a\u000a<<display 'A maze of twisty passages, all alike'>>
-p513
-sg488
-(lp514
-sg490
+p498
+sg20
+VKey taken
+p499
+sg22
 g23
 ((I2013
 I11
@@ -1663,33 +1649,33 @@ I42
 I1
 I330
 I0
-tp515
-(dp516
-tp517
-Rp518
-sg495
-g518
-sg496
-VKey taken
-p519
-sbsa(dp520
+tp500
+(dp501
+tp502
+Rp503
+sg28
+(lp504
+sg30
+g503
+sbsa(dp505
 g12
 I00
 sg13
-(lp521
+(lp506
 F990.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p522
-(dp523
-g486
+p507
+(dp508
+g18
 VThe hatch is locked.\u000a<<display 'A maze of twisty passages, all alike'>>
-p524
-sg488
-(lp525
-sg490
+p509
+sg20
+VHatch is locked
+p510
+sg22
 g23
 ((I2013
 I11
@@ -1700,33 +1686,33 @@ I50
 I1
 I330
 I0
-tp526
-(dp527
-tp528
-Rp529
-sg495
-g529
-sg496
-VHatch is locked
-p530
-sbsa(dp531
+tp511
+(dp512
+tp513
+Rp514
+sg28
+(lp515
+sg30
+g514
+sbsa(dp516
 g12
 I00
 sg13
-(lp532
+(lp517
 I10
 aI1410
 asg15
 (itiddlywiki
 Tiddler
-p533
-(dp534
-g486
+p518
+(dp519
+g18
 V\u000aYou <<if $luke eq "yes">>and Luke <<endif>>go down the hatch.  It doesn't seem that far to the floor below so you go in as far as you can, and then let go, but then it is at least a two foot drop to the floor below.  You seem to have made it unharmed.  <<if $leila eq "yes">>Leila follows you down, but just jumps, forming herself in to a parachute, gently floating to the ground.<<endif>>\u000a\u000a<<display 'A small room'>>\u000a<<endif>>\u000a 
-p535
-sg488
-(lp536
-sg490
+p520
+sg20
+VDown the hatch
+p521
+sg22
 g23
 ((I2013
 I11
@@ -1737,33 +1723,33 @@ I37
 I1
 I330
 I0
-tp537
-(dp538
-tp539
-Rp540
-sg495
-g540
-sg496
-VDown the hatch
-p541
-sbsa(dp542
+tp522
+(dp523
+tp524
+Rp525
+sg28
+(lp526
+sg30
+g525
+sbsa(dp527
 g12
 I00
 sg13
-(lp543
+(lp528
 F1130.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p544
-(dp545
-g486
+p529
+(dp530
+g18
 V<<set $hatch = "open">>You use the key you found and unlock the hatch.  It opens easily.  You could go down the hatch, but it looks intimidating.\u000a\u000a<<display 'A maze of twisty passages, all alike'>>
-p546
-sg488
-(lp547
-sg490
+p531
+sg20
+VOpen the hatch
+p532
+sg22
 g23
 ((I2013
 I11
@@ -1774,33 +1760,33 @@ I8
 I1
 I330
 I0
-tp548
-(dp549
-tp550
-Rp551
-sg495
-g551
-sg496
-VOpen the hatch
-p552
-sbsa(dp553
+tp533
+(dp534
+tp535
+Rp536
+sg28
+(lp537
+sg30
+g536
+sbsa(dp538
 g12
 I00
 sg13
-(lp554
+(lp539
 I10
 aI1690
 asg15
 (itiddlywiki
 Tiddler
-p555
-(dp556
-g486
+p540
+(dp541
+g18
 VYou are in a small room.  A door is to the north.\u000a\u000a[[Go through the door|Goblin room]]\u000a
-p557
-sg488
-(lp558
-sg490
+p542
+sg20
+VA small room
+p543
+sg22
 g23
 ((I2013
 I11
@@ -1811,33 +1797,33 @@ I34
 I1
 I330
 I0
-tp559
-(dp560
-tp561
-Rp562
-sg495
-g562
-sg496
-VA small room
-p563
-sbsa(dp564
+tp544
+(dp545
+tp546
+Rp547
+sg28
+(lp548
+sg30
+g547
+sbsa(dp549
 g12
 I00
 sg13
-(lp565
+(lp550
 I150
 aI1690
 asg15
 (itiddlywiki
 Tiddler
-p566
-(dp567
-g486
+p551
+(dp552
+g18
 VYou are in a small room.  <<if $goblin eq "hungry">> A hungry goblin is here, determined to have you for lunch!<<endif>>\u000a<<if $goblin eq "hungry" and $katana eq true>>\u000a[[Slice goblin in to ribbons with your katana|Goblin slicing]]\u000a/%%/\u000a<<endif>><<if $goblin eq "hungry" and $throwingstar gt 1>>\u000a[[Throw a throwing star at the goblin|Goblin star toss]] - You have <<print $throwingstars+"">> throwing stars in your inventory.<<endif>><<if $goblin eq "hungry">>\u000a[[Fight the small goblin empty handed|Goblin flailing]]\u000a[[Run back to the small room|A small room]]\u000a<<endif>><<if $goblin eq "subdued">>A hungry goblin is attempting to hide in the corner here, carefully keeping its distance from you.  Now that you aren't feeling threatened, you notice a door in the north of this room.\u000a<<endif>><<if $goblin eq "dead">>A dead goblin is here.  Now that you aren't feeling threatened, you notice a door in the north of this room.\u000a<<endif>>\u000a<<if $goblin neq "hungry">>\u000a[[Go south to the small room|A small room]]\u000a[[Go north|A long hallway]] \u000a<<endif>>
-p568
-sg488
-(lp569
-sg490
+p553
+sg20
+VGoblin room
+p554
+sg22
 g23
 ((I2013
 I11
@@ -1848,33 +1834,33 @@ I59
 I1
 I330
 I0
-tp570
-(dp571
-tp572
-Rp573
-sg495
-g573
-sg496
-VGoblin room
-p574
-sbsa(dp575
+tp555
+(dp556
+tp557
+Rp558
+sg28
+(lp559
+sg30
+g558
+sbsa(dp560
 g12
 I00
 sg13
-(lp576
+(lp561
 F150.0
 aF10.0
 asg15
 (itiddlywiki
 Tiddler
-p577
-(dp578
-g486
+p562
+(dp563
+g18
 V<<silently>>\u000a<<set $maze=0>>\u000a<<set $hunger=0>>\u000a<<set $registration=false>>\u000a<<set $warned=false>>\u000a<<set $key=false>>\u000a<<set $hatch="closed">>\u000a<<set $goblin="hungry">>\u000a<<set $ogre="angry">>\u000a<<set $mongoose="hungry">>\u000a<<set $leilacarried=false>>\u000a<<set $guard=Math.floor(Math.random()*6)>\u000a<<set $okay=true>>\u000a<<set $sitting=false>>\u000a<<set $first3=true>>\u000a<<set $first4=true>>\u000a<<set $coins=0>>\u000a<<set $money=100>>\u000a<<set $score=0>>\u000a<<set $katana=false>>\u000a<<set $shield=false>>\u000a<<set $leather=false>>\u000a<<set $throwingstars=0>>\u000a<<set $goldegg=false>>\u000a<<endsilently>>\u000a
-p579
-sg488
-(lp580
-sg490
+p564
+sg20
+VInitialize Variables
+p565
+sg22
 g23
 ((I2013
 I11
@@ -1885,36 +1871,33 @@ I53
 I1
 I330
 I0
-tp581
-(dp582
-tp583
-Rp584
-sg495
-g584
-sg496
-VInitialize Variables
-p585
-sbsa(dp586
+tp566
+(dp567
+tp568
+Rp569
+sg28
+(lp570
+sg30
+g569
+sbsa(dp571
 g12
 I00
 sg13
-(lp587
+(lp572
 I710
 aI1830
 asg15
 (itiddlywiki
 Tiddler
-p588
-(dp589
-S'text'
-p590
+p573
+(dp574
+g18
 VYou buy Nermin's little rowboat and walk down to the dock with him.  It's sitting there tied to the dock looking all cute and ready to go.\u000a\u000aNermin says "I'd be handing you keys here, but here are the oars, and I think you're ready to go!"\u000a\u000a<<if $luke eq "yes">>Luke jumps in the boat with you and is ready to row. "I believe there is an island just out of sight, not that island towards the south.  I understand it used to be a fort and it might have a treasure room!"<<endif>><<if $leila eq "yes">>Leila jumps in the boat with you but you are uncertain if she is able to help you row.\u000a<<endif>>\u000a[[Row towards small island to the south|Offshore Bird Sanctuary]]\u000a[[Row towards open ocean to the west|Out In The Ocean]]\u000a
-p591
-sS'tags'
-p592
-(lp593
-sS'created'
-p594
+p575
+sg20
+VAt the docks
+p576
+sg22
 g23
 ((I2013
 I11
@@ -1925,35 +1908,33 @@ I12
 I1
 I330
 I0
-tp595
-(dp596
-tp597
-Rp598
-sS'modified'
-p599
-g598
-sS'title'
-p600
-VAt the docks
-p601
-sbsa(dp602
+tp577
+(dp578
+tp579
+Rp580
+sg28
+(lp581
+sg30
+g580
+sbsa(dp582
 g12
 I00
 sg13
-(lp603
+(lp583
 I1550
 aI2110
 asg15
 (itiddlywiki
 Tiddler
-p604
-(dp605
-g590
+p584
+(dp585
+g18
 V<<if $leilacarried eq true>>After carrying Leila this far, and the mongoose didn't follow you, you are relieved to put her down.<<set $leilacarried=false>>\u000a<<endif>>You find yourself on a sandy beach.  The ocean expands out to the north and there is a path to the south.\u000a<<if $travel eq 1>><<set $travel=0>>\u000a<<if $leila eq "yes">>You are surprised to see Leila still with you.  She looks at you as if she is equally surprised.<<endif>>\u000a<<if $luke eq "yes">>Luke somehow has made it with you, including the Steampunk Spider.  He is as uncertain as you how he got here, but clearly ready to resume treasure hunting.<<endif>><<endif>>\u000a[[Go south|On A Small Island]]\u000a\u000a
-p606
-sg592
-(lp607
-sg594
+p586
+sg20
+VOn The Beach
+p587
+sg22
 g23
 ((I2013
 I11
@@ -1964,33 +1945,33 @@ I59
 I1
 I330
 I0
-tp608
-(dp609
-tp610
-Rp611
-sg599
-g611
-sg600
-VOn The Beach
-p612
-sbsa(dp613
+tp588
+(dp589
+tp590
+Rp591
+sg28
+(lp592
+sg30
+g591
+sbsa(dp593
 g12
 I00
 sg13
-(lp614
+(lp594
 I290
 aI1550
 asg15
 (itiddlywiki
 Tiddler
-p615
-(dp616
-g590
+p595
+(dp596
+g18
 V<<if $luke neq "yes">>Owning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  You smack the poor goblin with you katana, with the sharp side, with the flat side, with the pointy bit, repeatedly, as he screams, as he tries to run away, but you just keep doing this, until he is covered with blood, until he stops screaming, until he is dead.<<endif>><<if $luke eq "yes">>Owning a katana is not quite the same as knowing how to use a katana, but you do figure out that waving it around mercilessly can in fact cause a lot of damage.  Unfortunately, the goblin also know this, and so stays carefully away from you.  Fortunately, you are providing a good distraction for Luke's spider, who zips around, stinging the poor goblin everytime he takes the time to dodge your katana.  The poor goblin doesn't stand a chance when it's three against one.<<endif>>\u000a\u000a<<set $goblin="dead">><<display 'Goblin room'>>
-p617
-sg592
-(lp618
-sg594
+p597
+sg20
+VGoblin slicing
+p598
+sg22
 g23
 ((I2013
 I11
@@ -2001,33 +1982,33 @@ I3
 I2
 I331
 I0
-tp619
-(dp620
-tp621
-Rp622
-sg599
-g622
-sg600
-VGoblin slicing
-p623
-sbsa(dp624
+tp599
+(dp600
+tp601
+Rp602
+sg28
+(lp603
+sg30
+g602
+sbsa(dp604
 g12
 I00
 sg13
-(lp625
+(lp605
 I290
 aI1690
 asg15
 (itiddlywiki
 Tiddler
-p626
-(dp627
-g590
+p606
+(dp607
+g18
 V<<if Math.random() lt 0.2>>You throw a star at the goblin, and despite your lack of training it hits him!  It does not seem to do any damage and does little more than distract him.<<else>>You throw a star at the goblin, but your aim is horrible and the star bounces uselessly off the wall.<<endif>>\u000a\u000a<<display 'Goblin room'>>
-p628
-sg592
-(lp629
-sg594
+p608
+sg20
+VGoblin star toss
+p609
+sg22
 g23
 ((I2013
 I11
@@ -2038,33 +2019,33 @@ I22
 I2
 I331
 I0
-tp630
-(dp631
-tp632
-Rp633
-sg599
-g633
-sg600
-VGoblin star toss
-p634
-sbsa(dp635
+tp610
+(dp611
+tp612
+Rp613
+sg28
+(lp614
+sg30
+g613
+sbsa(dp615
 g12
 I00
 sg13
-(lp636
+(lp616
 F150.0
 aF2250.0
 asg15
 (itiddlywiki
 Tiddler
-p637
-(dp638
-g590
+p617
+(dp618
+g18
 V<<if $luke neq "yes">>You attempt to attack the goblin, flailing your fists about almost uselessly.  The goblin, though small, easily overwhelms you, almost never hurts you, but lands you on the ground easily.  He then picks you up and carries you off.\u000a\u000aHe carries you over his shoulder down a long passage way, suddenly stopping and knocking on a door.  Another goblin opens the door, they talk in a language you are unfamiliar with, and put you in a large cauldron.  They look rather excited.<<set $score=$score+2>><<display 'In a Cauldron 1'>><<endif>>\u000a<<if $luke eq "yes">>You attempt to attack the goblin.  Your ineffective punches and throws make suitable distraction for the spider to come around bite the goblin on the ankles.  Meanwhile Luke attacks the goblin from behind.  Between the three of you, you easily subdue to the goblin.<<set $interview=false>>\u000a<<display 'Goblin Defeat'>>\u000a<<endif>>\u000a
-p639
-sg592
-(lp640
-sg594
+p619
+sg20
+VGoblin flailing
+p620
+sg22
 g23
 ((I2013
 I11
@@ -2075,33 +2056,33 @@ I50
 I2
 I331
 I0
-tp641
-(dp642
-tp643
-Rp644
-sg599
-g644
-sg600
-VGoblin flailing
-p645
-sbsa(dp646
+tp621
+(dp622
+tp623
+Rp624
+sg28
+(lp625
+sg30
+g624
+sbsa(dp626
 g12
 I00
 sg13
-(lp647
+(lp627
 I1550
 aI2250
 asg15
 (itiddlywiki
 Tiddler
-p648
-(dp649
-g590
+p628
+(dp629
+g18
 VYou are on a small island.  There is a path to the beach north, and small hut here.  <<if $mongoose eq "hungry" and $leila eq "yes">>There is a mongoose here, looking at Leila with what appears to be ill intent.  Leila looks blatantly worried.<<endif>>\u000a\u000a<<if $mongoose eq "hungry" and $leila eq "yes" and $leilacarried eq false>>\u000a[[Go north|Eat Leila 1]]\u000a[[Enter the hut|Eat Leila 2]]\u000a[[Carry Leila so the mongoose doesn't eat her|Carry Leila]]\u000a<<else>>\u000a[[Go north|On The Beach]]\u000a[[Enter the hut|In The Hut]]\u000a<<endif>>\u000a<<if $mongoose eq "hungry" and $leila eq "yes">>[[Feed Leila to the mongoose]]<<endif>>\u000a<<if $mongoose eq "hungry" and $leila eq "yes" and $katana eq true>>[[Kill the mongoose with the katana|Kill mongoose]]<<endif>>\u000a
-p650
-sg592
-(lp651
-sg594
+p630
+sg20
+VOn A Small Island
+p631
+sg22
 g23
 ((I2013
 I11
@@ -2112,33 +2093,33 @@ I51
 I2
 I331
 I0
-tp652
-(dp653
-tp654
-Rp655
-sg599
-g655
-sg600
-VOn A Small Island
-p656
-sbsa(dp657
+tp632
+(dp633
+tp634
+Rp635
+sg28
+(lp636
+sg30
+g635
+sbsa(dp637
 g12
 I00
 sg13
-(lp658
+(lp638
 I1690
 aI2250
 asg15
 (itiddlywiki
 Tiddler
-p659
-(dp660
-g590
+p639
+(dp640
+g18
 V<<if $leilacarried eq true>>After carrying Leila this far, and the mongoose didn't follow you, you are relieved to put her down.\u000a<<set $leilacarried=false>>\u000a<<endif>>You are in a small hut.  It looks like it hasn't been used much, except maybe as a vacation rental or something.  There is a rug covering the floor, a locked treasure chest, and a bookshelf here.\u000a\u000a[[Move rug]]\u000a[[Open chest]]\u000a[[Read books]]\u000a[[Leave the hut|On A Small Island]]\u000a
-p661
-sg592
-(lp662
-sg594
+p641
+sg20
+VIn The Hut
+p642
+sg22
 g23
 ((I2013
 I11
@@ -2149,33 +2130,33 @@ I26
 I2
 I331
 I0
-tp663
-(dp664
-tp665
-Rp666
-sg599
-g666
-sg600
-VIn The Hut
-p667
-sbsa(dp668
+tp643
+(dp644
+tp645
+Rp646
+sg28
+(lp647
+sg30
+g646
+sbsa(dp648
 g12
 I00
 sg13
-(lp669
+(lp649
 F1130.0
 aF1270.0
 asg15
 (itiddlywiki
 Tiddler
-p670
-(dp671
-g590
+p650
+(dp651
+g18
 VThis room is a lot like the others, except that there is a cavernous fracture in the ground, a huge gap that would be uncrossable except for a stone bridge, decrepit enough that you aren't entirely certain if it is safe, goes across the gap.\u000a<<set $state="bridge">>\u000a[[Cross the bridge|Ogre Room]]\u000a[[south]]\u000a[[east]]\u000a[[west]]\u000a
-p672
-sg592
-(lp673
-sg594
+p652
+sg20
+VBridge Room
+p653
+sg22
 g23
 ((I2013
 I11
@@ -2186,33 +2167,33 @@ I44
 I2
 I331
 I0
-tp674
-(dp675
-tp676
-Rp677
-sg599
-g677
-sg600
-VBridge Room
-p678
-sbsa(dp679
+tp654
+(dp655
+tp656
+Rp657
+sg28
+(lp658
+sg30
+g657
+sbsa(dp659
 g12
 I00
 sg13
-(lp680
+(lp660
 F710.0
 aF1970.0
 asg15
 (itiddlywiki
 Tiddler
-p681
-(dp682
-g590
+p661
+(dp662
+g18
 VYou are just offshore of an island which has been designated as a bird sanctuary.  As such no humans are allowed on it.  There are several signs indicating as such, as well as a dock that you are allowed to hitch your boat to while you are observing the birds.\u000a\u000a<<if $leila eq "yes">>Leila seems utterly fascinated with the birds.  You wish you had binoculars to see them better.<<endif>>\u000a<<if $luke  eq "yes">>Luke looks at the island and says "I don't think we will find anything interesting there, and I recommend we continue on to the island with the fort on it.<<endif>>\u000a\u000a[[Hitch your boat|Tied To The Hitch At The Bird Sanctuary]]\u000a[[Continue rowing to sea|Out In The Ocean]]\u000a
-p683
-sg592
-(lp684
-sg594
+p663
+sg20
+VOffshore Bird Sanctuary
+p664
+sg22
 g23
 ((I2013
 I11
@@ -2223,33 +2204,33 @@ I37
 I2
 I331
 I0
-tp685
-(dp686
-tp687
-Rp688
-sg599
-g688
-sg600
-VOffshore Bird Sanctuary
-p689
-sbsa(dp690
+tp665
+(dp666
+tp667
+Rp668
+sg28
+(lp669
+sg30
+g668
+sbsa(dp670
 g12
 I00
 sg13
-(lp691
+(lp671
 F850.0
 aF2110.0
 asg15
 (itiddlywiki
 Tiddler
-p692
-(dp693
-g590
+p672
+(dp673
+g18
 VYou are paddling out in the ocean.  Just as you lose sight of shore, an island comes into view off in the distance!\u000a\u000a[[Row to far island|Toward The Small Island]]\u000a[[Row to bird sanctuary to the south|Offshore Bird Sanctuary]]\u000a
-p694
-sg592
-(lp695
-sg594
+p674
+sg20
+VOut In The Ocean
+p675
+sg22
 g23
 ((I2013
 I11
@@ -2260,33 +2241,33 @@ I55
 I2
 I331
 I0
-tp696
-(dp697
-tp698
-Rp699
-sg599
-g699
-sg600
-VOut In The Ocean
-p700
-sbsa(dp701
+tp676
+(dp677
+tp678
+Rp679
+sg28
+(lp680
+sg30
+g679
+sbsa(dp681
 g12
 I00
 sg13
-(lp702
+(lp682
 F710.0
 aF2110.0
 asg15
 (itiddlywiki
 Tiddler
-p703
-(dp704
-g590
+p683
+(dp684
+g18
 VYour boat is tied to the hitch at the bird sanctuary.  You can see majestic birds off in the distance, but it's really not the same without binoculars.\u000a<<if $leila eq "yes">>\u000aLeila is beside herself in awe of the birds.  It is clear she wants to go on the island for a closer look.<<endif>><<if $luke eq "yes">>\u000aLuke clearly doesn't think much of the birds and is waiting for you to do something interesting.<<endif>>\u000a[[Go on shore|Disembark]]\u000a[[Unhitch and row out to sea|Out In The Ocean]]\u000a
-p705
-sg592
-(lp706
-sg594
+p685
+sg20
+VTied To The Hitch At The Bird Sanctuary
+p686
+sg22
 g23
 ((I2013
 I11
@@ -2297,36 +2278,33 @@ I4
 I2
 I331
 I0
-tp707
-(dp708
-tp709
-Rp710
-sg599
-g710
-sg600
-VTied To The Hitch At The Bird Sanctuary
-p711
-sbsa(dp712
+tp687
+(dp688
+tp689
+Rp690
+sg28
+(lp691
+sg30
+g690
+sbsa(dp692
 g12
 I00
 sg13
-(lp713
+(lp693
 I1830
 aI2250
 asg15
 (itiddlywiki
 Tiddler
-p714
-(dp715
-S'text'
-p716
+p694
+(dp695
+g18
 VThe chest is locked.\u000a\u000a<<display 'In The Hut'>>
-p717
-sS'tags'
-p718
-(lp719
-sS'created'
-p720
+p696
+sg20
+VOpen chest
+p697
+sg22
 g23
 ((I2013
 I11
@@ -2337,35 +2315,33 @@ I23
 I2
 I331
 I0
-tp721
-(dp722
-tp723
-Rp724
-sS'modified'
-p725
-g724
-sS'title'
-p726
-VOpen chest
-p727
-sbsa(dp728
+tp698
+(dp699
+tp700
+Rp701
+sg28
+(lp702
+sg30
+g701
+sbsa(dp703
 g12
 I00
 sg13
-(lp729
+(lp704
 I1830
 aI2110
 asg15
 (itiddlywiki
 Tiddler
-p730
-(dp731
-g716
+p705
+(dp706
+g18
 VI can infer something about text adventures you've played in the past.\u000a\u000aUnfortunately, there is nothing under the rug.\u000a\u000a<<display 'In The Hut'>>
-p732
-sg718
-(lp733
-sg720
+p707
+sg20
+VMove rug
+p708
+sg22
 g23
 ((I2013
 I11
@@ -2376,33 +2352,33 @@ I8
 I2
 I331
 I0
-tp734
-(dp735
-tp736
-Rp737
-sg725
-g737
-sg726
-VMove rug
-p738
-sbsa(dp739
+tp709
+(dp710
+tp711
+Rp712
+sg28
+(lp713
+sg30
+g712
+sbsa(dp714
 g12
 I00
 sg13
-(lp740
+(lp715
 F1690.0
 aF2390.0
 asg15
 (itiddlywiki
 Tiddler
-p741
-(dp742
-g716
+p716
+(dp717
+g18
 VYou take a browse the bookshelf, and see a book titled "Treasures Found On Abandoned Islands".  You take the shelf, when suddenly the floor opens up from underneath you!\u000a\u000aYou fall in to some caves below.\u000a\u000a<<display 'A cold room'>>\u000a/% Could go to some twisty caves, but I think that's just mean.  %/
-p743
-sg718
-(lp744
-sg720
+p718
+sg20
+VRead books
+p719
+sg22
 g23
 ((I2013
 I11
@@ -2413,33 +2389,33 @@ I16
 I2
 I331
 I0
-tp745
-(dp746
-tp747
-Rp748
-sg725
-g748
-sg726
-VRead books
-p749
-sbsa(dp750
+tp720
+(dp721
+tp722
+Rp723
+sg28
+(lp724
+sg30
+g723
+sbsa(dp725
 g12
 I00
 sg13
-(lp751
+(lp726
 I710
 aI430
 asg15
 (itiddlywiki
 Tiddler
-p752
-(dp753
-g716
+p727
+(dp728
+g18
 VMrs. Slime has the best tea and cookies.  You make yourself comfortable on the couch and munch on too many cookies for your health and drink too much tea.  An inner voice is nagging you to get back on your adventures, but you are enjoying this far too much.  It's almost like you are melting in to the couch, it is so awesome.\u000a\u000a[[Continue to enjoy tea and cookies and couch|Stuck In The Couch]]\u000a[[Thank you so much Mrs. Slime.  We really must be on our way now, though.|Choose Your Destiny]]\u000a
-p754
-sg718
-(lp755
-sg720
+p729
+sg20
+VTea And Cookies
+p730
+sg22
 g23
 ((I2013
 I11
@@ -2450,33 +2426,33 @@ I31
 I2
 I331
 I0
-tp756
-(dp757
-tp758
-Rp759
-sg725
-g759
-sg726
-VTea And Cookies
-p760
-sbsa(dp761
+tp731
+(dp732
+tp733
+Rp734
+sg28
+(lp735
+sg30
+g734
+sbsa(dp736
 g12
 I00
 sg13
-(lp762
+(lp737
 F990.0
 aF2110.0
 asg15
 (itiddlywiki
 Tiddler
-p763
-(dp764
-g716
+p738
+(dp739
+g18
 VSeeing the island close, you get a new burst of energy.  You <<if $luke eq "yes">>and Luke <<endif>>row confidently towards the island.\u000a\u000aYou aren't quite there yet, but it is close now.\u000a\u000a[[Row to the small island|Almost On Shore]]\u000a[[Row back toward the mainland|Out In The Ocean]]\u000a
-p765
-sg718
-(lp766
-sg720
+p740
+sg20
+VToward The Small Island
+p741
+sg22
 g23
 ((I2013
 I11
@@ -2487,33 +2463,33 @@ I50
 I2
 I331
 I0
-tp767
-(dp768
-tp769
-Rp770
-sg725
-g770
-sg726
-VToward The Small Island
-p771
-sbsa(dp772
+tp742
+(dp743
+tp744
+Rp745
+sg28
+(lp746
+sg30
+g745
+sbsa(dp747
 g12
 I00
 sg13
-(lp773
+(lp748
 F1130.0
 aF2110.0
 asg15
 (itiddlywiki
 Tiddler
-p774
-(dp775
-g716
+p749
+(dp750
+g18
 VYou row vigourously.  Suddenly, the waves seem much higher than before!  You keep rowing and aiming toward shore but it has suddenly become much more difficult, with the water churning and falling.  Just as you think you've got it made, the waves cause the boat to fall, and as it hits the water it smashes in to little pieces!\u000a\u000aWithout thinking about it, you swim towards the island.  You are surprised how quickly you find land - you must have been closer than you thought.  You walk up on to the beach.  It's not so cold that you fear for your life, and you attempt to make sense of the situation.  <<set $travel=1>>\u000a\u000a<<display 'On The Beach'>>
-p776
-sg718
-(lp777
-sg720
+p751
+sg20
+VAlmost On Shore
+p752
+sg22
 g23
 ((I2013
 I11
@@ -2524,36 +2500,33 @@ I19
 I2
 I331
 I0
-tp778
-(dp779
-tp780
-Rp781
-sg725
-g781
-sg726
-VAlmost On Shore
-p782
-sbsa(dp783
+tp753
+(dp754
+tp755
+Rp756
+sg28
+(lp757
+sg30
+g756
+sbsa(dp758
 g12
 I00
 sg13
-(lp784
+(lp759
 F1270.0
 aF1270.0
 asg15
 (itiddlywiki
 Tiddler
-p785
-(dp786
-S'text'
-p787
+p760
+(dp761
+g18
 V <<if $ogre neq "dead">>There is an ogre here glaring at you.  He carries a club about the size that you are, and moves in your direction poised to swing it at you as soon as you are close enough.\u000a\u000a[[Run back across the bridge|A maze of twisty passages, all alike]]\u000a[[Empty-handedly fight the ogre|Ogre Fight]]\u000a<<if $katana eq true>>\u000a[[Fight the ogre with the katana|Ogre Slice]]\u000a<<endif>><<if $throwingstars gte 1>>\u000a[[Throw stars at the the ogre|Ogre Fight]]\u000a<<endif>>\u000a<<else>>\u000aYou are in a room that looks like it was the den for a strange animal.  Tufts of fur adorn a corner that look like it was used for a bed; bones are piled in a corner.  There is a bridge of uncertain safety to the south.\u000a\u000a[[Cross the bridge|A maze of twisty passages, all alike]]\u000a<<endif>>
-p788
-sS'tags'
-p789
-(lp790
-sS'created'
-p791
+p762
+sg20
+VOgre Room
+p763
+sg22
 g23
 ((I2013
 I11
@@ -2564,38 +2537,33 @@ I40
 I2
 I331
 I0
-tp792
-(dp793
-tp794
-Rp795
-sS'modified'
-p796
-g795
-sS'title'
-p797
-VOgre Room
-p798
-sbsa(dp799
+tp764
+(dp765
+tp766
+Rp767
+sg28
+(lp768
+sg30
+g767
+sbsa(dp769
 g12
 I00
 sg13
-(lp800
+(lp770
 F430.0
 aF1970.0
 asg15
 (itiddlywiki
 Tiddler
-p801
-(dp802
-S'text'
-p803
+p771
+(dp772
+g18
 VYou tell the goblin not to hurt you, since you clearly have the upper hand.  The goblin doesn't understand your words, but he clearly knows you can defeat him, so you hope that he doesn't try anything.\u000a<<set $goblin="subdued">>\u000a<<display 'Goblin room'>>
-p804
-sS'tags'
-p805
-(lp806
-sS'created'
-p807
+p773
+sg20
+VShow Mercy
+p774
+sg22
 g23
 ((I2013
 I11
@@ -2606,35 +2574,33 @@ I1
 I4
 I333
 I0
-tp808
-(dp809
-tp810
-Rp811
-sS'modified'
-p812
-g811
-sS'title'
-p813
-VShow Mercy
-p814
-sbsa(dp815
+tp775
+(dp776
+tp777
+Rp778
+sg28
+(lp779
+sg30
+g778
+sbsa(dp780
 g12
 I00
 sg13
-(lp816
+(lp781
 F430.0
 aF1830.0
 asg15
 (itiddlywiki
 Tiddler
-p817
-(dp818
-g803
+p782
+(dp783
+g18
 VLuke says "what do we do with the goblin now?  My spider can inject enough venom in to him if we need to kill him.  <<if $interview eq false>>Or we can quiz him but I'm not sure he knows our language.<<endif>>  Or we could just leave him here and hope he doesn't chase us, or do something more drastic if he does."\u000a[[Kill the goblin]]\u000a<<if $interview eq false>>\u000a[[Interrogate the goblin]]\u000a<<endif>>\u000a[[Allow the goblin to live|Show Mercy]]<<set $score=$score+5>><<endif>>
-p819
-sg805
-(lp820
-sg807
+p784
+sg20
+VGoblin Defeat
+p785
+sg22
 g23
 ((I2013
 I11
@@ -2645,33 +2611,33 @@ I58
 I4
 I333
 I0
-tp821
-(dp822
-tp823
-Rp824
-sg812
-g824
-sg813
-VGoblin Defeat
-p825
-sbsa(dp826
+tp786
+(dp787
+tp788
+Rp789
+sg28
+(lp790
+sg30
+g789
+sbsa(dp791
 g12
 I00
 sg13
-(lp827
+(lp792
 F430.0
 aF1690.0
 asg15
 (itiddlywiki
 Tiddler
-p828
-(dp829
-g803
+p793
+(dp794
+g18
 VYou attempt to ruthlessly question the goblin, but unfortunately, not speaking a common language, this is futile.\u000a<<set $interview=true>>\u000a<<display 'Goblin Defeat'>>\u000a
-p830
-sg805
-(lp831
-sg807
+p795
+sg20
+VInterrogate the goblin
+p796
+sg22
 g23
 ((I2013
 I11
@@ -2682,33 +2648,33 @@ I51
 I4
 I333
 I0
-tp832
-(dp833
-tp834
-Rp835
-sg812
-g835
-sg813
-VInterrogate the goblin
-p836
-sbsa(dp837
+tp797
+(dp798
+tp799
+Rp800
+sg28
+(lp801
+sg30
+g800
+sbsa(dp802
 g12
 I00
 sg13
-(lp838
+(lp803
 F430.0
 aF2110.0
 asg15
 (itiddlywiki
 Tiddler
-p839
-(dp840
-g803
+p804
+(dp805
+g18
 V<<set $goblin="dead">>\u000a<<display 'Goblin room'>>
-p841
-sg805
-(lp842
-sg807
+p806
+sg20
+VKill the goblin
+p807
+sg22
 g23
 ((I2013
 I11
@@ -2719,36 +2685,33 @@ I34
 I4
 I333
 I0
-tp843
-(dp844
-tp845
-Rp846
-sg812
-g846
-sg813
-VKill the goblin
-p847
-sbsa(dp848
+tp808
+(dp809
+tp810
+Rp811
+sg28
+(lp812
+sg30
+g811
+sbsa(dp813
 g12
 I00
 sg13
-(lp849
+(lp814
 F1410.0
 aF1270.0
 asg15
 (itiddlywiki
 Tiddler
-p850
-(dp851
-S'text'
-p852
+p815
+(dp816
+g18
 V<<if $luke neq "yes">><<if $shield eq true>>The ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being where you were before, except without a useful shield this time.<<set $shield=false>>\u000a\u000a<<display 'Ogre Room'>><<else>> /% Shield else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You remember nothing else.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have been killed by an ogre. <<if $katana eq false>>Perhaps next time you should use a weapon. <<endif>> Your score is <<print $score +"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a<<endif>>  /% No shield endif %/\u000a<<else>> /% Else we have Luke %/\u000a<<if $shield eq true>>\u000aThe ogre does a simple overhead swing in your direction.  Without thinking, you put your shield above your head.  The club goes right through the shield, splitting the shield in two, wounding your hand, and putting you in the position of being \u000awhere you were before, except without a useful shield this time.\u000a\u000aWhile you were busy distracting the ogre, apparantly Luke was also busy.  Although you don't know what he did, as you brace yourself to get hit by that club again, the swing never comes, and the ogre falls down dead.<<set $ogre="dead">>\u000a\u000a"My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"\u000a[[Search for loot|Ogre Loot]]<<set $shield=false>><<else>> /% Sheild else %/\u000aThe ogre does a simple overhead swing in your direction.  It clocks you on your head.  You black out.\u000a\u000aYou aren't sure how long you were out, but after a while you come to.  You open your eyes to see Luke highly concerned and glad that you are back to consiousness.  "I was getting really worried.  I realized I can't carry you out of here by myself!"  You don't quite feel right, but at least you are alive and are capable of self-mobilization.  "My spider bit him -- apparently ogres are very suceptable to the poison I'm using.  Who would have thought?"<<set $ogre="dead">>\u000a\u000a[[Ogre Loot]]<<endif>> /% Shield endif %/ <<endif>> /%Luke endif %/
-p853
-sS'tags'
-p854
-(lp855
-sS'created'
-p856
+p817
+sg20
+VOgre Fight
+p818
+sg22
 g23
 ((I2013
 I11
@@ -2759,35 +2722,33 @@ I44
 I4
 I333
 I0
-tp857
-(dp858
-tp859
-Rp860
-sS'modified'
-p861
-g860
-sS'title'
-p862
-VOgre Fight
-p863
-sbsa(dp864
+tp819
+(dp820
+tp821
+Rp822
+sg28
+(lp823
+sg30
+g822
+sbsa(dp824
 g12
 I00
 sg13
-(lp865
+(lp825
 F1550.0
 aF1270.0
 asg15
 (itiddlywiki
 Tiddler
-p866
-(dp867
-g852
+p826
+(dp827
+g18
 VYou explore the ogre dwelling a little more.  He wasn't doing too badly!  You find piles of gold coins and cash (yes currency!) in a small chest mixed in with his belongings.\u000a<<if $luke eq "yes">>You split the loot evenly with Luke, giving him 75 coins with ogre heads on them, keeping 75 for yourself.  You also split the cash evenly, giving him $200 and keeping $200 for yourself.<<set $money=$money+200>><<set $coins=$coins+75>><<else>>You find 150 gold coins with ogre heads on them!  You also find $400!<<set $money=$money+400>><<set $coins=$coins+150>><<endif>>\u000a\u000aYou now have $<<print $money+"">>. \u000a\u000a<<display 'Ogre Room'>>\u000a
-p868
-sg854
-(lp869
-sg856
+p828
+sg20
+VOgre Loot
+p829
+sg22
 g23
 ((I2013
 I11
@@ -2798,33 +2759,33 @@ I44
 I4
 I333
 I0
-tp870
-(dp871
-tp872
-Rp873
-sg861
-g873
-sg862
-VOgre Loot
-p874
-sbsa(dp875
+tp830
+(dp831
+tp832
+Rp833
+sg28
+(lp834
+sg30
+g833
+sbsa(dp835
 g12
 I00
 sg13
-(lp876
+(lp836
 F1690.0
 aF1270.0
 asg15
 (itiddlywiki
 Tiddler
-p877
-(dp878
-g852
+p837
+(dp838
+g18
 V\u000aYou ineffectively wave the katana at the ogre.<<display 'Ogre Fight'>>
-p879
-sg854
-(lp880
-sg856
+p839
+sg20
+VOgre Slice
+p840
+sg22
 g23
 ((I2013
 I11
@@ -2835,33 +2796,33 @@ I40
 I4
 I333
 I0
-tp881
-(dp882
-tp883
-Rp884
-sg861
-g884
-sg862
-VOgre Slice
-p885
-sbsa(dp886
+tp841
+(dp842
+tp843
+Rp844
+sg28
+(lp845
+sg30
+g844
+sbsa(dp846
 g12
 I00
 sg13
-(lp887
+(lp847
 F570.0
 aF2810.0
 asg15
 (itiddlywiki
 Tiddler
-p888
-(dp889
-g852
+p848
+(dp849
+g18
 V\u000aYou are in a long hallway.  There is a door to the south, a door to the east, and a hole with a ladder in the far end. <<if $goblin eq "making soup">>The door to the west is the kitchen, where you were being made into soup.  I don't recommend going that way.<<endif>>\u000a\u000a[[Go south|Goblin room]]\u000a[[Go east|A cold room]]\u000a[[Go down the ladder|Down a hole]]\u000a
-p890
-sg854
-(lp891
-sg856
+p850
+sg20
+VA long hallway
+p851
+sg22
 g23
 ((I2013
 I11
@@ -2872,33 +2833,33 @@ I45
 I4
 I333
 I0
-tp892
-(dp893
-tp894
-Rp895
-sg861
-g895
-sg862
-VA long hallway
-p896
-sbsa(dp897
+tp852
+(dp853
+tp854
+Rp855
+sg28
+(lp856
+sg30
+g855
+sbsa(dp857
 g12
 I00
 sg13
-(lp898
+(lp858
 F150.0
 aF2390.0
 asg15
 (itiddlywiki
 Tiddler
-p899
-(dp900
-g852
+p859
+(dp860
+g18
 VYou are in a cauldron.  It is filled with water, and is not too cold.  It's not bad, you could use a bath.  The goblin cuts up carrots and puts them in the water with you.  \u000a<<set $goblin = "making soup">>\u000a[[Say "aaahhh...  what's up, doc?"|In a Cauldron 2]]\u000a[[Eat a carrot|In a Cauldron 3]]\u000a
-p901
-sg854
-(lp902
-sg856
+p861
+sg20
+VIn a Cauldron 1
+p862
+sg22
 g23
 ((I2013
 I11
@@ -2909,36 +2870,33 @@ I11
 I4
 I333
 I0
-tp903
-(dp904
-tp905
-Rp906
-sg861
-g906
-sg862
-VIn a Cauldron 1
-p907
-sbsa(dp908
+tp863
+(dp864
+tp865
+Rp866
+sg28
+(lp867
+sg30
+g866
+sbsa(dp868
 g12
 I00
 sg13
-(lp909
+(lp869
 F150.0
 aF2530.0
 asg15
 (itiddlywiki
 Tiddler
-p910
-(dp911
-S'text'
-p912
+p870
+(dp871
+g18
 VThe goblin clearly has no idea what you said, and continues.\u000a\u000aYou are in a cauldron.  It is filled with water, and is not quite warm.  The goblin cuts up some onions and puts them in the water with you.  \u000a\u000a[[Say "There must be some misunderstanding!"|In a Cauldron 4]]\u000a[[Wait for the next more edible thing|In a Cauldron 8]]\u000a
-p913
-sS'tags'
-p914
-(lp915
-sS'created'
-p916
+p872
+sg20
+VIn a Cauldron 2
+p873
+sg22
 g23
 ((I2013
 I11
@@ -2949,38 +2907,33 @@ I11
 I4
 I333
 I0
-tp917
-(dp918
-tp919
-Rp920
-sS'modified'
-p921
-g920
-sS'title'
-p922
-VIn a Cauldron 2
-p923
-sbsa(dp924
+tp874
+(dp875
+tp876
+Rp877
+sg28
+(lp878
+sg30
+g877
+sbsa(dp879
 g12
 I00
 sg13
-(lp925
+(lp880
 F290.0
 aF2530.0
 asg15
 (itiddlywiki
 Tiddler
-p926
-(dp927
-S'text'
-p928
+p881
+(dp882
+g18
 VThe goblin is clearly amused by your antics.\u000a\u000aYou are in a cauldron.  It is filled with water, and is not quite warm.  The goblin cuts up some turnips and puts them in the water with you.  This time, he directly hands you a turnip.\u000a\u000a[[Eat a turnip|In a Cauldron 5]]\u000a[[Say "There must be some misunderstanding!"|In a Cauldron 4]]\u000a
-p929
-sS'tags'
-p930
-(lp931
-sS'created'
-p932
+p883
+sg20
+VIn a Cauldron 3
+p884
+sg22
 g23
 ((I2013
 I11
@@ -2991,38 +2944,33 @@ I11
 I4
 I333
 I0
-tp933
-(dp934
-tp935
-Rp936
-sS'modified'
-p937
-g936
-sS'title'
-p938
-VIn a Cauldron 3
-p939
-sbsa(dp940
+tp885
+(dp886
+tp887
+Rp888
+sg28
+(lp889
+sg30
+g888
+sbsa(dp890
 g12
 I00
 sg13
-(lp941
+(lp891
 F150.0
 aF2670.0
 asg15
 (itiddlywiki
 Tiddler
-p942
-(dp943
-S'text'
-p944
+p892
+(dp893
+g18
 VThe goblin ignores your blabber, and continues.\u000a\u000aYou are in a cauldron.  It is filled with water, and is finally getting warm enough to be comfortable.  The goblin cuts up some onions and puts them in the water with you.  \u000a\u000a[[Say "Perhaps I can bargain with you?"|In a Cauldron 6]]\u000a[[Get out of the cauldron|Back in the Cauldron]]\u000a
-p945
-sS'tags'
-p946
-(lp947
-sS'created'
-p948
+p894
+sg20
+VIn a Cauldron 4
+p895
+sg22
 g23
 ((I2013
 I11
@@ -3033,35 +2981,33 @@ I11
 I4
 I333
 I0
-tp949
-(dp950
-tp951
-Rp952
-sS'modified'
-p953
-g952
-sS'title'
-p954
-VIn a Cauldron 4
-p955
-sbsa(dp956
+tp896
+(dp897
+tp898
+Rp899
+sg28
+(lp900
+sg30
+g899
+sbsa(dp901
 g12
 I00
 sg13
-(lp957
+(lp902
 F1410.0
 aF570.0
 asg15
 (itiddlywiki
 Tiddler
-p958
-(dp959
-g852
+p903
+(dp904
+g18
 VGoing on a space adventure sounds like a great fun idea, but you don't really know how to get to outer space. <<if $leila eq "yes">>Leila says "I have no idea how to get to space, don't look at me!"<<endif>> You remember an art project, a bunch of kids made a giant slingshot.  Although it seems risky, perhaps that could get you in to space.  <<if $luke eq "yes">>Luke says, "Don't bother with a giant slingshot!  That's stupid and dangerous. I know of an aerospace company we can sneak in to their yard; perhaps they'll have something there.<<endif>><<if $leila eq "yes">>Leila suggests that you choose a different adventure, as giant slingshots may lead to premature death.<<endif>><<set $first=true>><<set $guard=1>>\u000a\u000a[[Go to giant slingshot|Giant Slingshot]]\u000a<<if $luke eq "yes">>[[Go to aerospace yard|Outside the yard of an aerospace company]]<<endif>>\u000a<<if $leila eq "yes">>[[Choose a different adventure|Choose Your Destiny]]<<endif>>
-p960
-sg854
-(lp961
-sg856
+p905
+sg20
+VSpace Adventure
+p906
+sg22
 g23
 ((I2013
 I11
@@ -3072,33 +3018,33 @@ I0
 I4
 I333
 I0
-tp962
-(dp963
-tp964
-Rp965
-sg861
-g965
-sg862
-VSpace Adventure
-p966
-sbsa(dp967
+tp907
+(dp908
+tp909
+Rp910
+sg28
+(lp911
+sg30
+g910
+sbsa(dp912
 g12
 I00
 sg13
-(lp968
+(lp913
 F290.0
 aF2670.0
 asg15
 (itiddlywiki
 Tiddler
-p969
-(dp970
-g852
+p914
+(dp915
+g18
 VYou munch on the turnip.  It's not nearly as tasty raw as the carrot was, but you appreciate the gesture.\u000a\u000aYou are in a cauldron.  It is filled with water, and is finally getting warm enough to be comfortable.  The goblin cuts up some onions and puts them in the water with you.  \u000a\u000a[[Eat a slice of onion, despite it not being handed to you|In a Cauldron 7]]\u000a[[Wait for the next more edible thing|In a Cauldron 8]]\u000a
-p971
-sg854
-(lp972
-sg856
+p916
+sg20
+VIn a Cauldron 5
+p917
+sg22
 g23
 ((I2013
 I11
@@ -3109,33 +3055,33 @@ I36
 I4
 I333
 I0
-tp973
-(dp974
-tp975
-Rp976
-sg861
-g976
-sg862
-VIn a Cauldron 5
-p977
-sbsa(dp978
+tp918
+(dp919
+tp920
+Rp921
+sg28
+(lp922
+sg30
+g921
+sbsa(dp923
 g12
 I00
 sg13
-(lp979
+(lp924
 F10.0
 aF2810.0
 asg15
 (itiddlywiki
 Tiddler
-p980
-(dp981
-g852
+p925
+(dp926
+g18
 VYou attempt to get out of the cauldron.  The goblin whacks you with a leek, and seeing the ineffectiveness of that, hits you with a large gourd.  That stuns you just long enough for him to grab his knife and stab you repeatedly.  You aren't entirely certain what happens next, but you strongly suspect it involves him tossing you back in the cauldron, and becoming soup.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I believe protocol is to penalize points for such a case, but in this case I will waive all penalties.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p982
-sg854
-(lp983
-sg856
+p927
+sg20
+VBack in the Cauldron
+p928
+sg22
 g23
 ((I2013
 I11
@@ -3146,33 +3092,33 @@ I14
 I4
 I333
 I0
-tp984
-(dp985
-tp986
-Rp987
-sg861
-g987
-sg862
-VBack in the Cauldron
-p988
-sbsa(dp989
+tp929
+(dp930
+tp931
+Rp932
+sg28
+(lp933
+sg30
+g932
+sbsa(dp934
 g12
 I00
 sg13
-(lp990
+(lp935
 F150.0
 aF2810.0
 asg15
 (itiddlywiki
 Tiddler
-p991
-(dp992
-g852
+p936
+(dp937
+g18
 VThe goblin still has no idea what you are saying.\u000a\u000aYou are in a cauldron.  It is filled with water, and is getting warm enough to start worrying about.  \u000a\u000a[[Continue to attempt to communicate with the goblin|Noisy Soup]]\u000a[[Search for bones in the soup|In a Cauldron 9]]\u000a[[Get out of the cauldron|Back in the Cauldron]]\u000a
-p993
-sg854
-(lp994
-sg856
+p938
+sg20
+VIn a Cauldron 6
+p939
+sg22
 g23
 ((I2013
 I11
@@ -3183,36 +3129,33 @@ I40
 I4
 I333
 I0
-tp995
-(dp996
-tp997
-Rp998
-sg861
-g998
-sg862
-VIn a Cauldron 6
-p999
-sbsa(dp1000
+tp940
+(dp941
+tp942
+Rp943
+sg28
+(lp944
+sg30
+g943
+sbsa(dp945
 g12
 I00
 sg13
-(lp1001
+(lp946
 F290.0
 aF2810.0
 asg15
 (itiddlywiki
 Tiddler
-p1002
-(dp1003
-S'text'
-p1004
+p947
+(dp948
+g18
 VYou munch on the onion.  If you are going to get turned in to soup, at least you can inflict your onion breath on someone.\u000a\u000aYou are in a cauldron.  It is filled with water, and is getting warm enough to start worrying about.   \u000a\u000a[[Search for bones in the soup|In a Cauldron 9]]\u000a
-p1005
-sS'tags'
-p1006
-(lp1007
-sS'created'
-p1008
+p949
+sg20
+VIn a Cauldron 7
+p950
+sg22
 g23
 ((I2013
 I11
@@ -3223,35 +3166,33 @@ I36
 I4
 I333
 I0
-tp1009
-(dp1010
-tp1011
-Rp1012
-sS'modified'
-p1013
-g1012
-sS'title'
-p1014
-VIn a Cauldron 7
-p1015
-sbsa(dp1016
+tp951
+(dp952
+tp953
+Rp954
+sg28
+(lp955
+sg30
+g954
+sbsa(dp956
 g12
 I00
 sg13
-(lp1017
+(lp957
 F1550.0
 aF430.0
 asg15
 (itiddlywiki
 Tiddler
-p1018
-(dp1019
-g852
+p958
+(dp959
+g18
 VYou approach the giant slingshot.  Fortunately these artists did such a nice recreation of a smaller slingshot such that it should actually function as a slingshot.  This doesn't really make it that easy.<<if $leila eq "yes">>You suggest that you could put Leila in the slingshot, and you will pull, but Leila says "absolutely not".  And Leila is not strong enough for her to pull the slingshot such that you would be able to get far.<<endif>><<if $luke eq "yes">>Luke says that he will pull on the slingshot, if you get in it. When you make the reverse offer, he says "I am not that stupid." <<else>> You ask around the area, looking for someone who will help you slingshot off to space.  While most of the people just think you are insane, there is a homeless guy who looks strong enough to do it, who is just thrilled by the idea.<<endif>>\u000a\u000a[[Slingshot to space]]\u000a<<if $leila eq "yes">>[[Listen to Leila's advice and choose another adventure|Choose Your Destiny]]<<endif>>\u000a<<if $luke eq "yes">>[[Listen to Luke's advice and choose another adventure|Choose Your Destiny]]\u000a[[Listen to Luke's advice and explore the aerospace company|Outside the yard of an aerospace company]]\u000a<<endif>>
-p1020
-sg854
-(lp1021
-sg856
+p960
+sg20
+VGiant Slingshot
+p961
+sg22
 g23
 ((I2013
 I11
@@ -3262,33 +3203,33 @@ I23
 I4
 I333
 I0
-tp1022
-(dp1023
-tp1024
-Rp1025
-sg861
-g1025
-sg862
-VGiant Slingshot
-p1026
-sbsa(dp1027
+tp962
+(dp963
+tp964
+Rp965
+sg28
+(lp966
+sg30
+g965
+sbsa(dp967
 g12
 I00
 sg13
-(lp1028
+(lp968
 F1690.0
 aF290.0
 asg15
 (itiddlywiki
 Tiddler
-p1029
-(dp1030
-g852
+p969
+(dp970
+g18
 VYou get in the giant slingshot as <<if $luke eq "yes">>luke<<else>>a homeless person<<endif>> pulls as hard as he can on the slingshot.  As it is pulled to brink of breaking, he lets go, and you are flung across the countryside.\u000a\u000a* *** You have died ***<<set $score=$score+12>>\u000a\u000aIt seems you have collided with the earth at high velocity.  While the earth is in space, it's not quite what people mean when they say they are looking for a Space Adventure.  However, I have to give you extra points for trying.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p1031
-sg854
-(lp1032
-sg856
+p971
+sg20
+VSlingshot to space
+p972
+sg22
 g23
 ((I2013
 I11
@@ -3299,33 +3240,33 @@ I25
 I4
 I333
 I0
-tp1033
-(dp1034
-tp1035
-Rp1036
-sg861
-g1036
-sg862
-VSlingshot to space
-p1037
-sbsa(dp1038
+tp973
+(dp974
+tp975
+Rp976
+sg28
+(lp977
+sg30
+g976
+sbsa(dp978
 g12
 I00
 sg13
-(lp1039
+(lp979
 F1830.0
 aF570.0
 asg15
 (itiddlywiki
 Tiddler
-p1040
-(dp1041
-g852
+p980
+(dp981
+g18
 V<<if $first eq true>>Luke knows a shortcut through the woods that leads to the back yard of an aerospace company.  Luke indicates that there is a guard patrolling.<<set $first=false>><<set $first2=true>><<endif>>\u000aYou are outside the backyard of an aerospace company.  There is a nice hole under the fence you can crawl through.\u000a<<if $guard eq 1 or $guard eq 4 or $guard eq 5>>\u000aYou see a guard in the yard.  You may want to wait until he goes away.\u000a<<endif>>\u000a[[Enter the yard|The Yard of an aerospace company, center]]\u000a[[Wait before entering|Stay Hidden Outside The Fence]]\u000a
-p1042
-sg854
-(lp1043
-sg856
+p982
+sg20
+VOutside the yard of an aerospace company
+p983
+sg22
 g23
 ((I2013
 I11
@@ -3336,33 +3277,33 @@ I46
 I4
 I333
 I0
-tp1044
-(dp1045
-tp1046
-Rp1047
-sg861
-g1047
-sg862
-VOutside the yard of an aerospace company
-p1048
-sbsa(dp1049
+tp984
+(dp985
+tp986
+Rp987
+sg28
+(lp988
+sg30
+g987
+sbsa(dp989
 g12
 I00
 sg13
-(lp1050
+(lp990
 F10.0
 aF2950.0
 asg15
 (itiddlywiki
 Tiddler
-p1051
-(dp1052
-g852
+p991
+(dp992
+g18
 VYou continue trying to talk to the goblin.  He continues ignoring you, continuing to cook you, seasoning you appropriately, and keeping on.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  The goblin has found you quite tasty and passes this recipe on to his friends under the name of "Noisy Soup".  Hopefully more adventurers come in to his lair so that his friends can recreate this recipe. Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p1053
-sg854
-(lp1054
-sg856
+p993
+sg20
+VNoisy Soup
+p994
+sg22
 g23
 ((I2013
 I11
@@ -3373,33 +3314,33 @@ I26
 I4
 I333
 I0
-tp1055
-(dp1056
-tp1057
-Rp1058
-sg861
-g1058
-sg862
-VNoisy Soup
-p1059
-sbsa(dp1060
+tp995
+(dp996
+tp997
+Rp998
+sg28
+(lp999
+sg30
+g998
+sbsa(dp1000
 g12
 I00
 sg13
-(lp1061
+(lp1001
 F430.0
 aF2810.0
 asg15
 (itiddlywiki
 Tiddler
-p1062
-(dp1063
-g852
+p1002
+(dp1003
+g18
 VYou wait for something more edible, but now the goblin is cutting up leafy things.  I suppose you could knibble on the kale or something, but it's not as satisfying as a carrot.\u000a\u000aYou are in a cauldron.  It is filled with water, and is getting warm enough to start worrying about.  \u000a\u000a[[Continue waiting for tasty bits|Waited too long]]\u000a[[Search for bones in the soup|In a Cauldron 9]]\u000a
-p1064
-sg854
-(lp1065
-sg856
+p1004
+sg20
+VIn a Cauldron 8
+p1005
+sg22
 g23
 ((I2013
 I11
@@ -3410,33 +3351,33 @@ I3
 I4
 I333
 I0
-tp1066
-(dp1067
-tp1068
-Rp1069
-sg861
-g1069
-sg862
-VIn a Cauldron 8
-p1070
-sbsa(dp1071
+tp1006
+(dp1007
+tp1008
+Rp1009
+sg28
+(lp1010
+sg30
+g1009
+sbsa(dp1011
 g12
 I00
 sg13
-(lp1072
+(lp1012
 F290.0
 aF2950.0
 asg15
 (itiddlywiki
 Tiddler
-p1073
-(dp1074
-g852
+p1013
+(dp1014
+g18
 VBeing as you are the soup bones, you don't expect to find any in here, but you dive to the bottom and look around a little.  You don't find anything but the vegetables.  You cause some splashes  and spill some water out of the cauldron, which cause the goblin to say something to you in his funny goblin language in a tone that clearly means "stop that, you!".\u000a\u000a[[Contine being a mermaid and explore the cauldron|Mermaid time!]]\u000a[[Stop splashing and behave|Good Soup]]\u000a
-p1075
-sg854
-(lp1076
-sg856
+p1015
+sg20
+VIn a Cauldron 9
+p1016
+sg22
 g23
 ((I2013
 I11
@@ -3447,33 +3388,33 @@ I53
 I4
 I333
 I0
-tp1077
-(dp1078
-tp1079
-Rp1080
-sg861
-g1080
-sg862
-VIn a Cauldron 9
-p1081
-sbsa(dp1082
+tp1017
+(dp1018
+tp1019
+Rp1020
+sg28
+(lp1021
+sg30
+g1020
+sbsa(dp1022
 g12
 I00
 sg13
-(lp1083
+(lp1023
 F430.0
 aF2950.0
 asg15
 (itiddlywiki
 Tiddler
-p1084
-(dp1085
-g852
+p1024
+(dp1025
+g18
 VYou patiently wait for something tasty to come in to the soup.  As you wait, you get tired, maybe dizzy, and you aren't entirely certain if you've remained concious.  The water gets warmer, maybe even hot?  \u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I am not certain, but if the goblin's demeaner shows anything, I believe you were quite tasty.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p1086
-sg854
-(lp1087
-sg856
+p1026
+sg20
+VWaited too long
+p1027
+sg22
 g23
 ((I2013
 I11
@@ -3484,33 +3425,33 @@ I31
 I4
 I333
 I0
-tp1088
-(dp1089
-tp1090
-Rp1091
-sg861
-g1091
-sg862
-VWaited too long
-p1092
-sbsa(dp1093
+tp1028
+(dp1029
+tp1030
+Rp1031
+sg28
+(lp1032
+sg30
+g1031
+sbsa(dp1033
 g12
 I00
 sg13
-(lp1094
+(lp1034
 F290.0
 aF3090.0
 asg15
 (itiddlywiki
 Tiddler
-p1095
-(dp1096
-g852
+p1035
+(dp1036
+g18
 VYou dive again, searching out all the nooks and the crannies of the cauldron, which as expected, doesn't really have any.  You break the surface of the water as fast as possible, like a dolphin, crash land on your back, and then take a big mouthful of water, and sploosh it out in the air like a whale!\u000a\u000aWater is everywhere.\u000a\u000aThe goblin is clearly agitated.  He is screaming at you in his language, which you still are not fluent in.  \u000a\u000a[[More splashing!]]\u000a[[Get out of the cauldron|Out of the Cauldron]]\u000a
-p1097
-sg854
-(lp1098
-sg856
+p1037
+sg20
+VMermaid time!
+p1038
+sg22
 g23
 ((I2013
 I11
@@ -3521,33 +3462,33 @@ I16
 I4
 I333
 I0
-tp1099
-(dp1100
-tp1101
-Rp1102
-sg861
-g1102
-sg862
-VMermaid time!
-p1103
-sbsa(dp1104
+tp1039
+(dp1040
+tp1041
+Rp1042
+sg28
+(lp1043
+sg30
+g1042
+sbsa(dp1044
 g12
 I00
 sg13
-(lp1105
+(lp1045
 F290.0
 aF3230.0
 asg15
 (itiddlywiki
 Tiddler
-p1106
-(dp1107
-g852
+p1046
+(dp1047
+g18
 VYou splash about more, and the water level is getting notably lower now.  The goblin now has his knife and is ready to get violent with it.\u000a\u000a[[Get out of the cauldron and run away|Leave the soup kitchen]]\u000a[[Prepare to get violent back at the goblin|Fight the goblin... again?]]\u000a
-p1108
-sg854
-(lp1109
-sg856
+p1048
+sg20
+VMore splashing!
+p1049
+sg22
 g23
 ((I2013
 I11
@@ -3558,33 +3499,33 @@ I40
 I4
 I333
 I0
-tp1110
-(dp1111
-tp1112
-Rp1113
-sg861
-g1113
-sg862
-VMore splashing!
-p1114
-sbsa(dp1115
+tp1050
+(dp1051
+tp1052
+Rp1053
+sg28
+(lp1054
+sg30
+g1053
+sbsa(dp1055
 g12
 I00
 sg13
-(lp1116
+(lp1056
 F430.0
 aF3090.0
 asg15
 (itiddlywiki
 Tiddler
-p1117
-(dp1118
-g852
+p1057
+(dp1058
+g18
 VYou get out of the cauldron and you realize the goblin is not near his knife or other weapons.  The other goblin has not yet noticed you, and you might have some time here.\u000a\u000a[[Fight the goblin|Fight the goblin... again?]]\u000a[[Leave the room|Leave the soup kitchen]]\u000a
-p1119
-sg854
-(lp1120
-sg856
+p1059
+sg20
+VOut of the Cauldron
+p1060
+sg22
 g23
 ((I2013
 I11
@@ -3595,33 +3536,33 @@ I58
 I4
 I333
 I0
-tp1121
-(dp1122
-tp1123
-Rp1124
-sg861
-g1124
-sg862
-VOut of the Cauldron
-p1125
-sbsa(dp1126
+tp1061
+(dp1062
+tp1063
+Rp1064
+sg28
+(lp1065
+sg30
+g1064
+sbsa(dp1066
 g12
 I00
 sg13
-(lp1127
+(lp1067
 F430.0
 aF3370.0
 asg15
 (itiddlywiki
 Tiddler
-p1128
-(dp1129
-g852
+p1068
+(dp1069
+g18
 VYou get ready for combat, but did you forget there was another goblin in this room?  It doesn't matter, I think last time it was well illustrated that you are not good at fighting goblins, and this time they don't let you live so that you won't interfere with their soup making.\u000a\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  At least you fought valiantly to not become soup.  Unfortunately, your ability with fighting is not that great.  Your score is <<print $score+"">> out of 100.  \u000a
-p1130
-sg854
-(lp1131
-sg856
+p1070
+sg20
+VFight the goblin... again?
+p1071
+sg22
 g23
 ((I2013
 I11
@@ -3632,33 +3573,33 @@ I55
 I4
 I333
 I0
-tp1132
-(dp1133
-tp1134
-Rp1135
-sg861
-g1135
-sg862
-VFight the goblin... again?
-p1136
-sbsa(dp1137
+tp1072
+(dp1073
+tp1074
+Rp1075
+sg28
+(lp1076
+sg30
+g1075
+sbsa(dp1077
 g12
 I00
 sg13
-(lp1138
+(lp1078
 F570.0
 aF3230.0
 asg15
 (itiddlywiki
 Tiddler
-p1139
-(dp1140
-g852
+p1079
+(dp1080
+g18
 VYou run out of the room.  <<if $luke eq "yes">>You have no idea where Luke is.<<endif>><<if $leila eq "yes">>You have no idea where Leila is.<<endif>><<if $katana eq true or $throwingstars gte 0 or $leather eq true or $shield eq true>>You have no idea where your possessions might be.<<endif>><<set $leila="no">><<set $luke="no">><<set $katana=false>><<set $shield=false>><<set $leather=false>><<set $throwingstars=0>>\u000a<<display 'A long hallway'>>
-p1141
-sg854
-(lp1142
-sg856
+p1081
+sg20
+VLeave the soup kitchen
+p1082
+sg22
 g23
 ((I2013
 I11
@@ -3669,33 +3610,33 @@ I2
 I4
 I333
 I0
-tp1143
-(dp1144
-tp1145
-Rp1146
-sg861
-g1146
-sg862
-VLeave the soup kitchen
-p1147
-sbsa(dp1148
+tp1083
+(dp1084
+tp1085
+Rp1086
+sg28
+(lp1087
+sg30
+g1086
+sbsa(dp1088
 g12
 I00
 sg13
-(lp1149
+(lp1089
 F1550.0
 aF2810.0
 asg15
 (itiddlywiki
 Tiddler
-p1150
-(dp1151
-g852
+p1090
+(dp1091
+g18
 VYou are in a small room, notably chillier than what you have been used to.  The ceiling is high, and there is some light indicating that there is something up there.\u000a\u000aThere is a door to the west.\u000a\u000a[[Go through the door|A long hallway]]\u000a
-p1152
-sg854
-(lp1153
-sg856
+p1092
+sg20
+VA cold room
+p1093
+sg22
 g23
 ((I2013
 I11
@@ -3706,33 +3647,33 @@ I0
 I4
 I333
 I0
-tp1154
-(dp1155
-tp1156
-Rp1157
-sg861
-g1157
-sg862
-VA cold room
-p1158
-sbsa(dp1159
+tp1094
+(dp1095
+tp1096
+Rp1097
+sg28
+(lp1098
+sg30
+g1097
+sbsa(dp1099
 g12
 I00
 sg13
-(lp1160
+(lp1100
 F710.0
 aF3090.0
 asg15
 (itiddlywiki
 Tiddler
-p1161
-(dp1162
-g852
+p1101
+(dp1102
+g18
 VAs you go down the ladder, you realize that this ladder is not safe.  In fact, the ladder crumbles as you are holding on to it and you fall down!  You don't hurt yourself too badly as you pick yourself up.  <<if $leila eq "yes">>Leila fashions herself into a parachute and follows you down.<<endif>><<if $luke eq "yes">>Luke follows you down, jumping parts and being carefully not to hurt himself.<<endif>>\u000a\u000a<<display 'Dark passageway'>>\u000a<<silently>>\u000a<<set $dragon="sleeping">>\u000a<<set $chain="north">>\u000a<<set $switch="up">>\u000a<<set $f=false>>\u000a<<set $first=true>>\u000a<<set $boulder="ledge">>\u000a<<set $bars=false>>\u000a<<endsilently>>
-p1163
-sg854
-(lp1164
-sg856
+p1103
+sg20
+VDown a hole
+p1104
+sg22
 g23
 ((I2013
 I11
@@ -3743,33 +3684,33 @@ I4
 I4
 I333
 I0
-tp1165
-(dp1166
-tp1167
-Rp1168
-sg861
-g1168
-sg862
-VDown a hole
-p1169
-sbsa(dp1170
+tp1105
+(dp1106
+tp1107
+Rp1108
+sg28
+(lp1109
+sg30
+g1108
+sbsa(dp1110
 g12
 I00
 sg13
-(lp1171
+(lp1111
 F850.0
 aF3090.0
 asg15
 (itiddlywiki
 Tiddler
-p1172
-(dp1173
-g852
+p1112
+(dp1113
+g18
 V\u000aYou are in a dark twisty tunnel.  Ahead you smell sulfur.  You are not aware of any other direction you can go.\u000a\u000a[[Continue|Dragon Room, west]]\u000a
-p1174
-sg854
-(lp1175
-sg856
+p1114
+sg20
+VDark passageway
+p1115
+sg22
 g23
 ((I2013
 I11
@@ -3780,33 +3721,33 @@ I12
 I4
 I333
 I0
-tp1176
-(dp1177
-tp1178
-Rp1179
-sg861
-g1179
-sg862
-VDark passageway
-p1180
-sbsa(dp1181
+tp1116
+(dp1117
+tp1118
+Rp1119
+sg28
+(lp1120
+sg30
+g1119
+sbsa(dp1121
 g12
 I00
 sg13
-(lp1182
+(lp1122
 F150.0
 aF3090.0
 asg15
 (itiddlywiki
 Tiddler
-p1183
-(dp1184
-g852
+p1123
+(dp1124
+g18
 VYou stop fussing and wait for a more opportune moment.  As you wait, you get tired, maybe dizzy, and you aren't entirely certain if you've remained concious.  The water gets warmer, maybe even hot?  \u000a\u000a* *** You have died ***\u000a\u000aIt seems you have become soup.  I am not certain, but if the goblin's demeaner shows anything, I believe you were quite tasty.  Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p1185
-sg854
-(lp1186
-sg856
+p1125
+sg20
+VGood Soup
+p1126
+sg22
 g23
 ((I2013
 I11
@@ -3817,33 +3758,33 @@ I54
 I4
 I333
 I0
-tp1187
-(dp1188
-tp1189
-Rp1190
-sg861
-g1190
-sg862
-VGood Soup
-p1191
-sbsa(dp1192
+tp1127
+(dp1128
+tp1129
+Rp1130
+sg28
+(lp1131
+sg30
+g1130
+sbsa(dp1132
 g12
 I00
 sg13
-(lp1193
+(lp1133
 F710.0
 aF2530.0
 asg15
 (itiddlywiki
 Tiddler
-p1194
-(dp1195
-g852
+p1134
+(dp1135
+g18
 VYou violate several environmental protection laws by merely stepping foot on to the bird sanctuary, but what's an adventure without breaking a few laws?  It's much more ethical than piracy, right?\u000a\u000a<<display 'On the shore of the bird sanctuary'>>\u000a
-p1196
-sg854
-(lp1197
-sg856
+p1136
+sg20
+VDisembark
+p1137
+sg22
 g23
 ((I2013
 I11
@@ -3854,33 +3795,33 @@ I47
 I4
 I333
 I0
-tp1198
-(dp1199
-tp1200
-Rp1201
-sg861
-g1201
-sg862
-VDisembark
-p1202
-sbsa(dp1203
+tp1138
+(dp1139
+tp1140
+Rp1141
+sg28
+(lp1142
+sg30
+g1141
+sbsa(dp1143
 g12
 I00
 sg13
-(lp1204
+(lp1144
 F850.0
 aF2530.0
 asg15
 (itiddlywiki
 Tiddler
-p1205
-(dp1206
-g852
+p1145
+(dp1146
+g18
 VYou are on the shore of a bird sanctuary.  Despite people not being allowed here, there are clear paths north and west.\u000a\u000a[[North|North side of bird sanctuary]]\u000a[[West|West side of bird sanctuary]]\u000a[[Return to boat|Tied To The Hitch At The Bird Sanctuary]]\u000a
-p1207
-sg854
-(lp1208
-sg856
+p1147
+sg20
+VOn the shore of the bird sanctuary
+p1148
+sg22
 g23
 ((I2013
 I11
@@ -3891,36 +3832,33 @@ I22
 I4
 I333
 I0
-tp1209
-(dp1210
-tp1211
-Rp1212
-sg861
-g1212
-sg862
-VOn the shore of the bird sanctuary
-p1213
-sbsa(dp1214
+tp1149
+(dp1150
+tp1151
+Rp1152
+sg28
+(lp1153
+sg30
+g1152
+sbsa(dp1154
 g12
 I00
 sg13
-(lp1215
+(lp1155
 F1550.0
 aF1970.0
 asg15
 (itiddlywiki
 Tiddler
-p1216
-(dp1217
-S'text'
-p1218
+p1156
+(dp1157
+g18
 V<<set $found = 0>><<set $magicword = prompt("What magic word do you say?")>><<if $magicword eq "yoho" or $magicword eq "YOHO" or $magicword eq "yoho!" or $magicword eq "Yoho" or $magicword eq "Yoho!" or $magicword eq "YOHO!">><<set $score=$score+4>><<set $found = 1>><<set $travel=1>>The world spins and you find yourself in another location!<<display 'On The Beach'>><<endif>>\u000a<<if $magicword eq "hello sailor" or $magicword eq "Hello Sailor" or $magicword eq "HELLO SAILOR">><<set $score=$score+4>><<set $found = 1>>You hear a sailor say "Hello!" to you as the world spins and you find yourself in another location!\u000a<<set $travel=1>><<display 'On The Beach'>><<endif>><<if $magicword eq "XYZZY" or $magicword eq "xyzzy">>A hallow voice says "fool!"...<<set $maze = 0>><<set $found = 1>><<set $score=$score+4>><<display 'A maze of twisty passages, all alike'>><<endif>>\u000a<<if $found eq 0>>You say "<<print $magicword>>" and nothing seems to happen...\u000a/%%/\u000a<<display 'On A Window Ledge'>><<endif>>
-p1219
-sS'tags'
-p1220
-(lp1221
-sS'created'
-p1222
+p1158
+sg20
+VMagic Word
+p1159
+sg22
 g23
 ((I2013
 I11
@@ -3931,38 +3869,33 @@ I53
 I1
 I330
 I0
-tp1223
-(dp1224
-tp1225
-Rp1226
-sS'modified'
-p1227
-g1226
-sS'title'
-p1228
-VMagic Word
-p1229
-sbsa(dp1230
+tp1160
+(dp1161
+tp1162
+Rp1163
+sg28
+(lp1164
+sg30
+g1163
+sbsa(dp1165
 g12
 I00
 sg13
-(lp1231
+(lp1166
 F1410.0
 aF1550.0
 asg15
 (itiddlywiki
 Tiddler
-p1232
-(dp1233
-S'text'
-p1234
+p1167
+(dp1168
+g18
 VYou take the katana.<<set $katana=true>>\u000a\u000a<<display 'In The Attic'>>
-p1235
-sS'tags'
-p1236
-(lp1237
-sS'created'
-p1238
+p1169
+sg20
+VTake the katana
+p1170
+sg22
 g23
 ((I2013
 I11
@@ -3973,35 +3906,33 @@ I43
 I5
 I334
 I0
-tp1239
-(dp1240
-tp1241
-Rp1242
-sS'modified'
-p1243
-g1242
-sS'title'
-p1244
-VTake the katana
-p1245
-sbsa(dp1246
+tp1171
+(dp1172
+tp1173
+Rp1174
+sg28
+(lp1175
+sg30
+g1174
+sbsa(dp1176
 g12
 I00
 sg13
-(lp1247
+(lp1177
 F990.0
 aF2390.0
 asg15
 (itiddlywiki
 Tiddler
-p1248
-(dp1249
-g1234
+p1178
+(dp1179
+g18
 VYou say "hurry up Leila" and she is running as fast as she can, but as you head north, she gets eaten by the mongoose!  \u000a<<set $leila="dead">>\u000a...\u000a\u000a<<display 'On The Beach'>>
-p1250
-sg1236
-(lp1251
-sg1238
+p1180
+sg20
+VEat Leila 1
+p1181
+sg22
 g23
 ((I2013
 I11
@@ -4012,36 +3943,50 @@ I30
 I5
 I334
 I0
-tp1252
-(dp1253
-tp1254
-Rp1255
-sg1243
-g1255
-sg1244
-VEat Leila 1
-p1256
-sbsa(dp1257
+tp1182
+(dp1183
+tp1184
+Rp1185
+sg28
+(lp1186
+sg30
+g1185
+sbsa(dp1187
 g12
 I00
 sg13
-(lp1258
+(lp1188
 F1550.0
 aF2390.0
 asg15
 (itiddlywiki
 Tiddler
-p1259
-(dp1260
-S'text'
-p1261
-VYou say "hurry up Leila" and she is running as fast as she can, but as you in the hut, she gets eaten by the mongoose!  \u000a<<set $leila="dead">>\u000a...\u000a\u000a<<display 'In The Hut'>>
-p1262
-sS'tags'
-p1263
-(lp1264
-sS'created'
-p1265
+p1189
+(dp1190
+g18
+VYou say "hurry up Leila" and she is running as fast as she can, but as you enter the hut, she gets eaten by the mongoose!  \u000a<<set $leila="dead">>\u000a...\u000a\u000a<<display 'In The Hut'>>
+p1191
+sg20
+VEat Leila 2
+p1192
+sg22
+g23
+((I2014
+I2
+I22
+I17
+I32
+I20
+I5
+I53
+I0
+tp1193
+(dp1194
+tp1195
+Rp1196
+sg28
+(lp1197
+sg30
 g23
 ((I2013
 I11
@@ -4052,35 +3997,29 @@ I30
 I5
 I334
 I0
-tp1266
-(dp1267
-tp1268
-Rp1269
-sS'modified'
-p1270
-g1269
-sS'title'
-p1271
-VEat Leila 2
-p1272
-sbsa(dp1273
+tp1198
+(dp1199
+tp1200
+Rp1201
+sbsa(dp1202
 g12
 I00
 sg13
-(lp1274
+(lp1203
 F1130.0
 aF2390.0
 asg15
 (itiddlywiki
 Tiddler
-p1275
-(dp1276
-g1234
+p1204
+(dp1205
+g18
 VYou pick up Leila so that she does not get eaten by a mongoose.  She is heavy and slimy.  You can't carry her forever.\u000a<<set $leilacarried=true>>\u000a<<display 'On A Small Island'>>
-p1277
-sg1236
-(lp1278
-sg1238
+p1206
+sg20
+VCarry Leila
+p1207
+sg22
 g23
 ((I2013
 I11
@@ -4091,33 +4030,33 @@ I15
 I5
 I334
 I0
-tp1279
-(dp1280
-tp1281
-Rp1282
-sg1243
-g1282
-sg1244
-VCarry Leila
-p1283
-sbsa(dp1284
+tp1208
+(dp1209
+tp1210
+Rp1211
+sg28
+(lp1212
+sg30
+g1211
+sbsa(dp1213
 g12
 I00
 sg13
-(lp1285
+(lp1214
 F1270.0
 aF2390.0
 asg15
 (itiddlywiki
 Tiddler
-p1286
-(dp1287
-g1234
+p1215
+(dp1216
+g18
 V\u000aYou cruel bastard.  I'm not sure whether to increase or decrease your score.  Either way, you're mean!\u000a\u000aThe mongoose goes away, satisfied with his meal.\u000a<<set $leila eq "dead">>\u000a<<display 'On A Small Island'>>
-p1288
-sg1236
-(lp1289
-sg1238
+p1217
+sg20
+VFeed Leila to the mongoose
+p1218
+sg22
 g23
 ((I2013
 I11
@@ -4128,33 +4067,33 @@ I58
 I5
 I334
 I0
-tp1290
-(dp1291
-tp1292
-Rp1293
-sg1243
-g1293
-sg1244
-VFeed Leila to the mongoose
-p1294
-sbsa(dp1295
+tp1219
+(dp1220
+tp1221
+Rp1222
+sg28
+(lp1223
+sg30
+g1222
+sbsa(dp1224
 g12
 I00
 sg13
-(lp1296
+(lp1225
 F1410.0
 aF2390.0
 asg15
 (itiddlywiki
 Tiddler
-p1297
-(dp1298
-g1234
+p1226
+(dp1227
+g18
 VYou hack at the mongoose with your katana. After one hit, the mongoose runs away!<<set $mongoose="runaway">><<set $score=$score+7>>\u000a\u000a<<display 'On A Small Island'>>
-p1299
-sg1236
-(lp1300
-sg1238
+p1228
+sg20
+VKill mongoose
+p1229
+sg22
 g23
 ((I2013
 I11
@@ -4165,33 +4104,33 @@ I49
 I5
 I334
 I0
-tp1301
-(dp1302
-tp1303
-Rp1304
-sg1243
-g1304
-sg1244
-VKill mongoose
-p1305
-sbsa(dp1306
+tp1230
+(dp1231
+tp1232
+Rp1233
+sg28
+(lp1234
+sg30
+g1233
+sbsa(dp1235
 g12
 I00
 sg13
-(lp1307
+(lp1236
 F1690.0
 aF710.0
 asg15
 (itiddlywiki
 Tiddler
-p1308
-(dp1309
-g1234
+p1237
+(dp1238
+g18
 VThe following numbers indicate when the guard is where.\u000a\u000aNorth Yard 2 3\u000aMid Yard   1 4 5\u000aSouth Yard 0 6 \u000a\u000aWe <<set $guard=1>> at the beginning, which seems to time it perfectly.
-p1310
-sg1236
-(lp1311
-sg1238
+p1239
+sg20
+VGuard notes
+p1240
+sg22
 g23
 ((I2013
 I11
@@ -4202,33 +4141,33 @@ I15
 I5
 I334
 I0
-tp1312
-(dp1313
-tp1314
-Rp1315
-sg1243
-g1315
-sg1244
-VGuard notes
-p1316
-sbsa(dp1317
+tp1241
+(dp1242
+tp1243
+Rp1244
+sg28
+(lp1245
+sg30
+g1244
+sbsa(dp1246
 g12
 I00
 sg13
-(lp1318
+(lp1247
 F1830.0
 aF710.0
 asg15
 (itiddlywiki
 Tiddler
-p1319
-(dp1320
-g1234
+p1248
+(dp1249
+g18
 VYou stay hidden on this side of the fence.\u000a<<set $guard=$guard+1>><<if $guard eq 7>><<set $guard=0>><<endif>>\u000a<<if $guard eq 1>>The guard enters the area from the south.<<endif>><<if $guard eq 4>>The guard enters the area from the north.<<endif>><<if $guard eq 2>>The guard leaves the area to the north.<<endif>><<if $guard eq 6>>The guard leaves the area to the south.<<endif>><<if $guard eq 5>>The guard meanders about, looks left, looks right, looks bored, sighs, and doesn't move on.<<endif>><<display 'Outside the yard of an aerospace company'>>
-p1321
-sg1236
-(lp1322
-sg1238
+p1250
+sg20
+VStay Hidden Outside The Fence
+p1251
+sg22
 g23
 ((I2013
 I11
@@ -4239,33 +4178,33 @@ I38
 I5
 I334
 I0
-tp1323
-(dp1324
-tp1325
-Rp1326
-sg1243
-g1326
-sg1244
-VStay Hidden Outside The Fence
-p1327
-sbsa(dp1328
+tp1252
+(dp1253
+tp1254
+Rp1255
+sg28
+(lp1256
+sg30
+g1255
+sbsa(dp1257
 g12
 I00
 sg13
-(lp1329
+(lp1258
 F2110.0
 aF570.0
 asg15
 (itiddlywiki
 Tiddler
-p1330
-(dp1331
-g1234
+p1259
+(dp1260
+g18
 VYou are in the yard of an aerospace company.  To the north, it looks like there is something that looks like a rocket ship.  To the south, there appear to be more conventional aircraft.  Unfortunately, here it seems be just parts and bits, but there is plenty to hide behind should the guard come through.\u000a\u000a<<if $guard eq 0>>The guard approaches from the south.  "Hey!  What are you kids doing here?"<<set $okay=false>><<display 'Caught by guard'>><<endif>>\u000a<<if $guard eq 1>>You notice that the guard has just left to the north.  His apparent obliviousness is probably the only reason he hasn't caught you.<<endif>><<if $guard eq 3>>The guard approaches from the north.  "Hey!  What are you kids doing here?"<<display 'Caught by guard'>><<set $okay=false>><<endif>><<if $guard eq 4>>You interrupt the guard dreaming about other things he could be doing for a living.  "Hey!  What are you doing here?"<<display 'Caught by guard'>><<endif>><<if $guard eq 5>>You notice that the guard has just left to the south.  His apparent obliviousness is probably the only reason he hasn't caught you.<<endif>>\u000a<<if $okay eq true>>\u000a[[Go north|The Yard of an aerospace company, north]]\u000a[[Go south|The Yard of an aerospace company, south]]\u000a[[Hide behind some metal panels|The Yard of an aerospace company, center, hidden]]<<endif>>\u000a<<set $guard=$guard+1>><<if $guard gt 6>><<set $guard=0>><<endif>>
-p1332
-sg1236
-(lp1333
-sg1238
+p1261
+sg20
+VThe Yard of an aerospace company, center
+p1262
+sg22
 g23
 ((I2013
 I11
@@ -4276,36 +4215,33 @@ I3
 I5
 I334
 I0
-tp1334
-(dp1335
-tp1336
-Rp1337
-sg1243
-g1337
-sg1244
-VThe Yard of an aerospace company, center
-p1338
-sbsa(dp1339
+tp1263
+(dp1264
+tp1265
+Rp1266
+sg28
+(lp1267
+sg30
+g1266
+sbsa(dp1268
 g12
 I00
 sg13
-(lp1340
+(lp1269
 F2250.0
 aF570.0
 asg15
 (itiddlywiki
 Tiddler
-p1341
-(dp1342
-S'text'
-p1343
+p1270
+(dp1271
+g18
 VYou are in the yard of an aerospace company, hidden behind some metal panels.  To the north, it looks like there is something that looks like a rocket ship.  To the south, there appear to be more conventional aircraft.  Unfortunately, here it seems be just parts and bits, but there is plenty to hide behind should the guard come through.\u000a\u000a<<if $guard eq 0>>The guard approaches from the south.<<endif>>\u000a<<if $guard eq 1>>The guard leaves to go north.<<endif>><<if $guard eq 2 or $guard eq 6>>The guard is not here.<<endif>><<if $guard eq 4>>The guard meanders about, looks left, looks right, looks bored, sighs, and doesn't move on.<<endif>><<if $guard eq 5>>You notice that the guard has just left to the south.<<endif>>\u000a\u000a<<if $okay eq true>>\u000a[[Go north|The Yard of an aerospace company, north]]\u000a[[Go south|The Yard of an aerospace company, south]]\u000a[[Stay hidden|Stay hidden, center]]\u000a<<endif>><<set $guard=$guard+1>><<if $guard gt 6>><<set $guard=0>><<endif>>
-p1344
-sS'tags'
-p1345
-(lp1346
-sS'created'
-p1347
+p1272
+sg20
+VThe Yard of an aerospace company, center, hidden
+p1273
+sg22
 g23
 ((I2013
 I11
@@ -4316,35 +4252,33 @@ I3
 I5
 I334
 I0
-tp1348
-(dp1349
-tp1350
-Rp1351
-sS'modified'
-p1352
-g1351
-sS'title'
-p1353
-VThe Yard of an aerospace company, center, hidden
-p1354
-sbsa(dp1355
+tp1274
+(dp1275
+tp1276
+Rp1277
+sg28
+(lp1278
+sg30
+g1277
+sbsa(dp1279
 g12
 I00
 sg13
-(lp1356
+(lp1280
 F2390.0
 aF570.0
 asg15
 (itiddlywiki
 Tiddler
-p1357
-(dp1358
-g1234
+p1281
+(dp1282
+g18
 V<<display 'The Yard of an aerospace company, center, hidden'>>
-p1359
-sg1236
-(lp1360
-sg1238
+p1283
+sg20
+VStay hidden, center
+p1284
+sg22
 g23
 ((I2013
 I11
@@ -4355,36 +4289,33 @@ I59
 I5
 I334
 I0
-tp1361
-(dp1362
-tp1363
-Rp1364
-sg1243
-g1364
-sg1244
-VStay hidden, center
-p1365
-sbsa(dp1366
+tp1285
+(dp1286
+tp1287
+Rp1288
+sg28
+(lp1289
+sg30
+g1288
+sbsa(dp1290
 g12
 I00
 sg13
-(lp1367
+(lp1291
 F2110.0
 aF430.0
 asg15
 (itiddlywiki
 Tiddler
-p1368
-(dp1369
-S'text'
-p1370
+p1292
+(dp1293
+g18
 VYou are in the yard of an aerospace company.  There is a rocket ship here.\u000a\u000a<<if $guard eq 1>>The guard approaches from the south.  "Hey!  What are you kids doing here?"<<display 'Caught by guard'>><<endif>><<if $guard eq 3>>You notice that the guard has just left to the south.  His apparent obliviousness is probably the only reason he hasn't caught you.<<endif>><<if $guard eq 2>>You interrupt the guard dreaming about other things he could be doing for a living.  "Hey!  What are you doing here?"<<display 'Caught by guard'>><<endif>>\u000a\u000a<<if $guard neq 1 and $guard neq 2>>\u000a[[Enter the rocket ship|In The Rocket Ship]]\u000a[[Go south|The Yard of an aerospace company, center]]\u000a<<endif>>\u000a<<set $guard=$guard+1>><<if $guard gt 6>><<set $guard=0>><<endif>>
-p1371
-sS'tags'
-p1372
-(lp1373
-sS'created'
-p1374
+p1294
+sg20
+VThe Yard of an aerospace company, north
+p1295
+sg22
 g23
 ((I2013
 I11
@@ -4395,35 +4326,33 @@ I3
 I5
 I334
 I0
-tp1375
-(dp1376
-tp1377
-Rp1378
-sS'modified'
-p1379
-g1378
-sS'title'
-p1380
-VThe Yard of an aerospace company, north
-p1381
-sbsa(dp1382
+tp1296
+(dp1297
+tp1298
+Rp1299
+sg28
+(lp1300
+sg30
+g1299
+sbsa(dp1301
 g12
 I00
 sg13
-(lp1383
+(lp1302
 F2250.0
 aF430.0
 asg15
 (itiddlywiki
 Tiddler
-p1384
-(dp1385
-g1234
+p1303
+(dp1304
+g18
 V<<if $first2 eq true>>You are in a rocket ship.  YES!  YOU ARE IN A ROCKET SHIP!  <<set $first2=false>><<set $score=$score+12>><<endif>>You are in the rocket ship.  Now you have to figure out how to make this thing fly.  There are buttons, dials, and switches.  There is a window here.\u000a<<set $guard=$guard+1>><<if $guard gt 6>><<set $guard=0>><<endif>>\u000a[[Press a button|The button is pressed]]\u000a[[Turn a dial|The dial is spun]]\u000a[[Flip a switch|The switch is flipped]]\u000a[[Look out the window|A View From A Rocket Ship]]\u000a[[Leave the rocket ship|The Yard of an aerospace company, north]]\u000a
-p1386
-sg1236
-(lp1387
-sg1238
+p1305
+sg20
+VIn The Rocket Ship
+p1306
+sg22
 g23
 ((I2013
 I11
@@ -4434,33 +4363,33 @@ I13
 I5
 I334
 I0
-tp1388
-(dp1389
-tp1390
-Rp1391
-sg1243
-g1391
-sg1244
-VIn The Rocket Ship
-p1392
-sbsa(dp1393
+tp1307
+(dp1308
+tp1309
+Rp1310
+sg28
+(lp1311
+sg30
+g1310
+sbsa(dp1312
 g12
 I00
 sg13
-(lp1394
+(lp1313
 F2530.0
 aF430.0
 asg15
 (itiddlywiki
 Tiddler
-p1395
-(dp1396
-g1234
+p1314
+(dp1315
+g18
 VYou press a button.  It makes a dubious click.  Nothing happens.\u000a\u000a<<display 'In The Rocket Ship'>>
-p1397
-sg1236
-(lp1398
-sg1238
+p1316
+sg20
+VThe button is pressed
+p1317
+sg22
 g23
 ((I2013
 I11
@@ -4471,33 +4400,33 @@ I2
 I5
 I334
 I0
-tp1399
-(dp1400
-tp1401
-Rp1402
-sg1243
-g1402
-sg1244
-VThe button is pressed
-p1403
-sbsa(dp1404
+tp1318
+(dp1319
+tp1320
+Rp1321
+sg28
+(lp1322
+sg30
+g1321
+sbsa(dp1323
 g12
 I00
 sg13
-(lp1405
+(lp1324
 F2530.0
 aF290.0
 asg15
 (itiddlywiki
 Tiddler
-p1406
-(dp1407
-g1234
+p1325
+(dp1326
+g18
 VYou turn the dial.  It spims as though it were not attached to anything.  Nothing seems to happen.\u000a\u000a<<display 'In The Rocket Ship'>>
-p1408
-sg1236
-(lp1409
-sg1238
+p1327
+sg20
+VThe dial is spun
+p1328
+sg22
 g23
 ((I2013
 I11
@@ -4508,33 +4437,33 @@ I14
 I5
 I334
 I0
-tp1410
-(dp1411
-tp1412
-Rp1413
-sg1243
-g1413
-sg1244
-VThe dial is spun
-p1414
-sbsa(dp1415
+tp1329
+(dp1330
+tp1331
+Rp1332
+sg28
+(lp1333
+sg30
+g1332
+sbsa(dp1334
 g12
 I00
 sg13
-(lp1416
+(lp1335
 F2390.0
 aF150.0
 asg15
 (itiddlywiki
 Tiddler
-p1417
-(dp1418
-g1234
+p1336
+(dp1337
+g18
 VYou look out the window.  <<if $guard eq 1>>You see the guard enter the north side of the yard.<<endif>><<if $guard eq 2>>You see the guard look around, sigh.  You can only imagine he is wishing he was flying off in to space right now.<<endif>><<if $guard eq 3>>You see the guard head south to the other side of the yard.  It might be safe to leave the ship now.<<endif>>\u000a\u000a<<display 'In The Rocket Ship'>>
-p1419
-sg1236
-(lp1420
-sg1238
+p1338
+sg20
+VA View From A Rocket Ship
+p1339
+sg22
 g23
 ((I2013
 I11
@@ -4545,33 +4474,33 @@ I22
 I5
 I334
 I0
-tp1421
-(dp1422
-tp1423
-Rp1424
-sg1243
-g1424
-sg1244
-VA View From A Rocket Ship
-p1425
-sbsa(dp1426
+tp1340
+(dp1341
+tp1342
+Rp1343
+sg28
+(lp1344
+sg30
+g1343
+sbsa(dp1345
 g12
 I00
 sg13
-(lp1427
+(lp1346
 F2530.0
 aF150.0
 asg15
 (itiddlywiki
 Tiddler
-p1428
-(dp1429
-g1234
+p1347
+(dp1348
+g18
 VYou flip the switch.  Nothing seems to happen.\u000a\u000a<<display 'In The Rocket Ship'>>
-p1430
-sg1236
-(lp1431
-sg1238
+p1349
+sg20
+VThe switch is flipped
+p1350
+sg22
 g23
 ((I2013
 I11
@@ -4582,33 +4511,50 @@ I28
 I5
 I334
 I0
-tp1432
-(dp1433
-tp1434
-Rp1435
-sg1243
-g1435
-sg1244
-VThe switch is flipped
-p1436
-sbsa(dp1437
+tp1351
+(dp1352
+tp1353
+Rp1354
+sg28
+(lp1355
+sg30
+g1354
+sbsa(dp1356
 g12
 I00
 sg13
-(lp1438
+(lp1357
 F1830.0
 aF290.0
 asg15
 (itiddlywiki
 Tiddler
-p1439
-(dp1440
-g1234
-V<<set $okay=false>>\u000aThe guard apprehends you  and Luke and quizzes you about your lives, your jobs, your aspirations, and what the hell are you doing here anyway.  Another guard shows up quickly enough, and they keep asking you where you live and if you are aware how much trouble you are in.  Police eventually show up and you are put in the back of one police car, and Luke is put in the back of another.\u000a\u000aThe police finally drive you home and tell your parents where they found you and what you have been doing.\u000a\u000a* *** Your adventure has been curtailed. ***\u000a\u000aI hope you have lenient parents.  At least, I wouldn't ground you. Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a
-p1441
-sg1236
-(lp1442
-sg1238
+p1358
+(dp1359
+g18
+V<<set $okay=false>>\u000aThe guard apprehends you and Luke and quizzes you about your lives, your jobs, your aspirations, and what the hell are you doing here anyway.  Another guard shows up quickly enough, and they keep asking you where you live and if you are aware how much trouble you are in.  Police eventually show up and you are put in the back of one police car, and Luke is put in the back of another.\u000a\u000aThe police finally drive you home and tell your parents where they found you and what you have been doing.\u000a\u000a* *** Your adventure has been curtailed. ***\u000a\u000aI hope you have lenient parents.  At least, I wouldn't ground you. Your score is <<print $score+"">> out of 100.  \u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.\u000a
+p1360
+sg20
+VCaught by guard
+p1361
+sg22
+g23
+((I2014
+I2
+I22
+I17
+I22
+I58
+I5
+I53
+I0
+tp1362
+(dp1363
+tp1364
+Rp1365
+sg28
+(lp1366
+sg30
 g23
 ((I2013
 I11
@@ -4619,33 +4565,29 @@ I4
 I5
 I334
 I0
-tp1443
-(dp1444
-tp1445
-Rp1446
-sg1243
-g1446
-sg1244
-VCaught by guard
-p1447
-sbsa(dp1448
+tp1367
+(dp1368
+tp1369
+Rp1370
+sbsa(dp1371
 g12
 I00
 sg13
-(lp1449
+(lp1372
 F2110.0
 aF710.0
 asg15
 (itiddlywiki
 Tiddler
-p1450
-(dp1451
-g1234
+p1373
+(dp1374
+g18
 V<<if $sitting eq true>>You stand up and head out the door.  <<set $sitting=false>><<endif>>You are in the yard of an aerospace company.  To the north, it there are bits and parts and stuff that you think might go in to flying vehicles.  There is a high security fence to the south.\u000a\u000aThere is a large building here, with the door open.  It looks like the main office, not just a guard house.  You are not sure why the door is open.\u000a\u000a<<if $guard eq 5>>The guard approaches from the south.  "Hey!  What are you kids doing here?"<<set $okay=false>><<display 'Caught by guard'>><<endif>>\u000a<<if $guard eq 0>>You notice that the guard has just left to the north.  His apparent obliviousness is probably the only reason he hasn't caught you.<<endif>><<if $guard eq 6>>You interrupt the guard dreaming about other things he could be doing for a living.  "Hey!  What are you doing here?"<<display 'Caught by guard'>><<set $okay=false>><<endif>>\u000a<<if $okay eq true>>\u000a[[Go north|The Yard of an aerospace company, center]]\u000a[[Go in the door|The swanky office of an aerospace company]]<<endif>>\u000a<<set $guard=$guard+1>><<if $guard gt 6>><<set $guard=0>><<endif>>
-p1452
-sg1236
-(lp1453
-sg1238
+p1375
+sg20
+VThe Yard of an aerospace company, south
+p1376
+sg22
 g23
 ((I2013
 I11
@@ -4656,33 +4598,33 @@ I17
 I5
 I334
 I0
-tp1454
-(dp1455
-tp1456
-Rp1457
-sg1243
-g1457
-sg1244
-VThe Yard of an aerospace company, south
-p1458
-sbsa(dp1459
+tp1377
+(dp1378
+tp1379
+Rp1380
+sg28
+(lp1381
+sg30
+g1380
+sbsa(dp1382
 g12
 I00
 sg13
-(lp1460
+(lp1383
 F2250.0
 aF710.0
 asg15
 (itiddlywiki
 Tiddler
-p1461
-(dp1462
-g1234
+p1384
+(dp1385
+g18
 V<<if $sitting eq true>>You <<if $luke eq true>>and Luke <<endif>><<if $leila eq true>>and Leila <<endif>>are sitting in swanky office chairs in what appears to be the presidential chambers of an aerospace company.  It seems the guard might be using this as his office due to the proximity of the back yard and it's luxuriousness.\u000a\u000aThere is a great desk here, with four buttons on it.<<endif>><<if $sitting eq false>>You <<if $luke eq true>>and Luke <<endif>><<if $leila eq true>>and Leila <<endif>>are standing in what looks like a swanky office that might be the presidential chambers for this aerospace company.\u000a\u000aThere is a great desk here, with four buttons on it.  Behind it are two chairs that look quite comfortable.<<endif>>\u000a<<set $guard=$guard+1>><<if $guard gt 6>><<set $guard=0>><<endif>>\u000a<<if $sitting eq false>>[[Sit in comfy chairs]]<<endif>><<if $sitting eq true>>[[Get out of comfy chairs]]<<endif>>\u000a[[Press the red button]]\u000a[[Press the green button]]\u000a[[Press the yellow button]]\u000a[[Press the blue button]]\u000a[[Look out the window|A View From A Nice Office]]\u000a[[Go outside|The Yard of an aerospace company, south]]\u000a\u000a
-p1463
-sg1236
-(lp1464
-sg1238
+p1386
+sg20
+VThe swanky office of an aerospace company
+p1387
+sg22
 g23
 ((I2013
 I12
@@ -4693,33 +4635,33 @@ I17
 I6
 I335
 I0
-tp1465
-(dp1466
-tp1467
-Rp1468
-sg1243
-g1468
-sg1244
-VThe swanky office of an aerospace company
-p1469
-sbsa(dp1470
+tp1388
+(dp1389
+tp1390
+Rp1391
+sg28
+(lp1392
+sg30
+g1391
+sbsa(dp1393
 g12
 I00
 sg13
-(lp1471
+(lp1394
 F2530.0
 aF850.0
 asg15
 (itiddlywiki
 Tiddler
-p1472
-(dp1473
-g1234
+p1395
+(dp1396
+g18
 VYou <<if $luke eq true>>and Luke <<endif>><<if $leila eq true>>and Leila<<endif>> sit in the chairs.<<set $sitting=true>>\u000a\u000a<<display 'The swanky office of an aerospace company'>>\u000a
-p1474
-sg1236
-(lp1475
-sg1238
+p1397
+sg20
+VSit in comfy chairs
+p1398
+sg22
 g23
 ((I2013
 I12
@@ -4730,36 +4672,33 @@ I43
 I6
 I335
 I0
-tp1476
-(dp1477
-tp1478
-Rp1479
-sg1243
-g1479
-sg1244
-VSit in comfy chairs
-p1480
-sbsa(dp1481
+tp1399
+(dp1400
+tp1401
+Rp1402
+sg28
+(lp1403
+sg30
+g1402
+sbsa(dp1404
 g12
 I00
 sg13
-(lp1482
+(lp1405
 F2530.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p1483
-(dp1484
-S'text'
-p1485
+p1406
+(dp1407
+g18
 VYou <<if $luke eq true>>and Luke <<endif>><<if $leila eq true>>and Leila<<endif>> stand up and go to the non-sitting side of the desk.<<set $sitting=false>>\u000a\u000a<<display 'The swanky office of an aerospace company'>>\u000a
-p1486
-sS'tags'
-p1487
-(lp1488
-sS'created'
-p1489
+p1408
+sg20
+VGet out of comfy chairs
+p1409
+sg22
 g23
 ((I2013
 I12
@@ -4770,35 +4709,33 @@ I43
 I6
 I335
 I0
-tp1490
-(dp1491
-tp1492
-Rp1493
-sS'modified'
-p1494
-g1493
-sS'title'
-p1495
-VGet out of comfy chairs
-p1496
-sbsa(dp1497
+tp1410
+(dp1411
+tp1412
+Rp1413
+sg28
+(lp1414
+sg30
+g1413
+sbsa(dp1415
 g12
 I00
 sg13
-(lp1498
+(lp1416
 F2390.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p1499
-(dp1500
-g1234
+p1417
+(dp1418
+g18
 VYou press the red button.\u000a\u000a<<if $sitting eq true>>You hear strange machinery activate under the floor.  A trap door opens on the other side of the floor.  After a couple of seconds, flames come out of the trap door, and then it closes.\u000a\u000a<<display 'The swanky office of an aerospace company'>>\u000a<<else>>You hear strange machinery activate under the floor.  The floor beneath you opens up and you fall in to a deep pit!  There is a lava here, and then a tube pointed at you opens up, with large flames come at you, just in case the lava didn't kill you!\u000a\u000a* *** You have died. ***\u000a\u000aYou triggered the trap of some sadistic rich executive.  That wasn't very nice of him leaving that around for you to fall into.  Your score is <<print $score+"">> of 100.\u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.<<endif>>\u000a\u000a
-p1501
-sg1236
-(lp1502
-sg1238
+p1419
+sg20
+VPress the red button
+p1420
+sg22
 g23
 ((I2013
 I12
@@ -4809,36 +4746,33 @@ I39
 I6
 I335
 I0
-tp1503
-(dp1504
-tp1505
-Rp1506
-sg1243
-g1506
-sg1244
-VPress the red button
-p1507
-sbsa(dp1508
+tp1421
+(dp1422
+tp1423
+Rp1424
+sg28
+(lp1425
+sg30
+g1424
+sbsa(dp1426
 g12
 I00
 sg13
-(lp1509
+(lp1427
 F2530.0
 aF710.0
 asg15
 (itiddlywiki
 Tiddler
-p1510
-(dp1511
-S'text'
-p1512
+p1428
+(dp1429
+g18
 VYou look out the window.  <<if $guard eq 0>>You see the guard leave to go the north side of the yard.  It is probably safe to go out now.<<endif>><<if $guard eq 6>>You see the guard look around as if he were completely bored and nothing ever happens.<<endif>><<if $guard eq 5>>You see the guard enter this side of the yard.  I would not go out right now, and maybe even hide under the desk if he comes inside.<<endif>>\u000a\u000a<<display 'The swanky office of an aerospace company'>>
-p1513
-sS'tags'
-p1514
-(lp1515
-sS'created'
-p1516
+p1430
+sg20
+VA View From A Nice Office
+p1431
+sg22
 g23
 ((I2013
 I11
@@ -4849,38 +4783,33 @@ I22
 I5
 I334
 I0
-tp1517
-(dp1518
-tp1519
-Rp1520
-sS'modified'
-p1521
-g1520
-sS'title'
-p1522
-VA View From A Nice Office
-p1523
-sbsa(dp1524
+tp1432
+(dp1433
+tp1434
+Rp1435
+sg28
+(lp1436
+sg30
+g1435
+sbsa(dp1437
 g12
 I00
 sg13
-(lp1525
+(lp1438
 F1970.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p1526
-(dp1527
-S'text'
-p1528
+p1439
+(dp1440
+g18
 VYou press the yellow button.\u000a\u000a<<if $sitting eq true>>You hear strange machinery activate under the floor.  A trap door opens on the other side of the floor.  You hear nothing but silence, then after a couple seconds, the trap door closes.\u000a\u000a<<display 'The swanky office of an aerospace company'>>\u000a<<else>>You hear strange machinery activate under the floor.  The floor beneath you opens up and you fall in to a deep pit! You fall down some tunnels that seem to open and close and strange junctions just before you reach them.  Then, you land somewhere and attempt to get your bearings.  <<if $luke eq "yes">>Amazingly, Luke is still with you.<<endif>>\u000a\u000a<<display 'A maze of twisty passages, all alike'>><<endif>>\u000a
-p1529
-sS'tags'
-p1530
-(lp1531
-sS'created'
-p1532
+p1441
+sg20
+VPress the yellow button
+p1442
+sg22
 g23
 ((I2013
 I12
@@ -4891,38 +4820,33 @@ I39
 I6
 I335
 I0
-tp1533
-(dp1534
-tp1535
-Rp1536
-sS'modified'
-p1537
-g1536
-sS'title'
-p1538
-VPress the yellow button
-p1539
-sbsa(dp1540
+tp1443
+(dp1444
+tp1445
+Rp1446
+sg28
+(lp1447
+sg30
+g1446
+sbsa(dp1448
 g12
 I00
 sg13
-(lp1541
+(lp1449
 F2110.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p1542
-(dp1543
-S'text'
-p1544
+p1450
+(dp1451
+g18
 VYou press the green button.\u000a\u000a<<if $sitting eq true>>You hear strange machinery activate under the floor.  A trap door opens on the other side of the floor.  You hear nothing but silence, then after a couple seconds, the trap door closes.\u000a\u000a<<display 'The swanky office of an aerospace company'>>\u000a<<else>>You hear strange machinery activate under the floor.  The floor beneath you opens up and you fall in to a deep pit! You fall down some tunnels that seem to open and close and strange junctions just before you reach them.  Then, you land somewhere and attempt to get your bearings.  <<if $luke eq "yes">>Amazingly, Luke is still with you.<<endif>>\u000a\u000a<<display 'A long hallway'>><<endif>>\u000a
-p1545
-sS'tags'
-p1546
-(lp1547
-sS'created'
-p1548
+p1452
+sg20
+VPress the green button
+p1453
+sg22
 g23
 ((I2013
 I12
@@ -4933,38 +4857,33 @@ I39
 I6
 I335
 I0
-tp1549
-(dp1550
-tp1551
-Rp1552
-sS'modified'
-p1553
-g1552
-sS'title'
-p1554
-VPress the green button
-p1555
-sbsa(dp1556
+tp1454
+(dp1455
+tp1456
+Rp1457
+sg28
+(lp1458
+sg30
+g1457
+sbsa(dp1459
 g12
 I00
 sg13
-(lp1557
+(lp1460
 F2250.0
 aF990.0
 asg15
 (itiddlywiki
 Tiddler
-p1558
-(dp1559
-S'text'
-p1560
+p1461
+(dp1462
+g18
 VYou press the blue button.\u000a\u000a<<if $sitting eq true>>You hear strange machinery activate under the floor.  The chair<<if $luke eq "yes">>s you and Luke<<else>> you<<endif>> are sitting fall backwards and you slide in to some sort of capsule!  It starts moving quite rapidly, and you discover that it has windows as you come out of a tunnel underwater.  It continues rapidly moving underwater and you can see confused fish fly past the windows.  Meanwhile, some sort of a robot comes out and offers you<<if $luke eq "yes">> and Luke <<endif>> a drink.\u000a\u000a[[Take the drink]]\u000a[[Decline the drink]]\u000a<<else>>You hear strange machinery activate under the floor.  The two chairs behind the desk rotate around in a circle, as if to dump someone out, and then return to their original positions.\u000a\u000a<<display 'The swanky office of an aerospace company'>>\u000a<<endif>>\u000a
-p1561
-sS'tags'
-p1562
-(lp1563
-sS'created'
-p1564
+p1463
+sg20
+VPress the blue button
+p1464
+sg22
 g23
 ((I2013
 I12
@@ -4975,35 +4894,33 @@ I39
 I6
 I335
 I0
-tp1565
-(dp1566
-tp1567
-Rp1568
-sS'modified'
-p1569
-g1568
-sS'title'
-p1570
-VPress the blue button
-p1571
-sbsa(dp1572
+tp1465
+(dp1466
+tp1467
+Rp1468
+sg28
+(lp1469
+sg30
+g1468
+sbsa(dp1470
 g12
 I00
 sg13
-(lp1573
+(lp1471
 F2250.0
 aF1410.0
 asg15
 (itiddlywiki
 Tiddler
-p1574
-(dp1575
-g1234
+p1472
+(dp1473
+g18
 VYou make motions to refuse the drink from the robot, and it figures out that you don't want it.  <<if $luke eq "yes">>Luke doesn't share your reservations about unknown drinks, and cheerfully drinks his.<<endif>>\u000a\u000aYou continue on your journey until at some point the capsule leaves the water.  You see an island up ahead, and perhaps this is your destination, but the capsule is not slowing down.  Suddenly there is a big impact as you collide with a tree and you are thrown across the island!  You manage to get up, seemingly unharmed.\u000a\u000a<<display 'On The Beach'>>
-p1576
-sg1236
-(lp1577
-sg1238
+p1474
+sg20
+VDecline the drink
+p1475
+sg22
 g23
 ((I2013
 I12
@@ -5014,36 +4931,33 @@ I16
 I6
 I335
 I0
-tp1578
-(dp1579
-tp1580
-Rp1581
-sg1243
-g1581
-sg1244
-VDecline the drink
-p1582
-sbsa(dp1583
+tp1476
+(dp1477
+tp1478
+Rp1479
+sg28
+(lp1480
+sg30
+g1479
+sbsa(dp1481
 g12
 I00
 sg13
-(lp1584
+(lp1482
 F2390.0
 aF1410.0
 asg15
 (itiddlywiki
 Tiddler
-p1585
-(dp1586
-S'text'
-p1587
+p1483
+(dp1484
+g18
 VYou take the drink from the robot, and cautiously take a sip.  It seems perfectly fine.\u000a\u000aYou continue on your journey until at some point the capsule leaves the water.  You see an island up ahead, and perhaps this is your destination, but the capsule is not slowing down.  Suddenly there is a big impact as you collide with a tree and you are thrown across the island!  You manage to get up, seemingly unharmed.\u000a\u000a<<display 'On The Beach'>>
-p1588
-sS'tags'
-p1589
-(lp1590
-sS'created'
-p1591
+p1485
+sg20
+VTake the drink
+p1486
+sg22
 g23
 ((I2013
 I12
@@ -5054,35 +4968,33 @@ I16
 I6
 I335
 I0
-tp1592
-(dp1593
-tp1594
-Rp1595
-sS'modified'
-p1596
-g1595
-sS'title'
-p1597
-VTake the drink
-p1598
-sbsa(dp1599
+tp1487
+(dp1488
+tp1489
+Rp1490
+sg28
+(lp1491
+sg30
+g1490
+sbsa(dp1492
 g12
 I00
 sg13
-(lp1600
+(lp1493
 F850.0
 aF2670.0
 asg15
 (itiddlywiki
 Tiddler
-p1601
-(dp1602
-g1234
+p1494
+(dp1495
+g18
 V<<if $first4 eq true>>As you come to the north side of the sanctuary, the birds just flee their nests.  Never have you seen so many birds just fly off to the sky.  Hopefully they don't alert anyone to your presence.\u000a<<set $first4=false>><<endif>><<if $goldegg eq false>>\u000aIn a nest close to the path, you see a beautiful adorned golden egg.\u000a<<endif>>\u000aYou are on the north side of the bird sanctuary.  You can go to the north side, or back to the shore.<<endif>>\u000a\u000a[[West|West side of bird sanctuary]]\u000a[[Back to the shore|On the shore of the bird sanctuary]]\u000a<<if $goldegg eq false>>[[Take the gold egg]]<<endif>>\u000a
-p1603
-sg1236
-(lp1604
-sg1238
+p1496
+sg20
+VNorth side of bird sanctuary
+p1497
+sg22
 g23
 ((I2013
 I12
@@ -5093,36 +5005,33 @@ I45
 I6
 I335
 I0
-tp1605
-(dp1606
-tp1607
-Rp1608
-sg1243
-g1608
-sg1244
-VNorth side of bird sanctuary
-p1609
-sbsa(dp1610
+tp1498
+(dp1499
+tp1500
+Rp1501
+sg28
+(lp1502
+sg30
+g1501
+sbsa(dp1503
 g12
 I00
 sg13
-(lp1611
+(lp1504
 F990.0
 aF2530.0
 asg15
 (itiddlywiki
 Tiddler
-p1612
-(dp1613
-S'text'
-p1614
+p1505
+(dp1506
+g18
 V<<if $first3 eq true>>As you come around the west side of the bird sanctuary, you suddenly notice that different types of birds are on the opposite sides of path.  In fact, it even seems that they are glaring at each other, taunting each other, daring each other to cross imaginary lines.\u000a\u000aAt the end of the path, there is a picnic table.  On this picnic table, a Jet and a Shark have made their nest.  As you approach, they fly off.\u000a<<set $first3=false>><<endif>>You are on the west side of the bird sanctuary.  You can go to the north side, or back to the shore.<<endif>>\u000a\u000a[[North|North side of bird sanctuary]]\u000a[[Back to the shore|On the shore of the bird sanctuary]]\u000a
-p1615
-sS'tags'
-p1616
-(lp1617
-sS'created'
-p1618
+p1507
+sg20
+VWest side of bird sanctuary
+p1508
+sg22
 g23
 ((I2013
 I12
@@ -5133,35 +5042,33 @@ I45
 I6
 I335
 I0
-tp1619
-(dp1620
-tp1621
-Rp1622
-sS'modified'
-p1623
-g1622
-sS'title'
-p1624
-VWest side of bird sanctuary
-p1625
-sbsa(dp1626
+tp1509
+(dp1510
+tp1511
+Rp1512
+sg28
+(lp1513
+sg30
+g1512
+sbsa(dp1514
 g12
 I00
 sg13
-(lp1627
+(lp1515
 F990.0
 aF2670.0
 asg15
 (itiddlywiki
 Tiddler
-p1628
-(dp1629
-g1234
+p1516
+(dp1517
+g18
 VYou take the gold egg.  It's hard to believe that a bird made this, it is so intricately adorned.<<set $goldegg=true>>\u000a\u000a<<display 'North side of bird sanctuary'>>
-p1630
-sg1236
-(lp1631
-sg1238
+p1518
+sg20
+VTake the gold egg
+p1519
+sg22
 g23
 ((I2013
 I12
@@ -5172,33 +5079,33 @@ I57
 I6
 I335
 I0
-tp1632
-(dp1633
-tp1634
-Rp1635
-sg1243
-g1635
-sg1244
-VTake the gold egg
-p1636
-sbsa(dp1637
+tp1520
+(dp1521
+tp1522
+Rp1523
+sg28
+(lp1524
+sg30
+g1523
+sbsa(dp1525
 g12
 I00
 sg13
-(lp1638
+(lp1526
 F1130.0
 aF3090.0
 asg15
 (itiddlywiki
 Tiddler
-p1639
-(dp1640
-g1234
+p1527
+(dp1528
+g18
 V<<set $f=false>><<set $here="Dragon Room, north">>You are in the north side of a large cavern.  <<if $chain eq "north">>There is a large chain on the floor here.  <<endif>>\u000a<<if $boulder eq "north">>There is a large boulder here.  <<if $dragon eq "dead">>There appears to be a squished dragon under it.<<endif>><<endif>>\u000a<<display 'dragon status'>>\u000a\u000aYou can go\u000a[[East|Dragon Room, east]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[West|Dragon Room, west]]\u000a<<if $chain eq "north">>[[Take chain]]\u000a<<endif>><<if $f eq true>><<display 'dragon options'>><<endif>>
-p1641
-sg1236
-(lp1642
-sg1238
+p1529
+sg20
+VDragon Room, north
+p1530
+sg22
 g23
 ((I2013
 I12
@@ -5209,33 +5116,33 @@ I29
 I6
 I335
 I0
-tp1643
-(dp1644
-tp1645
-Rp1646
-sg1243
-g1646
-sg1244
-VDragon Room, north
-p1647
-sbsa(dp1648
+tp1531
+(dp1532
+tp1533
+Rp1534
+sg28
+(lp1535
+sg30
+g1534
+sbsa(dp1536
 g12
 I00
 sg13
-(lp1649
+(lp1537
 F1130.0
 aF3370.0
 asg15
 (itiddlywiki
 Tiddler
-p1650
-(dp1651
-g1234
+p1538
+(dp1539
+g18
 V<<set $here="Dragon Room, center">>You are in the center of the cavern of the dragon.<<display 'dragon status'>>\u000a\u000a[[North|Dragon Room, north]]\u000a[[East|Dragon Room, east]]\u000a[[South|Dragon Room, south]]\u000a[[West|Dragon Room, west]]\u000a<<if $dragon eq "sleeping" or $f eq true>><<display 'dragon options'>><<endif>>
-p1652
-sg1236
-(lp1653
-sg1238
+p1540
+sg20
+VDragon Room, center
+p1541
+sg22
 g23
 ((I2013
 I12
@@ -5246,33 +5153,33 @@ I39
 I6
 I335
 I0
-tp1654
-(dp1655
-tp1656
-Rp1657
-sg1243
-g1657
-sg1244
-VDragon Room, center
-p1658
-sbsa(dp1659
+tp1542
+(dp1543
+tp1544
+Rp1545
+sg28
+(lp1546
+sg30
+g1545
+sbsa(dp1547
 g12
 I00
 sg13
-(lp1660
+(lp1548
 F1410.0
 aF3370.0
 asg15
 (itiddlywiki
 Tiddler
-p1661
-(dp1662
-g1234
+p1549
+(dp1550
+g18
 V<<set $f=false>><<set $here="Dragon Room, east">>You are in the east side of a large cavern.  There is a large switch here, currently pointed <<print $switch>>.  <<display 'dragon status'>>\u000a\u000a[[North|Dragon Room, north]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[South|Dragon Room, south]]\u000a[[Flip switch]]\u000a<<if $f eq true>><<display 'dragon options'>><<endif>>
-p1663
-sg1236
-(lp1664
-sg1238
+p1551
+sg20
+VDragon Room, east
+p1552
+sg22
 g23
 ((I2013
 I12
@@ -5283,33 +5190,33 @@ I42
 I6
 I335
 I0
-tp1665
-(dp1666
-tp1667
-Rp1668
-sg1243
-g1668
-sg1244
-VDragon Room, east
-p1669
-sbsa(dp1670
+tp1553
+(dp1554
+tp1555
+Rp1556
+sg28
+(lp1557
+sg30
+g1556
+sbsa(dp1558
 g12
 I00
 sg13
-(lp1671
+(lp1559
 F850.0
 aF3370.0
 asg15
 (itiddlywiki
 Tiddler
-p1672
-(dp1673
-g1234
+p1560
+(dp1561
+g18
 V<<set $f=false>><<set $here="Dragon Room, west">>You are in the west side of a large cavern.  <<if $switch eq "down">>There is a large hook here, hanging from the ceiling by a thin cord.  <<endif>><<if $switch eq "up" and $chain eq "attached">>There is a chain hanging down from the ceiling by a large hook far up in the air.  <<endif>><<if $switch eq "down" and $chain eq "attached">>  The hook has a chain hooked on it.  <<endif>>\u000a<<display 'dragon status'>>\u000a\u000a[[North|Dragon Room, north]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[South|Dragon Room, south]]\u000a<<if $switch eq "down">>[[Climb cord]]\u000a<<endif>>\u000a<<if $chain eq "taken" and $switch eq "down">>\u000a[[Attach chain to hook]]<<endif>><<if $switch eq "up" and $chain eq "attached">>[[Climb chain|On The Chain]]\u000a<<endif>>\u000a<<if $f eq true>><<display 'dragon options'>><<endif>>
-p1674
-sg1236
-(lp1675
-sg1238
+p1562
+sg20
+VDragon Room, west
+p1563
+sg22
 g23
 ((I2013
 I12
@@ -5320,33 +5227,33 @@ I45
 I6
 I335
 I0
-tp1676
-(dp1677
-tp1678
-Rp1679
-sg1243
-g1679
-sg1244
-VDragon Room, west
-p1680
-sbsa(dp1681
+tp1564
+(dp1565
+tp1566
+Rp1567
+sg28
+(lp1568
+sg30
+g1567
+sbsa(dp1569
 g12
 I00
 sg13
-(lp1682
+(lp1570
 F1130.0
 aF3650.0
 asg15
 (itiddlywiki
 Tiddler
-p1683
-(dp1684
-g1234
+p1571
+(dp1572
+g18
 V<<set $f=false>><<set $here="Dragon Room, south">>You are in the south side of a large cavern.  <<display 'dragon status'>>\u000aYou see a strange antique lamp here.\u000a\u000aYou can go\u000a[[East|Dragon Room, east]]\u000a[[To the center of the cavern|Dragon Room, center]]\u000a[[West|Dragon Room, west]]\u000a[[Rub the lamp]]\u000a<<if $f eq true>><<display 'dragon options'>><<endif>>
-p1685
-sg1236
-(lp1686
-sg1238
+p1573
+sg20
+VDragon Room, south
+p1574
+sg22
 g23
 ((I2013
 I12
@@ -5357,33 +5264,33 @@ I48
 I6
 I335
 I0
-tp1687
-(dp1688
-tp1689
-Rp1690
-sg1243
-g1690
-sg1244
-VDragon Room, south
-p1691
-sbsa(dp1692
+tp1575
+(dp1576
+tp1577
+Rp1578
+sg28
+(lp1579
+sg30
+g1578
+sbsa(dp1580
 g12
 I00
 sg13
-(lp1693
+(lp1581
 F1410.0
 aF3090.0
 asg15
 (itiddlywiki
 Tiddler
-p1694
-(dp1695
-g1234
+p1582
+(dp1583
+g18
 V<<set $f=false>><<set $o=true>>\u000a<<if $dragon eq "sleeping">>There is a large dragon sleeping in the center of the cavern.  <<endif>>\u000a<<if $dragon eq "north" and $here eq "Dragon Room, north">>The dragon is here in the north with you.  You do not feel safe.<<set $f=true>><<set $o=false>><<endif>><<if $dragon eq "east" and $here eq "Dragon Room, east">>The dragon is here in the east with you.  You do not feel safe.<<set $f=true>><<set $o=false>><<endif>><<if $dragon eq "south" and $here eq "Dragon Room, south">>The dragon is here in the south with you.  You do not feel safe.<<set $f=true>><<set $o=false>><<endif>><<if $dragon eq "west" and $here eq "Dragon Room, west">>The dragon is here in the west with you.  You do not feel safe.<<set $f=true>><<set $o=false>><<endif>><<if $dragon eq "north" and $here neq "Dragon Room, north" and $o eq true>>The dragon is in the north of the room, heading east.<<set $o=false>><<set $dragon="east">><<endif>><<if $dragon eq "east" and $here neq "Dragon Room, east" and $o eq true>>The dragon is in the east of the room, heading south.<<set $o=false>><<set $dragon="south">><<endif>><<if $dragon eq "south" and $here neq "Dragon Room, south" and $o eq true>>The dragon is in the south of the room, heading west.<<set $o=false>><<set $dragon="west">><<endif>><<if $dragon eq "west" and $here neq "Dragon Room, west" and $o eq true>>The dragon is in the west of the room, heading north.<<set $o=false>><<set $dragon="north">><<endif>>
-p1696
-sg1236
-(lp1697
-sg1238
+p1584
+sg20
+Vdragon status
+p1585
+sg22
 g23
 ((I2013
 I12
@@ -5394,33 +5301,33 @@ I57
 I6
 I335
 I0
-tp1698
-(dp1699
-tp1700
-Rp1701
-sg1243
-g1701
-sg1244
-Vdragon status
-p1702
-sbsa(dp1703
+tp1586
+(dp1587
+tp1588
+Rp1589
+sg28
+(lp1590
+sg30
+g1589
+sbsa(dp1591
 g12
 I00
 sg13
-(lp1704
+(lp1592
 F1270.0
 aF3790.0
 asg15
 (itiddlywiki
 Tiddler
-p1705
-(dp1706
-g1234
+p1593
+(dp1594
+g18
 V<<if $f eq true>>Your lamp rubbing has been interupted by a dragon.\u000a\u000a<<display 'dragon fire'>><<else>>\u000aYou rub the lamp, and the world blurs and you get disoriented.\u000a\u000a...<<set $hastreasures=false>><<set $score=$score+20>>\u000a\u000aYou wake up to find yourself at your house.  <<if $goldegg eq true or $coins gt 0 or $goldbars eq true>>After verifying that you seem to be okay, or at least no worse for the wear, you realize that you still have all your treasures!<<set $hastreasures=true>><<endif>>\u000a\u000a* *** Your adventure was successful ***\u000a\u000aYou managed to have an adventure, and made it home alive.\u000a<<if $dragon eq "dead">>You defeated the dragon.<<endif>>\u000a<<if $hastreasures eq true>>You even managed to make it back with some treasures!<<endif>>\u000aYour score is <<print $score+"">> out of 100.\u000a\u000aCongratulations!  To try again, click "Restart" on the left.<<endif>>
-p1707
-sg1236
-(lp1708
-sg1238
+p1595
+sg20
+VRub the lamp
+p1596
+sg22
 g23
 ((I2013
 I12
@@ -5431,33 +5338,33 @@ I57
 I6
 I335
 I0
-tp1709
-(dp1710
-tp1711
-Rp1712
-sg1243
-g1712
-sg1244
-VRub the lamp
-p1713
-sbsa(dp1714
+tp1597
+(dp1598
+tp1599
+Rp1600
+sg28
+(lp1601
+sg30
+g1600
+sbsa(dp1602
 g12
 I00
 sg13
-(lp1715
+(lp1603
 F1410.0
 aF3650.0
 asg15
 (itiddlywiki
 Tiddler
-p1716
-(dp1717
-g1234
+p1604
+(dp1605
+g18
 V<<if $katana eq true>>[[Stab the dragon with the katana]]<<endif>>\u000a<<if $throwingstars gt 0>>[[Throw stars at the dragon]]<<endif>>\u000a
-p1718
-sg1236
-(lp1719
-sg1238
+p1606
+sg20
+Vdragon options
+p1607
+sg22
 g23
 ((I2013
 I12
@@ -5468,33 +5375,33 @@ I21
 I6
 I335
 I0
-tp1720
-(dp1721
-tp1722
-Rp1723
-sg1243
-g1723
-sg1244
-Vdragon options
-p1724
-sbsa(dp1725
+tp1608
+(dp1609
+tp1610
+Rp1611
+sg28
+(lp1612
+sg30
+g1611
+sbsa(dp1613
 g12
 I00
 sg13
-(lp1726
+(lp1614
 F1130.0
 aF2950.0
 asg15
 (itiddlywiki
 Tiddler
-p1727
-(dp1728
-g1234
+p1615
+(dp1616
+g18
 V<<if $f eq true>>Your chain acquisition has been interupted by a dragon.\u000a\u000a<<display 'dragon fire'>><<else>>You take the chain.  <<set $chain="taken">>\u000a\u000a<<display 'Dragon Room, north'>><<endif>>
-p1729
-sg1236
-(lp1730
-sg1238
+p1617
+sg20
+VTake chain
+p1618
+sg22
 g23
 ((I2013
 I12
@@ -5505,33 +5412,33 @@ I42
 I6
 I335
 I0
-tp1731
-(dp1732
-tp1733
-Rp1734
-sg1243
-g1734
-sg1244
-VTake chain
-p1735
-sbsa(dp1736
+tp1619
+(dp1620
+tp1621
+Rp1622
+sg28
+(lp1623
+sg30
+g1622
+sbsa(dp1624
 g12
 I00
 sg13
-(lp1737
+(lp1625
 F1550.0
 aF3370.0
 asg15
 (itiddlywiki
 Tiddler
-p1738
-(dp1739
-g1234
+p1626
+(dp1627
+g18
 V<<if $f eq true>>Your switch flipping has been interupted by a dragon.\u000a\u000a<<display 'dragon fire'>><<else>><<if $switch eq "down">>You flip the switch up.  On the opposite side of the cavern, you see a hook held by a cord slowly go up toward the ceiling.<<set $switch="up">><<else>>You flip the switch down.  On the opposite side of the cavern, you see a hook come down from the ceiling, held up by a cord.<<set $switch="down">><<endif>>\u000a\u000a<<display 'Dragon Room, east'>><<endif>>
-p1740
-sg1236
-(lp1741
-sg1238
+p1628
+sg20
+VFlip switch
+p1629
+sg22
 g23
 ((I2013
 I12
@@ -5542,33 +5449,33 @@ I26
 I6
 I335
 I0
-tp1742
-(dp1743
-tp1744
-Rp1745
-sg1243
-g1745
-sg1244
-VFlip switch
-p1746
-sbsa(dp1747
+tp1630
+(dp1631
+tp1632
+Rp1633
+sg28
+(lp1634
+sg30
+g1633
+sbsa(dp1635
 g12
 I00
 sg13
-(lp1748
+(lp1636
 F710.0
 aF3370.0
 asg15
 (itiddlywiki
 Tiddler
-p1749
-(dp1750
-g1234
+p1637
+(dp1638
+g18
 V<<if $f eq true>>You attempt to climb the cord, but you never get that far.\u000a\u000a<<display 'dragon fire'>><<else>>You attempt to climb the cord, but it is far too thin to be easily climbed.\u000a\u000a<<display 'Dragon Room, west'>><<endif>>
-p1751
-sg1236
-(lp1752
-sg1238
+p1639
+sg20
+VClimb cord
+p1640
+sg22
 g23
 ((I2013
 I12
@@ -5579,33 +5486,33 @@ I59
 I6
 I335
 I0
-tp1753
-(dp1754
-tp1755
-Rp1756
-sg1243
-g1756
-sg1244
-VClimb cord
-p1757
-sbsa(dp1758
+tp1641
+(dp1642
+tp1643
+Rp1644
+sg28
+(lp1645
+sg30
+g1644
+sbsa(dp1646
 g12
 I00
 sg13
-(lp1759
+(lp1647
 F1550.0
 aF3650.0
 asg15
 (itiddlywiki
 Tiddler
-p1760
-(dp1761
-g1234
+p1648
+(dp1649
+g18
 V<<if $dragon neq "sleeping">>You slam your katana in to the dragon.  You were aiming for his eye but you clearly missed.  Unfortunately your katana is stuck in him now, and as he twists and turns you are unable to retrieve it!<<set $katana=false>><<print tale.get($here).text>><<endif>><<if $dragon eq "sleeping">>You slam your katana in to the dragon as hard as you can.  You succeed in getting your katana stuck in the dragon scales and are unable to retrieve it! \u000a\u000aMeanwhile, the dragon wakes up, looks at you, and starts running about!  He runs to the north of the cavern.<<set $katana=false>><<set $dragon="north">><<print tale.get($here).text>><<endif>>
-p1762
-sg1236
-(lp1763
-sg1238
+p1650
+sg20
+VStab the dragon with the katana
+p1651
+sg22
 g23
 ((I2013
 I12
@@ -5616,33 +5523,33 @@ I38
 I6
 I335
 I0
-tp1764
-(dp1765
-tp1766
-Rp1767
-sg1243
-g1767
-sg1244
-VStab the dragon with the katana
-p1768
-sbsa(dp1769
+tp1652
+(dp1653
+tp1654
+Rp1655
+sg28
+(lp1656
+sg30
+g1655
+sbsa(dp1657
 g12
 I00
 sg13
-(lp1770
+(lp1658
 F1410.0
 aF2950.0
 asg15
 (itiddlywiki
 Tiddler
-p1771
-(dp1772
-g1234
+p1659
+(dp1660
+g18
 V$f is used to indicate if the dragon starts a fight with the player.  $f is set to false whenever the dragon isn't in the same room; $f is set to true if the dragon is in the same room, and if $f is set to true when the dragon starts in the same room, combat will occur.\u000a\u000a$o is used to indicate that the dragon has moved.  This keeps him from running around in circles, as he will do if this is not kept track of.
-p1773
-sg1236
-(lp1774
-sg1238
+p1661
+sg20
+VMore notes
+p1662
+sg22
 g23
 ((I2013
 I12
@@ -5653,33 +5560,33 @@ I35
 I6
 I335
 I0
-tp1775
-(dp1776
-tp1777
-Rp1778
-sg1243
-g1778
-sg1244
-VMore notes
-p1779
-sbsa(dp1780
+tp1663
+(dp1664
+tp1665
+Rp1666
+sg28
+(lp1667
+sg30
+g1666
+sbsa(dp1668
 g12
 I00
 sg13
-(lp1781
+(lp1669
 F710.0
 aF3510.0
 asg15
 (itiddlywiki
 Tiddler
-p1782
-(dp1783
-g1234
+p1670
+(dp1671
+g18
 V<<if $f eq true>>You get interupted by a dragon.\u000a\u000a<<display 'dragon fire'>><<else>>You attach the chain to the hook.  <<set $chain="attached">>\u000a\u000a<<display 'Dragon Room, west'>><<endif>>
-p1784
-sg1236
-(lp1785
-sg1238
+p1672
+sg20
+VAttach chain to hook
+p1673
+sg22
 g23
 ((I2013
 I12
@@ -5690,33 +5597,33 @@ I32
 I6
 I335
 I0
-tp1786
-(dp1787
-tp1788
-Rp1789
-sg1243
-g1789
-sg1244
-VAttach chain to hook
-p1790
-sbsa(dp1791
+tp1674
+(dp1675
+tp1676
+Rp1677
+sg28
+(lp1678
+sg30
+g1677
+sbsa(dp1679
 g12
 I00
 sg13
-(lp1792
+(lp1680
 F850.0
 aF3790.0
 asg15
 (itiddlywiki
 Tiddler
-p1793
-(dp1794
-g1234
+p1681
+(dp1682
+g18
 VShowing some strength you didn't know you had, you climb the chain up the wall.  After about 30 meters, you find a ledge that you could walk on.<<set $here="offfloor">><<set $f eq false>>\u000a\u000a[[Jump on the ledge|On The West Ledge]]\u000a[[Go down the chain|Dragon Room, west]]\u000a
-p1795
-sg1236
-(lp1796
-sg1238
+p1683
+sg20
+VOn The Chain
+p1684
+sg22
 g23
 ((I2013
 I12
@@ -5727,33 +5634,33 @@ I16
 I6
 I335
 I0
-tp1797
-(dp1798
-tp1799
-Rp1800
-sg1243
-g1800
-sg1244
-VOn The Chain
-p1801
-sbsa(dp1802
+tp1685
+(dp1686
+tp1687
+Rp1688
+sg28
+(lp1689
+sg30
+g1688
+sbsa(dp1690
 g12
 I00
 sg13
-(lp1803
+(lp1691
 F850.0
 aF3930.0
 asg15
 (itiddlywiki
 Tiddler
-p1804
-(dp1805
-g1234
+p1692
+(dp1693
+g18
 VYou are on the west ledge above the dragon cavern.  <<if $first eq true>>As you look down, you can see that the dragon has no wings.  You feel much safer here.  <<set $first=false>><<endif>><<display 'dragon status'>>\u000a\u000aThe ledge continues to the north.\u000a\u000a[[To the north ledge|On The North Ledge]]\u000a[[Climb down the chain|Down The Chain]]\u000a
-p1806
-sg1236
-(lp1807
-sg1238
+p1694
+sg20
+VOn The West Ledge
+p1695
+sg22
 g23
 ((I2013
 I12
@@ -5764,33 +5671,33 @@ I11
 I6
 I335
 I0
-tp1808
-(dp1809
-tp1810
-Rp1811
-sg1243
-g1811
-sg1244
-VOn The West Ledge
-p1812
-sbsa(dp1813
+tp1696
+(dp1697
+tp1698
+Rp1699
+sg28
+(lp1700
+sg30
+g1699
+sbsa(dp1701
 g12
 I00
 sg13
-(lp1814
+(lp1702
 F710.0
 aF3930.0
 asg15
 (itiddlywiki
 Tiddler
-p1815
-(dp1816
-g1234
+p1703
+(dp1704
+g18
 VYou reach out and grab the chain, and gently lower yourself down to the floor.\u000a\u000a<<display 'Dragon Room, west'>>
-p1817
-sg1236
-(lp1818
-sg1238
+p1705
+sg20
+VDown The Chain
+p1706
+sg22
 g23
 ((I2013
 I12
@@ -5801,33 +5708,33 @@ I31
 I6
 I335
 I0
-tp1819
-(dp1820
-tp1821
-Rp1822
-sg1243
-g1822
-sg1244
-VDown The Chain
-p1823
-sbsa(dp1824
+tp1707
+(dp1708
+tp1709
+Rp1710
+sg28
+(lp1711
+sg30
+g1710
+sbsa(dp1712
 g12
 I00
 sg13
-(lp1825
+(lp1713
 F990.0
 aF3930.0
 asg15
 (itiddlywiki
 Tiddler
-p1826
-(dp1827
-g1234
+p1714
+(dp1715
+g18
 VYou are on the north ledge.  <<if $boulder eq "ledge">>There is a huge boulder here, precariously close to the edge.  If you use all your strength, you might be able to push it off.  <<endif>><<if $boulder neq "ledge" and $bars eq false>>There are some gold bars here.<<endif>>\u000a<<display 'dragon status'>>\u000a\u000a[[To the west ledge|On The West Ledge]]\u000a<<if $boulder eq "ledge">>[[Push boulder off ledge]]<<endif>>\u000a<<if $boulder neq "ledge" and $bars eq false>>[[Take the gold bars]]<<endif>>
-p1828
-sg1236
-(lp1829
-sg1238
+p1716
+sg20
+VOn The North Ledge
+p1717
+sg22
 g23
 ((I2013
 I12
@@ -5838,33 +5745,33 @@ I36
 I6
 I335
 I0
-tp1830
-(dp1831
-tp1832
-Rp1833
-sg1243
-g1833
-sg1244
-VOn The North Ledge
-p1834
-sbsa(dp1835
+tp1718
+(dp1719
+tp1720
+Rp1721
+sg28
+(lp1722
+sg30
+g1721
+sbsa(dp1723
 g12
 I00
 sg13
-(lp1836
+(lp1724
 F1130.0
 aF3930.0
 asg15
 (itiddlywiki
 Tiddler
-p1837
-(dp1838
-g1234
-V<<set $boulder="north">>You push the boulder off the ledge.  As you push the boulder, gold bars are revealed underneath the boulder.  <<if $dragon eq "north">>Your aim is lucky and you manage to squish the dragon!  <<set $dragon="dead">><<set $score=$score+25>><<endif>><<endif>><<if $dragon eq "sleeping">>The sound of the boulder wakes the dragon up!  <<set $dragon north>><<endif>>\u000a\u000a<<display 'On The North Ledge'>>
-p1839
-sg1236
-(lp1840
-sg1238
+p1725
+(dp1726
+g18
+V<<set $boulder="north">>You push the boulder off the ledge.  As you push the boulder, gold bars are revealed underneath the boulder.  <<if $dragon eq "north">>Your aim is lucky and you manage to squish the dragon!  <<set $dragon="dead">><<set $score=$score+25>><<endif>><<if $dragon eq "sleeping">>The sound of the boulder wakes the dragon up!  <<set $dragon="north">><<endif>>\u000a\u000a<<display 'On The North Ledge'>>
+p1727
+sg20
+VPush boulder off ledge
+p1728
+sg22
 g23
 ((I2013
 I12
@@ -5875,33 +5782,33 @@ I24
 I6
 I335
 I0
-tp1841
-(dp1842
-tp1843
-Rp1844
-sg1243
-g1844
-sg1244
-VPush boulder off ledge
-p1845
-sbsa(dp1846
+tp1729
+(dp1730
+tp1731
+Rp1732
+sg28
+(lp1733
+sg30
+g1732
+sbsa(dp1734
 g12
 I00
 sg13
-(lp1847
+(lp1735
 F990.0
 aF4070.0
 asg15
 (itiddlywiki
 Tiddler
-p1848
-(dp1849
-g1234
+p1736
+(dp1737
+g18
 VYou take the gold bars.<<set $bars=true>><<set $score=$score+12>>\u000a\u000a<<display 'On The North Ledge'>>
-p1850
-sg1236
-(lp1851
-sg1238
+p1738
+sg20
+VTake the gold bars
+p1739
+sg22
 g23
 ((I2013
 I12
@@ -5912,33 +5819,33 @@ I31
 I6
 I335
 I0
-tp1852
-(dp1853
-tp1854
-Rp1855
-sg1243
-g1855
-sg1244
-VTake the gold bars
-p1856
-sbsa(dp1857
+tp1740
+(dp1741
+tp1742
+Rp1743
+sg28
+(lp1744
+sg30
+g1743
+sbsa(dp1745
 g12
 I00
 sg13
-(lp1858
+(lp1746
 F1550.0
 aF3790.0
 asg15
 (itiddlywiki
 Tiddler
-p1859
-(dp1860
-g1234
+p1747
+(dp1748
+g18
 VThe stars are utterly ineffective.  \u000a<<if $dragon neq "sleeping">><<display 'dragon fire'>><<else>><<print tale.get($here).text>><<endif>>
-p1861
-sg1236
-(lp1862
-sg1238
+p1749
+sg20
+VThrow stars at the dragon
+p1750
+sg22
 g23
 ((I2013
 I12
@@ -5949,33 +5856,33 @@ I47
 I6
 I335
 I0
-tp1863
-(dp1864
-tp1865
-Rp1866
-sg1243
-g1866
-sg1244
-VThrow stars at the dragon
-p1867
-sbsa(dp1868
+tp1751
+(dp1752
+tp1753
+Rp1754
+sg28
+(lp1755
+sg30
+g1754
+sbsa(dp1756
 g12
 I00
 sg13
-(lp1869
+(lp1757
 F1410.0
 aF3930.0
 asg15
 (itiddlywiki
 Tiddler
-p1870
-(dp1871
-g1234
+p1758
+(dp1759
+g18
 V\u000aThe dragon breathes fire at you.  <<if $shield eq false and $leather eq false>><<display 'dragon death'>><<endif>><<if $leather eq true and $sheild eq false>>Your leather armor provides minimal protection against the flames, but somehow you are not dead.  You aren't entirely certain that it will protect you again.<<set $leather=false>><<print tale.get($here).text>><<endif>><<if $shield eq true and $leather eq false>>Your shield provides minimal protection against the dragon's fire.  You hope that you don't have to rely on it again.<<set $shield=false>><<print tale.get($here).text>><<endif>><<if $shield eq true and $leather eq true>>Your shield provides minimal protection against the dragon's fire.  You hope that you don't have to rely on it again.<<set $shield=false>><<print tale.get($here).text>><<endif>>
-p1872
-sg1236
-(lp1873
-sg1238
+p1760
+sg20
+Vdragon fire
+p1761
+sg22
 g23
 ((I2013
 I12
@@ -5986,33 +5893,33 @@ I2
 I6
 I335
 I0
-tp1874
-(dp1875
-tp1876
-Rp1877
-sg1243
-g1877
-sg1244
-Vdragon fire
-p1878
-sbsa(dp1879
+tp1762
+(dp1763
+tp1764
+Rp1765
+sg28
+(lp1766
+sg30
+g1765
+sbsa(dp1767
 g12
 I00
 sg13
-(lp1880
+(lp1768
 F1410.0
 aF4070.0
 asg15
 (itiddlywiki
 Tiddler
-p1881
-(dp1882
-g1234
+p1769
+(dp1770
+g18
 VThe dragon breathes fire on you.\u000a\u000a* *** You have died ***\u000a\u000aIt seems you have been burned to a crisp by a dragon.  Perhaps next time you can get flame retardant leather armor.  Your score is <<print $score+"">> out of 100.\u000a\u000aBetter luck next time.  You can click "Restart" on the left to try again.
-p1883
-sg1236
-(lp1884
-sg1238
+p1771
+sg20
+Vdragon death
+p1772
+sg22
 g23
 ((I2013
 I12
@@ -6023,16 +5930,15 @@ I2
 I6
 I335
 I0
-tp1885
-(dp1886
-tp1887
-Rp1888
-sg1243
-g1888
-sg1244
-Vdragon death
-p1889
+tp1773
+(dp1774
+tp1775
+Rp1776
+sg28
+(lp1777
+sg30
+g1776
 sbsasS'scale'
-p1890
+p1778
 F0.57182448036951494
 ss.
